@@ -91,7 +91,7 @@ def smoke(blender):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["doctor", "validate", "smoke", "setup-review", *STAGES])
+    parser.add_argument("command", choices=["doctor", "validate", "smoke", "setup-review", "blockout-review", *STAGES])
     parser.add_argument("--blender", help="Absolute Blender executable path; overrides auto detection")
     parser.add_argument("--scene", type=Path, help="Existing .blend for render; defaults to blender/scene/owli.blend")
     parser.add_argument("--output", type=Path, help="Render output directory (render command only)")
@@ -107,9 +107,9 @@ def main():
             run([sys.executable, str(ROOT / "scripts/validate_project.py"), "--strict-assets"])
         elif args.command == "smoke":
             smoke(find_blender(args.blender))
-        elif args.command == "setup-review":
+        elif args.command in ("setup-review", "blockout-review"):
             from setup_review import build_review
-            build_review(ROOT, find_blender(args.blender))
+            build_review(ROOT, find_blender(args.blender), "setup" if args.command == "setup-review" else "blockout_v01")
         else:
             scene = args.scene.resolve() if args.scene else ROOT / "blender/scene/owli.blend"
             if args.command == "scene" and scene.exists():

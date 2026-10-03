@@ -77,8 +77,15 @@ Technischer Review: [Setup-Bericht](validation/reviews/setup/report.md).
 
 Alle neun Referenz-PNGs sind vorhanden. Der nächste Produktionsschritt ist
 [Issue #3: Blockout und Silhouette](https://github.com/KreutzM/Owli-3d/issues/3).
-Die Skripte sind derzeit Gerüste: Kopf-/Flügeltopologie, echter Stangengriff,
-Materialzuweisung, vollständige Rig-Steuerung und Animationen sind
-noch umzusetzen. Die Folgeaufgaben stehen in Issues #4–#9.
+Der grobe Blockout enthält parametrische Primärvolumen und 3+1-Griffguides.
+Finale Kopf-/Flügeltopologie, Krallen, Materialien, Rig und Animationen folgen
+in den unter Epic #11 geschnittenen Produktionsaufgaben.
 
 Große Blender-/3D-Artefakte sind für Git LFS vorgesehen.
+
+Der parametrisierte grobe Blockout für Issue #13 wird mit
+`python scripts/project.py blockout-review` reproduziert. Maße stehen in
+[`design/proportions.json`](design/proportions.json); der gespeicherte LFS-Stand
+liegt in `blender/scene/owli_blockout_v01.blend`. Vier feste Ansichten und
+Referenzvergleiche: [`Blockout-Review`](validation/reviews/blockout_v01/report.md).
+Die separate Silhouettenfreigabe folgt in Issue #14.
