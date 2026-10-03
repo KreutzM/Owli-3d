@@ -64,6 +64,8 @@ def smoke(blender):
     with tempfile.TemporaryDirectory(prefix="blender-smoke-", dir=scratch_parent) as scratch:
         scratch = Path(scratch)
         shutil.copytree(ROOT / "design", scratch / "design")
+        (scratch / "validation").mkdir()
+        shutil.copy2(ROOT / "validation/reference_views.json", scratch / "validation/reference_views.json")
         driver = scratch / "smoke.py"
         stage_paths = [str(p) for p in sorted((ROOT / "scripts/blender").glob("[0-9][0-9]_*.py"))]
         driver.write_text(
@@ -89,18 +91,27 @@ def smoke(blender):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["doctor", "validate", "smoke", *STAGES])
+    parser.add_argument("command", choices=["doctor", "validate", "smoke", "setup-review", *STAGES])
     parser.add_argument("--blender", help="Absolute Blender executable path; overrides auto detection")
+    parser.add_argument("--scene", type=Path, help="Existing .blend for render; defaults to blender/scene/owli.blend")
+    parser.add_argument("--output", type=Path, help="Render output directory (render command only)")
     args = parser.parse_args()
     try:
+        if args.scene and args.command != "render":
+            raise RuntimeError("--scene is only supported for render")
+        if args.output and args.command != "render":
+            raise RuntimeError("--output is only supported for render")
         if args.command == "doctor":
             doctor(args.blender)
         elif args.command == "validate":
             run([sys.executable, str(ROOT / "scripts/validate_project.py"), "--strict-assets"])
         elif args.command == "smoke":
             smoke(find_blender(args.blender))
+        elif args.command == "setup-review":
+            from setup_review import build_review
+            build_review(ROOT, find_blender(args.blender))
         else:
-            scene = ROOT / "blender/scene/owli.blend"
+            scene = args.scene.resolve() if args.scene else ROOT / "blender/scene/owli.blend"
             if args.command == "scene" and scene.exists():
                 raise RuntimeError(f"Scene already exists: {scene}. Archive it before rebuilding.")
             if args.command != "scene" and not scene.exists():
@@ -109,7 +120,13 @@ def main():
             if args.command != "scene":
                 command.append(str(scene))
             command += ["--python-exit-code", "1", "--python", str(ROOT / "scripts/blender" / STAGES[args.command])]
-            run(command)
+            if args.command == "render":
+                env = dict(os.environ)
+                if args.output:
+                    env["OWLI_VALIDATION_OUTPUT"] = str(args.output.resolve())
+                subprocess.run(command, cwd=ROOT, env=env, check=True)
+            else:
+                run(command)
     except (RuntimeError, OSError, ImportError, subprocess.CalledProcessError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1

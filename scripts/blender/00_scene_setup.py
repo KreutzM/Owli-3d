@@ -1,4 +1,5 @@
 from pathlib import Path
+import sys
 import bpy
 
 ROOT=Path.cwd()
@@ -6,6 +7,10 @@ SCENE=ROOT/"blender"/"scene"/"owli.blend"
 
 bpy.ops.object.select_all(action="SELECT")
 bpy.ops.object.delete(use_global=False)
+for datablocks in (bpy.data.cameras, bpy.data.lights):
+    for data in list(datablocks):
+        if data.users == 0:
+            datablocks.remove(data)
 
 scene=bpy.context.scene
 scene.unit_settings.system="METRIC"
@@ -30,6 +35,10 @@ scene["version_target"]="V1 perched"
 scene["axis_convention"]="X left/right, Y front/back, Z up; +Y is Owli front"
 scene["foot_rule"]="4 toes per foot: 3 forward + 1 rear"
 scene["flight_required"]=False
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from validation_setup import setup
+setup(ROOT)
 
 SCENE.parent.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.save_as_mainfile(filepath=str(SCENE))

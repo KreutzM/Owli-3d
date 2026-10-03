@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import argparse, hashlib, json, sys
+from validation_config import validate_studio
 
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
@@ -20,6 +21,7 @@ materials=load("design/materials.json")
 manifest=load("references/manifest.json")
 views=load("validation/reference_views.json")
 checklist=load("validation/checklist.json")
+errors.extend(validate_studio(views, manifest, hier))
 
 feet=spec.get("anatomy",{}).get("feet",{})
 if feet.get("toes_per_foot") != 4 or feet.get("forward_toes") != 3 or feet.get("rear_toes") != 1:

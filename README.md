@@ -67,12 +67,18 @@ Dieser technische Test ersetzt keine Silhouettenprüfung anhand der Referenzen.
 Die CI prüft strikte Referenzvalidierung, Python-Syntax und Tooling-Regressionschecks
 unter Windows und Linux; der Blender-Smoke-Test läuft lokal.
 
+Der feste Vieransichten-Aufbau ist in `validation/reference_views.json`
+parametrisiert. Mit `python scripts/project.py setup-review` entstehen dauerhafte
+1024px-Nachweise samt gespeichertem Studio-Blend und einem Vergleich nach erneutem
+Öffnen. Anleitung und Referenzzuordnung: [Validierungsworkflow](docs/validation-workflow.md).
+Technischer Review: [Setup-Bericht](validation/reviews/setup/report.md).
+
 ## Aktueller Arbeitsstand
 
 Alle neun Referenz-PNGs sind vorhanden. Der nächste Produktionsschritt ist
 [Issue #3: Blockout und Silhouette](https://github.com/KreutzM/Owli-3d/issues/3).
 Die Skripte sind derzeit Gerüste: Kopf-/Flügeltopologie, echter Stangengriff,
-Materialzuweisung, Lichtaufbau, vollständige Rig-Steuerung und Animationen sind
+Materialzuweisung, vollständige Rig-Steuerung und Animationen sind
 noch umzusetzen. Die Folgeaufgaben stehen in Issues #4–#9.
 
 Große Blender-/3D-Artefakte sind für Git LFS vorgesehen.

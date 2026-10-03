@@ -43,6 +43,7 @@ class ToolingTests(unittest.TestCase):
             shutil.copytree(ROOT / "references", root / "references")
             (root / "scripts").mkdir()
             shutil.copy2(ROOT / "scripts/validate_project.py", root / "scripts")
+            shutil.copy2(ROOT / "scripts/validation_config.py", root / "scripts")
             hierarchy_path = root / "design/reference_hierarchy.json"
             hierarchy = json.loads(hierarchy_path.read_text(encoding="utf-8"))
             hierarchy["hierarchy"][0]["rank"] = 5
