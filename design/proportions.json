@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "status": "initial_blockout_targets_not_hard_measurements",
+  "normalized_character_height": 1,
+  "targets": {
+    "head_visual_share_of_height": 0.45,
+    "torso_visual_share_of_height": 0.44,
+    "tail_and_foot_transition_share": 0.11,
+    "head_width_to_body_width": 1.18,
+    "eye_diameter_to_head_width": 0.27,
+    "perch_length_to_character_width": 1.25
+  },
+  "rule": "Refine by simultaneous front/profile/back/3q silhouette matching. Document major changes."
+}

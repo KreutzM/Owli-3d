@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "rig_target": "avatar_v1_perched",
+  "required_controls": [
+    "root",
+    "body",
+    "head_neck",
+    "eye_L_aim",
+    "eye_R_aim",
+    "blink_L",
+    "blink_R",
+    "beak_open",
+    "wing_L_gesture",
+    "wing_R_gesture",
+    "leg_L",
+    "leg_R"
+  ],
+  "optional_controls": [
+    "toe_curl_L",
+    "toe_curl_R",
+    "secondary_feather_motion",
+    "pupil_scale"
+  ],
+  "facial_minimum": [
+    "neutral",
+    "blink",
+    "look_left",
+    "look_right",
+    "look_up",
+    "look_down",
+    "beak_open"
+  ],
+  "deferred": [
+    "flight_rig",
+    "flight_wing_articulation",
+    "complex_feather_simulation"
+  ],
+  "foot_rule": {
+    "toes_per_foot": 4,
+    "forward": 3,
+    "rear": 1
+  }
+}

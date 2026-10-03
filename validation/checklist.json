@@ -1,0 +1,17 @@
+{
+  "milestone": "blockout_v01",
+  "checks": [
+    "Owli immediately reads as the same mascot as the original logo",
+    "Head is dominant but not baby-like",
+    "Both eyes are separate spherical/volumetric objects",
+    "White facial mask remains strongly readable",
+    "Beak size and projection agree across front and profile",
+    "Folded wing masses read clearly in side and back views",
+    "Tail is compact and centered",
+    "Each foot has 3 forward toes and 1 rear toe",
+    "Rear toe wraps behind the perch rather than duplicating a front claw",
+    "Perch is visually secondary",
+    "No fine feather detailing hides a silhouette problem",
+    "No flight-specific complexity added"
+  ]
+}
