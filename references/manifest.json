@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "approved_directory": "references/approved",
-  "binary_status": "pending_upload_via_repository_binary_channel",
+  "binary_status": "present_and_verified",
   "references": [
     {
       "file": "00_original_logo.png",

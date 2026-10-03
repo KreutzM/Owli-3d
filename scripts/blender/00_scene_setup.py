@@ -11,7 +11,7 @@ scene=bpy.context.scene
 scene.unit_settings.system="METRIC"
 scene.unit_settings.length_unit="METERS"
 scene.unit_settings.scale_length=1.0
-scene.render.engine="BLENDER_EEVEE_NEXT"
+scene.render.engine="BLENDER_EEVEE" if bpy.app.version >= (5, 0, 0) else "BLENDER_EEVEE_NEXT"
 scene.render.resolution_x=1024
 scene.render.resolution_y=1024
 scene.render.resolution_percentage=100

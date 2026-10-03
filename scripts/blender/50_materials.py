@@ -33,4 +33,8 @@ mat("Owli_Eye_Gloss","#06163B",0.06,0.0)
 mat("Owli_Tech_Emission","#55F7FF",0.22,0.0,"#55F7FF",2.5)
 mat("Owli_Perch_Metal","#AEB8C5",0.3,0.85)
 
-print("Created Owli V1 material library.")
+for material in bpy.data.materials:
+    if material.name.startswith("Owli_"):
+        material.use_fake_user=True
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/"blender"/"scene"/"owli.blend"))
+print("Created and saved Owli V1 material library.")

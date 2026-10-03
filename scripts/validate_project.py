@@ -55,6 +55,15 @@ for key in ("feather_navy","feather_blue_cyan","face_cream"):
 if len(views.get("views",[])) < 4:
     errors.append("at least four validation views are required")
 
+if {v.get("name") for v in views.get("views", [])} != {"VAL_FRONT", "VAL_LEFT", "VAL_BACK", "VAL_3Q"}:
+    errors.append("validation views must include front, left profile, back and 3/4 front")
+
+if hier.get("conflict_rule") != "higher_rank_wins":
+    errors.append("reference conflicts must use higher_rank_wins")
+for rank, filename in enumerate(("00_original_logo.png", "07_turnaround_technical.png", "08_parts_lookdev_technical.png"), 1):
+    if not any(item.get("rank") == rank and item.get("file") == filename for item in hier.get("hierarchy", [])):
+        errors.append(f"reference hierarchy rank {rank} must be {filename}")
+
 if len(checklist.get("checks",[])) < 8:
     errors.append("validation checklist unexpectedly short")
 
@@ -67,6 +76,7 @@ try:
     from PIL import Image
 except Exception:
     Image=None
+    errors.append("Pillow is required for reference dimension validation; install requirements.txt")
 
 for rec in refs:
     p=approved/rec["file"]
