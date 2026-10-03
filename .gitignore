@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Blender backups/caches
+*.blend1
+*.blend2
+*.blend@
+*.autosave
+.blender/
+cache/
+tmp/
+
+# Generated renders/exports
+validation/renders/
+blender/exports/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

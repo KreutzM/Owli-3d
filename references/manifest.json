@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "approved_directory": "references/approved",
+  "binary_status": "pending_upload_via_repository_binary_channel",
+  "references": [
+    {
+      "file": "00_original_logo.png",
+      "role": "brand_identity",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "d97c36505ae64d3d70b04f55b055cba84de1bfa7326daa91a556b87dae3d0c2e",
+      "required": true
+    },
+    {
+      "file": "01_beauty_3q_front.png",
+      "role": "approved_style_support",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "348360038ba7bc25aed5334c7f9da4a717aaff16730b90ad46acb8be6f4bc924",
+      "required": false
+    },
+    {
+      "file": "02_beauty_profile.png",
+      "role": "approved_style_support",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b1f5ebbbe3c7467f011eab5552bae0de2bdca57503d769df4ea82e187eccff06",
+      "required": false
+    },
+    {
+      "file": "03_beauty_front.png",
+      "role": "approved_style_support",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c04e625311e5749f43c03605aa571effa961bbf04562edfb0b9b70553548e121",
+      "required": false
+    },
+    {
+      "file": "04_beauty_back_3q.png",
+      "role": "approved_style_support",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b6ff821d7deb529bad7a35c59a0f4cb3d79db4c6d560ceb0c4d2c66c732601b8",
+      "required": false
+    },
+    {
+      "file": "05_turnaround_v1.png",
+      "role": "legacy_support_only",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "a72a963bdc4ec1881f270e072c64a1c8056cc7fe8000dfa1e5338986f0a22efb",
+      "required": false
+    },
+    {
+      "file": "06_material_sheet_v1.png",
+      "role": "legacy_support_only",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "302d7cda916ca4ed3f90865a1b12c90b33ad564366dbf34a87ee8ea47cb02ffb",
+      "required": false
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "role": "primary_geometry_design",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "b15a961ceadc50c9b226aefb981464461c5e049d0a18de5e969f454fc90259a1",
+      "required": true
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "role": "primary_parts_material_design",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "6438c5a11db515e6d73f72a9617d511839b407e1e6c7022b80aa475b2a362488",
+      "required": true
+    }
+  ]
+}

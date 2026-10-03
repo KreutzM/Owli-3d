@@ -1,0 +1,47 @@
+{
+  "views": [
+    {
+      "name": "VAL_FRONT",
+      "type": "orthographic_design_validation",
+      "reference": "07_turnaround_technical.png",
+      "purpose": [
+        "silhouette",
+        "eye spacing",
+        "chest symmetry",
+        "feet"
+      ]
+    },
+    {
+      "name": "VAL_LEFT",
+      "type": "orthographic_design_validation",
+      "reference": "07_turnaround_technical.png",
+      "purpose": [
+        "head depth",
+        "beak projection",
+        "wing profile",
+        "rear toe"
+      ]
+    },
+    {
+      "name": "VAL_BACK",
+      "type": "orthographic_design_validation",
+      "reference": "07_turnaround_technical.png",
+      "purpose": [
+        "wing symmetry",
+        "tail",
+        "back feather layering"
+      ]
+    },
+    {
+      "name": "VAL_3Q",
+      "type": "perspective_style_validation",
+      "reference": "01_beauty_3q_front.png",
+      "purpose": [
+        "character read",
+        "volume",
+        "eye depth",
+        "perch grip"
+      ]
+    }
+  ]
+}
