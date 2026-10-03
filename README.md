@@ -16,9 +16,9 @@ Ziel ist ein sauber modellierter, riggbarer und später animierbarer 3D-Avatar i
 ## Start für GPT-6.1-Sol
 
 1. `AGENTS.md` lesen.
-2. `CHARACTER.md` und `DESIGN_FREEZE.md` lesen.
-3. `design/*.json` prüfen.
-4. `python scripts/validate_project.py` ausführen.
+2. Die Pflichtlektüre in der Reihenfolge aus `AGENTS.md` lesen, beginnend mit `DESIGN_FREEZE.md`.
+3. `python scripts/project.py doctor` ausführen.
+4. `python scripts/project.py smoke` ausführen.
 5. Erst Blockout, dann Silhouette-Review, dann Federn/Materialien, dann Rig.
 
 ## Kernreferenzen
@@ -42,13 +42,37 @@ Die eigentlichen PNG-Dateien sollen unter `references/approved/` liegen.
 
 ```bash
 python -m pip install -r requirements.txt
-python scripts/validate_project.py
+python scripts/project.py validate
 ```
 
-Blender:
+Blender (Windows/PowerShell und Linux; kein Make erforderlich):
 ```bash
-blender --background --python scripts/blender/00_scene_setup.py
-blender blender/scene/owli.blend --background --python scripts/blender/10_blockout.py
+python scripts/project.py scene
+python scripts/project.py blockout
+python scripts/project.py feet
+python scripts/project.py render
 ```
+
+Der Runner arbeitet immer vom Repository-Verzeichnis aus. Er findet Blender im PATH
+oder unter Windows in `Program Files/Blender Foundation` (höchste Versionsnummer).
+Ziel ist Blender 5.x; die Engine-Auswahl berücksichtigt auch Blender 4.2+.
+Eine bestimmte Installation kann über `--blender "C:/.../blender.exe"` oder
+`BLENDER_EXECUTABLE` gewählt werden. `scene` verweigert das Überschreiben einer
+vorhandenen Produktionsszene. Python-Fehler in Blender ergeben einen Fehlerstatus.
+
+`doctor` prüft Python, Pillow, Git, Git LFS, Blender und die Referenzen.
+`smoke` führt alle vorhandenen Blender-Skripte und vier 64px-Test-Renderings in einem
+temporären Arbeitsverzeichnis aus; die Produktionsszene bleibt erhalten.
+Dieser technische Test ersetzt keine Silhouettenprüfung anhand der Referenzen.
+Die CI prüft strikte Referenzvalidierung, Python-Syntax und Tooling-Regressionschecks
+unter Windows und Linux; der Blender-Smoke-Test läuft lokal.
+
+## Aktueller Arbeitsstand
+
+Alle neun Referenz-PNGs sind vorhanden. Der nächste Produktionsschritt ist
+[Issue #3: Blockout und Silhouette](https://github.com/KreutzM/Owli-3d/issues/3).
+Die Skripte sind derzeit Gerüste: Kopf-/Flügeltopologie, echter Stangengriff,
+Materialzuweisung, Lichtaufbau, vollständige Rig-Steuerung und Animationen sind
+noch umzusetzen. Die Folgeaufgaben stehen in Issues #4–#9.
 
 Große Blender-/3D-Artefakte sind für Git LFS vorgesehen.

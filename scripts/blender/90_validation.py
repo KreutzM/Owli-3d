@@ -1,6 +1,6 @@
 """Create/render standard Owli validation cameras."""
 from pathlib import Path
-import bpy, math
+import bpy, math, os
 from mathutils import Vector
 
 ROOT=Path.cwd()
@@ -34,9 +34,9 @@ cams=[
 ]
 
 scene=bpy.context.scene
-scene.render.engine="BLENDER_EEVEE_NEXT"
-scene.render.resolution_x=1024
-scene.render.resolution_y=1024
+scene.render.engine="BLENDER_EEVEE" if bpy.app.version >= (5, 0, 0) else "BLENDER_EEVEE_NEXT"
+scene.render.resolution_x=int(os.environ.get("OWLI_RENDER_SIZE", "1024"))
+scene.render.resolution_y=scene.render.resolution_x
 scene.render.resolution_percentage=100
 
 # Neutral world.
