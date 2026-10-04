@@ -88,4 +88,6 @@ Der parametrisierte grobe Blockout für Issue #13 wird mit
 [`design/proportions.json`](design/proportions.json); der gespeicherte LFS-Stand
 liegt in `blender/scene/owli_blockout_v01.blend`. Vier feste Ansichten und
 Referenzvergleiche: [`Blockout-Review`](validation/reviews/blockout_v01/report.md).
-Die separate Silhouettenfreigabe folgt in Issue #14.
+Der grobe Silhouetten-Freeze aus Issue #14 ist in
+[`design/silhouette_freeze.json`](design/silhouette_freeze.json) dokumentiert.
+Alle zwölf Checklistenbefunde und die Iterationen stehen im Blockout-Review.

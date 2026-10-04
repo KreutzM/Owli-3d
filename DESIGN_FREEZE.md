@@ -53,3 +53,14 @@ Do not continue generating general concept images after this point unless a conc
 - exact number of modeled feather groups.
 
 Adjustments must improve consistency across the approved views and must be documented.
+
+## Coarse 3D silhouette decision (#14)
+
+The reviewed coarse V1 envelope and face arrangement are recorded in
+[design/silhouette_freeze.json](design/silhouette_freeze.json), with all twelve
+checklist findings and four-view comparisons in
+[the blockout report](validation/reviews/blockout_v01/report.md).
+This is a coarse silhouette freeze, separate from production topology, final
+feather layers, materials, rig and animation. Changes to the frozen large forms
+require a new documented four-view review. The record binds the exact parameter,
+reference, Blend and image hashes; stale evidence must not imply continued approval.

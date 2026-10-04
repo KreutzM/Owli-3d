@@ -112,3 +112,18 @@ Blend's filename when saving, so milestone edits remain in the selected scene.
 clearing its debug material slots. Its evidence also includes the model probes
 and design-source hashes. It remains a studio check, separate from silhouette
 approval in #14. Neither command creates final materials, rig or flight geometry.
+
+## Manual silhouette decision (#14)
+
+`design/silhouette_freeze.json` is manually authored after inspecting all four
+fixed views. It records each exact `validation/checklist.json` item with a reason,
+authoritative references and visible evidence. `scripts/silhouette_review.py`
+checks completeness and hashes; it never grants visual approval. The automation's
+`design_approval=false` means that automation does not replace this visual decision.
+
+After rebuilding or changing the frozen forms, old hashes intentionally become
+stale. Review the four images again and write a new decision; do not automatically
+refresh approval hashes. Run `python -m unittest discover -s tests -v` to check
+both studio/model evidence and the current manual freeze. Historical candidates
+under `blockout_v01/iterations/` document rejected findings and remain historical;
+the active artifact is `blender/scene/owli_blockout_v01.blend`.

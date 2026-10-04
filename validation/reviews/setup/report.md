@@ -1,11 +1,11 @@
-# Owli — technischer Studio-Review (refresh für Issue #13)
+# Owli — technischer Studio-Review (refresh für Issue #14)
 
 Datum: 2026-10-03. Blender 5.2.1 LTS. Der feste Studio-Aufbau aus #12 bleibt
-unverändert; die Testgeometrie wurde für #13 mit den aktuellen groben Formen
+unverändert; die Testgeometrie wurde für #14 mit den aktuellen groben Formen
 ersetzt und neutral grau gerendert. Keine Silhouetten- oder Materialfreigabe.
 
-35 Geometrieobjekte, 4 Kameras, 5 Lichter: 44 Szenenobjekte. Vier 1024px-Ansichten,
-minimale konservative Bildrandabstände Front/Links/Rücken 3,214%, 3/4 17,660%.
+46 Geometrieobjekte, 4 Kameras, 5 Lichter: 55 Szenenobjekte. Vier 1024px-Ansichten,
+minimale konservative Bildrandabstände Front 2,697%, Links 2,393%, Rücken 2,794%, 3/4 17,384%.
 Kamerapositionen, Targets, 0,58-m-Orthoscale, 65-mm-Linse und Studio-Lichter bleiben
 fest. Alle Objekte halten den 2%-Rahmen und die Clip-Distanzen ein. Absichtlich
 verschobene Geometrie und ungültige Far-Clip-Distanz werden abgewiesen.
@@ -40,6 +40,6 @@ Die technische 3/4-Referenz zeigt die andere laterale Seite; kein Spiegeln oder
 metrisches Overlay. Die schriftliche 3+1-Anatomie und Stirnplatzierung gewinnen
 gegen uneindeutige Zeichnungen. Die graue Testszene belegt Studio/Geometrie,
 der [separate farbige Blockout-Review](../blockout_v01/report.md) dokumentiert
-Gesichts-/Farblektüre und grobe Modellgrenzen. Finale Silhouettenfreigabe in #14.
+Gesichts-/Farblektüre und grobe Modellgrenzen. Der grobe Freeze aus #14 steht in design/silhouette_freeze.json; dieser technische Bericht vergibt keine eigene visuelle Freigabe.
 Blender-Factory-Brush-Pfadwarnungen betreffen ungenutzte Assets. Pixelidentität gilt
 innerhalb derselben Blender-/Renderumgebung.
