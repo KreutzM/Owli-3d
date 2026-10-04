@@ -236,3 +236,39 @@ The neutral mask is smooth primary geometry, with visible lid canthi and no
 individual feather detailing. The current flat closure line is a geometric
 minimum; expression-specific shaping requires later combined rig/pose review.
 Body, primary head, wings, tail, tech, perch and exact 3+1 toe anatomy are preserved.
+
+## 2026-10-04 — #17 hooked upper beak and hinged lower jaw
+
+Logo 00 governs the orange face landmark, turnaround 07 the frozen front/profile
+projection, and parts 08 the hooked beak construction. The accepted #16 face is
+the starting scene. No new concept art or unrelated head/eye adjustment is needed.
+The evaluated frozen beak envelope is divided by a tilted plane into two closed
+rigid meshes, rather than replacing the approved outer shape with new proportions.
+The upper hooked tip remains fixed. The smaller posterior lower jaw rotates
+downward behind it, matching the anatomy implied by the profile/parts references.
+
+The split is specified at (0, 0.105, 0.386) m with normal (0, 1.2, 1). Opposed
+planar interior caps leave a 0.4 mm closed seam. The hinge is (0, 0.095, 0.398) m,
+on the extended split plane and behind every boundary vertex, with negative local
+X rotation opening the jaw. An earlier forward hinge swung rear jaw vertices
+into the upper beak; the actual BVH opening test rejected it. Moving the hinge
+behind the complete separation boundary fixes that collision rather than hiding
+it through the camera. A too-small lower piece looked like a sliver; the revised
+division retains a volumetric lower jaw while leaving the distal hook uppermost.
+
+`design/beak.json` and `beak_geometry.set_open` document a 0–18 degree probe range.
+Opening is rigid articulation, so the planar interior caps intentionally need no
+deforming quad lattice. Exterior polygons are clipped from the accepted evaluated
+surface; all generated vertices lie on that old envelope in the closed state.
+Geometry is sampled/split at reference scale and scaled afterward, avoiding
+scale-dependent clipping/vertex ordering. Interior faces use the existing deep
+navy diagnostic swatch to expose a dark mouth opening; exterior keratin remains
+orange. No teeth, tongue, speech synchronization or finished rig controls are added.
+
+The unchanged #16 eyes/mask/lids, head, wings, feet, tech and perch are verified by
+mesh/matrix/material/weight/modifier hashes. Four unchanged cameras expose closed,
+half-open and fully open states. Full character and isolated beak alpha silhouettes
+are compared to #16; the narrow physical seam may remove a small interior stripe
+but must not redesign the exterior envelope. No camera or light changes hide the
+open jaw. Final shader tuning and combined avatar rig/pose validation remain later
+work; the geometry probe pivot is prepared for the future `beak_open` control.

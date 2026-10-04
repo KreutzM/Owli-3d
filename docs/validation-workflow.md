@@ -211,3 +211,42 @@ authored four-criterion `review.json`. `design_approval=false` in automated outp
 does not grant visual acceptance. Final glossy shaders/network iris motifs and
 animatable controls remain in later goals; the transparent cornea inspection
 material reveals geometry beneath it without implying final lookdev approval.
+
+## Upper/lower beak and opening probe (#17)
+
+```powershell
+python scripts/beak_review.py
+python scripts/project.py validate
+python scripts/project.py smoke
+python -m compileall -q scripts
+python -m unittest discover -s tests -v
+```
+
+The runner verifies the complete current #16 artifact/visual review before copying
+its saved scene into an isolated workspace. `22_beak.py` and `design/beak.json`
+replace only `BLK_Beak`, preserving the other 50 meshes. Output is the LFS file
+`blender/scene/owli_beak_v01.blend`, with permanent evidence in
+`validation/reviews/beak_v01/`. All closed/half/open and isolated-jaw views use the
+same four cameras, lighting and reference comparisons as previous milestones.
+
+Live mesh audits inspect closure, connectedness, normals, duplicate vertices and
+self intersections. The fixed upper hook and lower jaw are separate meshes; the
+documented negative-X hinge drives actual lower-jaw motion. Forty-one samples
+test jaw/jaw and jaw/face/head/chest/forehead collisions. Two-way vertex-to-surface
+samples quantify mask clearance separately from definitive BVH intersection
+tests. The upper part must stay fixed and the lower tip must move visibly down.
+
+Negative probes reject open/reversed cages, a forward hinge that causes collision
+and an invalid opening range. Repeated builds, datablock counts and 80% uniform
+resizing are checked. New closed exterior vertices are measured against the
+accepted evaluated beak surface. Full-character and isolated-beak alpha images
+check silhouette preservation, allowing the narrow physical closed-mouth seam.
+Two fresh Blender processes repeat the saved-scene checks and must render identical
+canonical neutral pixels. Temporary open states never replace neutral delivery.
+
+Interior caps are flat rigid surfaces, with a diagnostic dark material assignment;
+they do not need deforming topology for this hinge articulation. The probe API
+is `beak_geometry.set_open(root,value)`, for [0,1] over the documented degree range.
+Final speech animation, rig controls and combined head/face pose validation follow
+separately. The manual report and hash-bound three-criterion review must be authored
+after inspecting all four neutral reference views and the visible opening probes.
