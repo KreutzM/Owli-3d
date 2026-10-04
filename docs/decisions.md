@@ -197,3 +197,42 @@ The navy/blue boundary is a debug material assignment, not a seam in the new mes
 Do not mistake the matte diagnostic palette or four-view topology acceptance for
 completion of the production character. The LFS milestone, fresh-open verification,
 fixed-view reference comparisons and limits are documented in its review report.
+
+## 2026-10-04 — #16 layered eyes, perforated mask and spherical blink
+
+Reference authority remains logo 00 for friendly face language and cream/cyan
+identity, turnaround 07 for frozen head/profile placement, and parts 08 for
+separate volumetric eye construction. No new concept image was generated. Frozen
+eye centers (+/-0.064, 0.074, 0.409 m) and globe radius 0.049 m are unchanged.
+The coarse closed mask lobes are replaced with thick annular cream cheek surfaces
+and a narrow central bridge, retaining the frozen outer X/Z envelope. Eyes now
+have separately named globe, iris, pupil and cornea meshes with globe-center aim
+pivots and +Y forward. This resolves geometry hidden behind the old flat guides.
+
+All eye components are rigid local meshes under the two aim pivots; mask/lids stay
+in head/world space until the later rig attachment goal. Lids use offset spherical
+quad patches and a deterministic nonlinear open/closed reconstruction, not linear
+shape-key interpolation. Their back surface clears the cornea. The final rig must
+preserve this spherical constraint when connecting blink_L/blink_R controls.
+The probe API supports unilateral blinks, but no finished facial controller,
+speech synchronization, or animation system is introduced by this geometry goal.
+
+An early downward-curved meeting edge folded the upper lid near its canthi at
+95% closure. The actual mesh self-intersection audit rejected it; a straight
+shared meeting edge fixes the Jacobian reversal and maintains a finite canthus
+strip. A dedicated negative probe preserves that rejected case as a regression
+check. The initial 31 mm mask ridge looked like a hard tube, so it was softened
+to 14 mm; a dangling bridge below the beak was removed. Neutral and blink states
+are compared through the unchanged front, left, back and 3/4 cameras. These
+changes refine the facial construction inside the frozen placement/envelope.
+
+The cream mask/lid outer junction is an intentional attachment overlap; the
+upper/lower closed lid seam is exact shared contact between separate meshes.
+Mask surfaces must not intersect any eye layer or the coarse orange beak. The
+beak remains unchanged for #17. Matte palette and completely transparent cornea
+inspection treatment are temporary diagnostic materials. Gloss, network iris
+motifs, feather layering and final material tuning remain #6/#18/#19 work.
+The neutral mask is smooth primary geometry, with visible lid canthi and no
+individual feather detailing. The current flat closure line is a geometric
+minimum; expression-specific shaping requires later combined rig/pose review.
+Body, primary head, wings, tail, tech, perch and exact 3+1 toe anatomy are preserved.
