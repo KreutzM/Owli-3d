@@ -104,3 +104,9 @@ Augen, Gesichtsmaske und geometrische Blinkproben (#16) entstehen mit
 Blick-Pivots und parametrische Lider. Dauerhafte Nachweise und Grenzen stehen in
 [validation/reviews/face_v01/report.md](validation/reviews/face_v01/report.md).
 Finale Augenshader und animierbare Rig-Controls folgen separat.
+
+Ober-/Unterschnabel und Öffnungsproben (#17) entstehen mit
+`python scripts/beak_review.py`. `blender/scene/owli_beak_v01.blend` enthält die
+getrennten Schnabelteile mit dokumentiertem Unterkiefer-Pivot; der geschlossene
+Zustand erhält den geprüften Umriss. Nachweise und Grenzen stehen im
+[Schnabel-Review](validation/reviews/beak_v01/report.md).

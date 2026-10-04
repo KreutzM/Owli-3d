@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "milestone": "beak_v01",
+  "status": "beak_geometry_accepted",
+  "reviewer": "Codex manual inspection of approved references and actual closed/half/open four-view Blender renders",
+  "reference_authority": [
+    "00_original_logo.png",
+    "07_turnaround_technical.png",
+    "08_parts_lookdev_technical.png"
+  ],
+  "blocking_findings": [],
+  "criteria": [
+    {
+      "id": "separate_reference_consistent_jaws",
+      "result": "pass",
+      "reason": "Separate closed upper/lower meshes retain the evaluated frozen envelope and orange central landmark. Upper hook stays fixed; front/profile reference comparisons and isolated/full alpha gates preserve the approved closed silhouette.",
+      "evidence": [
+        "verification.json",
+        "VAL_FRONT_comparison.png",
+        "VAL_LEFT_comparison.png",
+        "evidence/closed/beak/VAL_3Q.png"
+      ]
+    },
+    {
+      "id": "plausible_collision_free_opening",
+      "result": "pass",
+      "reason": "Actual lower-jaw negative-X hinge rotation opens down behind the fixed upper hook through 0\u201318 degrees. Forty-one samples pass 2,337 BVH collision checks; two-direction mask clearance samples are at least 5.614 mm. The open profile and 3/4 plus isolated jaws reveal plausible separation without hiding it through camera changes.",
+      "evidence": [
+        "verification.json",
+        "evidence/open/full/VAL_LEFT.png",
+        "evidence/open/full/VAL_3Q.png",
+        "evidence/open/beak/VAL_LEFT.png",
+        "evidence/half/full/VAL_3Q.png"
+      ]
+    },
+    {
+      "id": "documented_pivot_and_four_views",
+      "result": "pass",
+      "reason": "Hinge (0, 0.095, 0.398 m), tilted split plane, seam and opening range are reproducible in JSON/scripts and documented in the report. Four fixed reference comparisons keep the accepted face/forehead/body consistent; all 50 other meshes and 3+1 toes remain unchanged.",
+      "evidence": [
+        "verification.json",
+        "report.md",
+        "contact_sheet.png",
+        "VAL_FRONT_comparison.png",
+        "VAL_LEFT_comparison.png",
+        "VAL_BACK_comparison.png",
+        "VAL_3Q_comparison.png"
+      ]
+    }
+  ],
+  "evidence_sha256": {
+    "VAL_3Q_comparison.png": "1e6c4559a95abc3c213c829a12ecb821fc5265da07941b4cfea34bdd4ad2f417",
+    "VAL_BACK_comparison.png": "93c722ff437c6631b6fa0fa27896653bf1eb041522ec03896726c88b55b272ab",
+    "VAL_FRONT_comparison.png": "fd38fa06c25bc027fa70a8e45ef5c267f70b67e88e5181fea99ac6f593138be0",
+    "VAL_LEFT_comparison.png": "38a81f12dabf649174b9195356d21ce8af455fab88c02b12207775371c2b2de5",
+    "contact_sheet.png": "be58e44740d52c7d1c3201812796aa9cab6319cba8c009c61bee90defb243d7c",
+    "evidence/closed/beak/VAL_3Q.png": "a4cca2e86b2aac2c3810daba9cecc36f3a26afd8d07bbd693ffc32e1ec6716d0",
+    "evidence/half/full/VAL_3Q.png": "b67884a0814b77831b528cc18cb4759107284680ff5fb14655fc0ec704ff7bd4",
+    "evidence/open/beak/VAL_LEFT.png": "601e422f387328ffbc82e87787ff24c5a91d53ca917a0a2b1dd4cbbac2a1518a",
+    "evidence/open/full/VAL_3Q.png": "348afe3c7ec9bd33e620f228cd22c88c27cf8dec2348eb641aed7c8003a43641",
+    "evidence/open/full/VAL_LEFT.png": "ff4371d186f584065455f0211c796fcefea2a72befc2bbc283f9807ed3f39cbc",
+    "render_manifest.json": "cd13f1ed6a0604febe9a8ec34340807b38bab39b672844183731177cd9d50270",
+    "report.md": "86deb670168f27fbfc85ade544ef0956bff5c01391377a913df48abde1e03c8f",
+    "verification.json": "f1f03116066258a8413d6f87821281a3c6f0646b6014759472515522c0ef3520"
+  },
+  "limits": [
+    "Tested geometric opening range 0\u201318 degrees; final rig/combined poses follow separately.",
+    "Lower jaw lies behind upper hook and is mainly exposed in profile/3Q.",
+    "Planar inner caps and deep navy interior swatch are diagnostic; final mouth/keratin shaders remain later work.",
+    "No speech synchronization, final rig controls or tongue/throat detailing.",
+    "Parent #4 and production epic remain open."
+  ]
+}
