@@ -11,7 +11,7 @@ Silhouettenfreigabe folgt in #14.** Abhängigkeit #12 ist gemergt.
 | Zwei separate volumetrische Augen; Maske und obere Silhouette | Separate kugelförmige `BLK_Eye_L/R`, Maskenloben/Bridge, Brow und je ein grober Tuft; Front und 3/4 visuell geprüft |
 | Beide Füße exakt 3 Front + 1 Rear | Acht benannte Toe-Meshes; Rear-Centerlines strikt hinter der Stange, alle vier Zehen pro Fuß greifen unter die Stangenmitte; keine Guide-Vertices im Metallzylinder |
 | Erneuter Aufbau ohne Fehler/Duplikate; vier Ansichten | Geometrie-Digest und Objekt-/Mesh-/Materialzahlen nach wiederholtem Aufbau identisch; vier 1024px-PNGs; frischer Reload-Prozess mit erneuter Anatomieprüfung und pixelgleichen Renderings |
-| Gespeicherter LFS-Meilenstein und dauerhafte Nachweise | [owli_blockout_v01.blend](../../../blender/scene/owli_blockout_v01.blend), [Manifest](render_manifest.json), [Verifikation](verification.json), vier Originalbilder und Boards |
+| Gespeicherter LFS-Meilenstein und dauerhafte Nachweise | [owli_blockout_v01.blend](https://github.com/KreutzM/Owli-3d/blob/25b5fa570f79504b00d3d5ff6a195e44b52ba75e/blender/scene/owli_blockout_v01.blend), [Manifest](render_manifest.json), [Verifikation](verification.json), vier Originalbilder und Boards |
 
 35 Geometrieobjekte und 9 Studioobjekte: insgesamt 44 Szenenobjekte, 4 Kameras,
 5 Lichter. Minimale konservative Bildrandabstände: Front/Links/Rücken **3,214%**,
@@ -34,7 +34,7 @@ Original-Logo 00 für Gesicht/Farbe (Rang 1) und Parts/Lookdev 08 für Schnabel/
 (Rang 3) geprüft. Keine älteren Designs wurden eingemittelt. Die schriftliche
 3+1-Regel entscheidet uneindeutige Krallendarstellungen. Das rückseitig gezeichnete
 Kronenmotiv autorisiert kein zweites Stirnsymbol. Entscheidungen und Abweichungen:
-[docs/decisions.md](../../../docs/decisions.md).
+[docs/decisions.md](https://github.com/KreutzM/Owli-3d/blob/25b5fa570f79504b00d3d5ff6a195e44b52ba75e/docs/decisions.md).
 
 ## Reproduktion und Prüfungen
 
