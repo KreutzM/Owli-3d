@@ -1,0 +1,78 @@
+{
+  "sources": {
+    "scripts/blender/40_feet_perch.py": {
+      "archive": "scripts/blender/legacy/40_feet_perch.py",
+      "predecessor_sha256": "536ca72bf03a5a850a91210f785c32713c6d35ec2b6c65e482dc8b2871a443ae",
+      "archive_sha256": "536ca72bf03a5a850a91210f785c32713c6d35ec2b6c65e482dc8b2871a443ae",
+      "byte_exact": true
+    },
+    "scripts/project.py": {
+      "archive": "scripts/legacy/project.py",
+      "predecessor_sha256": "1275061cfecfdc4b16207e22fa94071f508193f2ec14dfa0fdfa6429d483ccaa",
+      "archive_sha256": "1275061cfecfdc4b16207e22fa94071f508193f2ec14dfa0fdfa6429d483ccaa",
+      "byte_exact": true
+    }
+  },
+  "snapshot_count": 12,
+  "snapshots_byte_exact": true,
+  "unchanged_artifact_count": 240,
+  "artifact_failures": {},
+  "negative_probes": {
+    "stale_archived_source": {
+      "errors": [
+        "Historical source changed: scripts/project.py"
+      ]
+    },
+    "changed_historical_decision": {
+      "errors": [
+        "Relocated historical metadata changed: design/silhouette_freeze.json",
+        "Migration changed more than dependency paths and hashes: design/silhouette_freeze.json"
+      ]
+    },
+    "missing_historical_snapshot": {
+      "exception": "FileNotFoundError",
+      "message": "[Errno 2] No such file or directory: 'D:\\\\Codex\\\\Owli-Tech\\\\Owli-3d\\\\tmp\\\\history-audit-jv1hk0vy\\\\validation\\\\history\\\\pre_feet_v01\\\\design\\\\silhouette_freeze.json'"
+    },
+    "removed_manifest_source_plus_changed_archive": {
+      "errors": [
+        "Migration changed more than dependency paths and hashes: validation/reviews/blockout_v01/iterations/13_baseline/verification.json",
+        "Migration changed more than dependency paths and hashes: validation/reviews/blockout_v01/iterations/14_iteration_01/verification.json",
+        "Migration changed more than dependency paths and hashes: validation/reviews/blockout_v01/iterations/14_iteration_02/verification.json",
+        "Migration changed more than dependency paths and hashes: validation/reviews/blockout_v01/verification.json",
+        "Migration changed more than dependency paths and hashes: validation/reviews/setup/verification.json"
+      ]
+    },
+    "removed_manifest_metadata_plus_changed_decision": {
+      "errors": [
+        "Migration changed more than dependency paths and hashes: validation/reviews/beak_v01/verification.json",
+        "Migration changed more than dependency paths and hashes: validation/reviews/face_v01/verification.json",
+        "Migration changed more than dependency paths and hashes: validation/reviews/head_body_v01/verification.json"
+      ]
+    },
+    "empty_manifest_plus_changed_archive_and_decision": {
+      "errors": []
+    }
+  },
+  "delivery_probes": {
+    "feet_v01": {
+      "baseline": [],
+      "omitted_all_reference_bindings": [],
+      "omitted_all_source_bindings": [
+        "Incomplete source bindings"
+      ],
+      "omitted_all_reload_comparisons": []
+    },
+    "beak_v01": {
+      "baseline": [],
+      "omitted_all_reference_bindings": [],
+      "omitted_all_source_bindings": [],
+      "omitted_all_reload_comparisons": []
+    },
+    "face_v01": {
+      "baseline": [],
+      "omitted_all_reference_bindings": [],
+      "omitted_all_source_bindings": [],
+      "omitted_all_reload_comparisons": []
+    }
+  }
+}

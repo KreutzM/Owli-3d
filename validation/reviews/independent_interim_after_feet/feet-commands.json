@@ -1,0 +1,44 @@
+[
+  {
+    "command": [
+      "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "--background",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction\\tmp\\feet\\prototype.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\scripts\\blender\\feet_evidence.py"
+    ],
+    "cwd": "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction",
+    "mode": "build",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "--background",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction\\tmp\\feet\\prototype.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\scripts\\blender\\feet_evidence.py"
+    ],
+    "cwd": "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction",
+    "mode": "reload_a",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "--background",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction\\tmp\\feet\\prototype.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\scripts\\blender\\feet_evidence.py"
+    ],
+    "cwd": "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction",
+    "mode": "reload_b",
+    "exit_code": 0
+  }
+]

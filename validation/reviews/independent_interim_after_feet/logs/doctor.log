@@ -1,0 +1,20 @@
+Python: 3.11.9 (C:\Users\Admin\AppData\Local\Programs\Python\Python311\python.exe)
+Pillow: 12.2.0
+git version 2.53.0.windows.3
+git-lfs/3.7.1 (GitHub; windows amd64; go 1.25.1; git b84b3384)
+Blender executable: C:\Program Files\Blender Foundation\Blender 5.2\blender.exe
+Blender 5.2.1 LTS
+	build date: 2026-08-25
+	build time: 02:38:20
+	build commit date: 2026-08-24
+	build commit time: 16:50
+	build hash: 9e2066aef7ef
+	build branch: blender-v5.2-release
+	build platform: Windows
+	build type: Release
+	build c flags:  /W3 -Werror=implicit-function-declaration -Werror=return-type -Wno-tautological-compare -Wno-unknown-pragmas -Wno-char-subscripts -Wstrict-prototypes -Wmissing-prototypes -Wunused-parameter -Wundef -Wundef-prefix -Werror=unguarded-availability-new /DWIN32 /D_WINDOWS /MP /nologo /J /Gy /Gd /showFilenames -Wno-unused-command-line-argument -Wno-microsoft-enum-forward-reference /clang:-funsigned-char /clang:-fno-strict-aliasing /clang:-ffp-contract=off -march=x86-64-v2
+	build c++ flags:  /W3 -Wno-tautological-compare -Wno-unknown-pragmas -Wno-char-subscripts -Wno-overloaded-virtual -Wno-sign-compare -Wno-invalid-offsetof -Wno-suggest-override -Wundef -Wundef-prefix -Wunused-parameter -Wmismatched-tags -Werror=unguarded-availability-new /DWIN32 /D_WINDOWS /EHsc  /Gy /MP /nologo /J /Gd /showFilenames /EHsc -Wno-unused-command-line-argument -Wno-microsoft-enum-forward-reference /clang:-funsigned-char /clang:-fno-strict-aliasing /clang:-ffp-contract=off -march=x86-64-v2
+	build link flags: /MACHINE:X64  /SUBSYSTEM:CONSOLE /STACK:2097152 /ignore:4049 /ignore:4217 /ignore:4221
+	build system: CMake
+VALIDATION OK: 9 reference records; 3+1 foot rule locked; V1 flight disabled.
+Optional tools: ffmpeg=available, gh=available, make=available

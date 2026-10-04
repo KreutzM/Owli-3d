@@ -1,0 +1,15 @@
+00:01.594  blend            | Read blend: "D:\Codex\Owli-Tech\Owli-3d\blender\scene\owli_feet_v01.blend"
+D:\Codex\Owli-Tech\Owli-3d\validation\reviews\independent_interim_after_feet\inspect_scene.py:142: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material_nodes={m.name: [n.type for n in m.node_tree.nodes] if m.use_nodes else [] for m in bpy.data.materials})
+00:24.047  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\neutral\VAL_FRONT.png'
+00:25.938  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\neutral\VAL_LEFT.png'
+00:26.859  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\neutral\VAL_BACK.png'
+00:27.703  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\neutral\VAL_3Q.png'
+00:28.047  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\toes\VAL_FRONT.png'
+00:28.359  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\toes\VAL_LEFT.png'
+00:28.672  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\toes\VAL_BACK.png'
+00:28.984  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\scene-b\toes\VAL_3Q.png'
+INDEPENDENT INTERIM INSPECTION OK: neutral
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

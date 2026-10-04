@@ -1,0 +1,14 @@
+00:01.531  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+00:01.531  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+Info: Saved as "owli.blend"
+Saved D:\Codex\Owli-Tech\Owli-3d\tmp\history-coarse\blender\scene\owli.blend
+Info: Saved as "owli.blend"
+Parameterized coarse blockout; no silhouette or material approval.
+Info: Saved as "owli.blend"
+Created two gripping feet with exactly three front and one rear guide each.
+Info: Saved as "owli.blend"
+Created two gripping feet with exactly three front and one rear guide each.
+{"archived_coarse_signature": "3b37663f1510b23daa185028ca89caf6cdfbe6e5e9991317675453ca2ef42cc5", "current_dispatch_signature": "3b37663f1510b23daa185028ca89caf6cdfbe6e5e9991317675453ca2ef42cc5", "archived_coarse_geometry": "55ab04fd95adf20ad6d53c2c8feb616b8bd746d81307c3b45f84ef68029195b4", "current_dispatch_geometry": "55ab04fd95adf20ad6d53c2c8feb616b8bd746d81307c3b45f84ef68029195b4", "before_counts": [55, 47, 7], "after_counts": [55, 47, 7], "identical": true}
+
+Blender quit

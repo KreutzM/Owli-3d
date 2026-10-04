@@ -1,0 +1,29 @@
+00:01.546  blend            | Read blend: "D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\tmp\feet\prototype.blend"
+00:17.640  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\full\VAL_FRONT.png'
+00:19.281  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\full\VAL_LEFT.png'
+00:20.062  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\full\VAL_BACK.png'
+00:20.812  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\full\VAL_3Q.png'
+00:21.140  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\feet\VAL_FRONT.png'
+00:21.437  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\feet\VAL_LEFT.png'
+00:21.750  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\feet\VAL_BACK.png'
+00:22.031  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\baseline\feet\VAL_3Q.png'
+00:42.140  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\full\VAL_FRONT.png'
+00:42.890  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\full\VAL_LEFT.png'
+00:43.687  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\full\VAL_BACK.png'
+00:44.406  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\full\VAL_3Q.png'
+00:44.718  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\feet\VAL_FRONT.png'
+00:45.015  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\feet\VAL_LEFT.png'
+00:45.328  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\feet\VAL_BACK.png'
+00:45.625  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\feet\VAL_3Q.png'
+00:45.921  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\toes\VAL_FRONT.png'
+00:46.187  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\toes\VAL_LEFT.png'
+00:46.484  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\toes\VAL_BACK.png'
+00:46.765  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\independent-review-33\feet-reproduction\validation\evidence\candidate\toes\VAL_3Q.png'
+Info: Saved as "prototype.blend"
+FEET BUILT: connected 3+1 toe skins, separate hooked claws and rounded perch.
+Info: Saved as "prototype.blend"
+FEET DEVELOPMENT GATES PASSED: closed quad topology, actual triangle contact, repeat, scale, unchanged predecessor and negative probes.
+Info: Saved as "prototype.blend"
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

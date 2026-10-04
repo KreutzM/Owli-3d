@@ -1,0 +1,61 @@
+{
+  "allowed": [
+    {
+      "bar_radius_m": 0.016,
+      "foot_half_spacing_m": 0.05,
+      "contacts": 8,
+      "collision_pairs": 45,
+      "valid": true
+    },
+    {
+      "bar_radius_m": 0.016,
+      "foot_half_spacing_m": 0.062,
+      "contacts": 8,
+      "collision_pairs": 45,
+      "valid": true
+    },
+    {
+      "bar_radius_m": 0.022,
+      "foot_half_spacing_m": 0.05,
+      "contacts": 8,
+      "collision_pairs": 45,
+      "valid": true
+    },
+    {
+      "bar_radius_m": 0.022,
+      "foot_half_spacing_m": 0.062,
+      "contacts": 8,
+      "collision_pairs": 45,
+      "valid": true
+    },
+    {
+      "bar_radius_m": 0.019,
+      "foot_half_spacing_m": 0.056,
+      "contacts": 8,
+      "collision_pairs": 45,
+      "valid": true
+    }
+  ],
+  "rejected": [
+    {
+      "parameter": "bar_radius_m",
+      "value": 0.0159,
+      "reason": "Foot/perch adjustment outside documented range: bar_radius"
+    },
+    {
+      "parameter": "bar_radius_m",
+      "value": 0.0221,
+      "reason": "Foot/perch adjustment outside documented range: bar_radius"
+    },
+    {
+      "parameter": "foot_half_spacing_m",
+      "value": 0.0499,
+      "reason": "Foot/perch adjustment outside documented range: foot_half_spacing"
+    },
+    {
+      "parameter": "foot_half_spacing_m",
+      "value": 0.0621,
+      "reason": "Foot/perch adjustment outside documented range: foot_half_spacing"
+    }
+  ]
+}
