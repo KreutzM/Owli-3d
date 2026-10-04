@@ -1,0 +1,22 @@
+00:01.562  blend            | Read blend: "D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\candidate.blend"
+00:19.047  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\baseline\VAL_FRONT.png'
+00:20.734  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\baseline\VAL_LEFT.png'
+00:21.562  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\baseline\VAL_BACK.png'
+00:22.344  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\baseline\VAL_3Q.png'
+00:37.172  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\live_neutral\VAL_FRONT.png'
+00:37.937  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\live_neutral\VAL_LEFT.png'
+00:38.734  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\live_neutral\VAL_BACK.png'
+00:39.469  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\live_neutral\VAL_3Q.png'
+00:40.281  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\blink\VAL_FRONT.png'
+00:41.047  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\blink\VAL_LEFT.png'
+00:41.844  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\blink\VAL_BACK.png'
+00:42.594  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\blink\VAL_3Q.png'
+00:43.437  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\beak_open\VAL_FRONT.png'
+00:44.187  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\beak_open\VAL_LEFT.png'
+00:45.000  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\beak_open\VAL_BACK.png'
+00:45.781  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d\tmp\review-fixes-37\run07\renders\beak_open\VAL_3Q.png'
+Info: Saved as "candidate.blend"
+REVIEW FIXES EVIDENCE OK: build
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

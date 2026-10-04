@@ -1,0 +1,80 @@
+{
+  "status": "review_fixes_geometry_accepted",
+  "blocking_findings": [],
+  "scope": "#37 primary organic face and strict admission gates; no final V1 rig/lookdev approval",
+  "scene_sha256": "8685fc054428ec848f20a922c995487f9ac4a2797cbe3713eaeb5e364b02e8fb",
+  "reference_authority": [
+    {
+      "file": "00_original_logo.png",
+      "rank": 1
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "rank": 2
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "rank": 3
+    }
+  ],
+  "views": {
+    "VAL_FRONT": {
+      "result": "pass",
+      "reason": "Breite cream Wangen und Verbindung unter dem orange Schnabel; angehobene verjüngte Brauen geben freundlich aufmerksame Neutralität statt horizontaler Balken. Große blue/cyan Augen bleiben primär. Restlicher Gesichtsfederfluss ist explizit #6."
+    },
+    "VAL_LEFT": {
+      "result": "pass",
+      "reason": "Neue Wange läuft zum echten unveränderten Kopf zurück statt einer freistehenden runden Fassung. Schnabelprofil und Perch-Pose erhalten. Äußere cream Grenzkante wird durch konkret zugeordnete große Gesichtsfederzüge in #6 weiter ausgearbeitet."
+    },
+    "VAL_BACK": {
+      "result": "pass",
+      "reason": "Unveränderte Kopf-/Körper-/Flügel-/Schwanz-/Perch-Geometrie bewahrt die akzeptierte hintere Silhouette; die tatsächliche neue Gesichtsform bleibt vorne."
+    },
+    "VAL_3Q": {
+      "result": "pass",
+      "reason": "Räumlich breite Wange und unterer zentraler cream Übergang sind sichtbar; aufmerksame Brauen, separate große Augen und freier orange Schnabel. Keine Materialzusage ersetzt diese neue Form."
+    }
+  },
+  "findings": {
+    "IR-01": {
+      "status": "resolved",
+      "reason": "Tatsächliche parametrisierte Primärmasken-/Bridge-/Brow-Korrektur und neue unabhängige Vieransichtenprüfung; restliches Gesichtsfederfinish konkret #6."
+    },
+    "IR-02": {
+      "status": "resolved",
+      "reason": "Version 2 erzwingt alle Quellen/Referenzen/Reloadfelder, konkrete rekursive Schemas und tatsächliche Worker-Daten; omissions/null/empty/malformed bindings negativ geprüft."
+    },
+    "IR-03": {
+      "status": "resolved",
+      "reason": "Code-owned Vorgängerinventar, echte Git-bytegenaue Archive/Snapshots, typed Dependency-Felder; Historie ohne Approval-Hash-Umschreibung erhalten."
+    },
+    "IR-04": {
+      "status": "resolved_current_deferred_rig",
+      "reason": "Aktuelle fünf Gesichtsteile inklusive Adjazenzerfassung/coplanarem Schnitt und realen Negativfixtures geprüft; Blink/Beak/Grip/Ecken erhalten. Gesamt-Rig-Zustände konkret #20–#24 deferred."
+    },
+    "IR-05": {
+      "status": "resolved",
+      "reason": "Eigener expliziter Scratch-Runner plus gespeicherter Renderer/two fresh reloads, geschützte Vorgänger unverändert; generische Save-/Prefix-/Smoke-Reihenfolge dokumentiert."
+    }
+  },
+  "evidence_sha256": {
+    "verification.json": "756a60970e6ed69e010c2389fe1a78aa63e572324a93d293d053b278f5fe586b",
+    "report.md": "d8647828969c99403d6041826a957f28881851ff7fc0d7977dce3f4851003973",
+    "baseline_vs_corrected.png": "1a5771d631658d223650732968ac072ba4453956e561f3d8e3cc9a0c713d2a4d",
+    "make_comparison.py": "74e2211a7a1f75a17da525f9895358cf12856c153d8c74d4fd9e1b8ff5844df9",
+    "history-git-audit.json": "670cb5a2814382e5293962a99d8ff15560f2592fe8ffca56620fae32b8ecb1ac",
+    "VAL_FRONT.png": "aae72c5f212ba017c23d146dfcb1bf1035ec4aa9f79137c347a6f534d336ed38",
+    "VAL_LEFT.png": "d7d6eaf0137155e84407382ed7b6d158ad93a4272d8586c9103420dc03bcaca0",
+    "VAL_BACK.png": "0d53699a408a29f4370a205f7ae66339212530e7e3caea2d4228c1e47e913bfa",
+    "VAL_3Q.png": "aece67db89b615666fc56eb7ccce679ce0b799bb08275a550dc6dcf8a05e4a3f",
+    "command-results.json": "25a636ac34240c992b81d33fffd66b2ab906202b1ce4d358430b3da0638f0ba8",
+    "independent-gates-review.md": "ff7b25bf6ba2eb38bf40c482206cab7b71bb1b8eda0b4c51764ad43225308517",
+    "independent-gates-evidence.json": "1c7942c1b8606db3db1e43ef8a2052bd412dcea59782d0236e9603790772c7af",
+    "independent-visual-review.md": "4cb38aa5562724ce5e85ac03179bdf5250ee67f5d5f4cc462b9c2a5a555a4288",
+    "check-compileall.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check-doctor.log": "ed7329977d8b398bb545a6be22d3e92fdc8af94bda8568165e1a423c05e51f7f",
+    "check-smoke.log": "e7d5886ae05243496c657839945fdb3d5f18cba355dc40fb975f590fa059e89a",
+    "check-tests.log": "3c84a4b19a498753381dad663a8a5f5d83ca2f613e13305f0e4ea402f38f7238",
+    "check-validate.log": "134e362fa4246889321d8c8f96f2fe6596562ae03b695b7d9839b0d6ef8155ae"
+  }
+}

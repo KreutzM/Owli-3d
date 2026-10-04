@@ -2,13 +2,16 @@
 
 Verbindlicher Umfang: [Issue #6](https://github.com/KreutzM/Owli-3d/issues/6).
 Dieser Plan ergänzt das Issue, schränkt dessen Lieferumfang aber nicht ein.
-Ausgang: `main` nach PR #31, `blender/scene/owli_feet_v01.blend`.
+Ausgang nach Abschluss/Merge von #37:
+`blender/scene/owli_review_fixes_v01.blend` und dessen
+[Korrekturbericht](../validation/reviews/review_fixes_v01/report.md).
 Für dieses Goal wurde noch kein neuer Modellierungsstand begonnen.
 
 ## Zuerst prüfen
 
 - [Agent-Übergabe](agent-handoff.md), AGENTS-Pflichtlektüre und Referenzen lesen.
-- Aktuelles #5 mit `validate_feet_delivery` und Tests bestätigen; nur eine Kopie
+- Aktuelles #37 mit `review_fixes_gate.validate_review_fixes` sowie historische
+  Lieferungen mit `delivery_gates` (Version 2) und Tests bestätigen; nur eine Kopie
   der akzeptierten Szene bearbeiten.
 - `30_wings_feathers.py` ist derzeit nur Policy-Metadaten. Tatsächliche
   `BLK_Wing_L/R`-Volumes und `BLK_Tail` sind die groben Ausgangsformen;
@@ -32,6 +35,11 @@ Für dieses Goal wurde noch kein neuer Modellierungsstand begonnen.
    Silhouettenänderungen aus den Referenzen begründen und neu dokumentieren.
 5. Unbetroffene Kopf-/Gesichts-/Schnabel-/Fuß-/Stangenkomponenten erhalten.
    Insbesondere echte 3+1-Anatomie und tragenden Stangengriff weiter prüfen.
+6. Verbliebenen Gesichtsfederfluss aus #37 mit wenigen breiten, symmetrischen
+   cream Gruppen ausarbeiten: äußerer Maskenrand sowie Wangen-/Mittelstegübergang.
+   Das ist die explizite weitere Zuständigkeit für Gesichts-Federfinish, keine
+   erneute Ringmasken-/Querbrauenkonstruktion. Logo 00/Parts 08; separate Augen,
+   nichtlinearen vollständigen Blink, ±12° Blick und 0–18° Beak erneut prüfen.
 
 ## Architekturhinweise, keine vorgeschriebene neue Konstruktion
 
@@ -53,6 +61,15 @@ keine bestehenden Produktionsprüfungen durch stilles Überspringen ersetzen.
 `project.py` und mehrere gemeinsam genutzte Helfer sind in alten Reviews
 hashgebunden. Neue Helfer bevorzugen; bei nötigen Änderungen die Nachweiskette
 ehrlich erhalten, nicht nur gespeicherte Hashes umschreiben.
+
+Die alten `face_review.py`/`beak_review.py`/`feet_review.py`/`history_bindings.py`
+bleiben historische Version 1. Aktuelle Abnahme nutzt `delivery_gates.py` und
+`history_gate.py` (Version 2), eigene vollständige Quellen-/Referenz-/Reload-
+Inventare und typisierte Vergleichsfelder. Leere/verkürzte Maps, identische
+Null-/Leerwerte und fehlende Unterfelder negativ prüfen. Historische Daten nicht
+aus einer gerade gelieferten Map als ihren eigenen Pflichtumfang ableiten.
+
+Weitere konkrete QA-Zuständigkeiten: [Folgeprüfungen #20–#24](review-fixes-qa-followup.md).
 
 Für neue Feather-Objekte einen eigenen Präfix wählen: `GRP_` gehört derzeit dem
 Fuß-Verifier, der alle so benannten Objekte als Fuß-/Stangenflächen untersucht.

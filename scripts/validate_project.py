@@ -103,6 +103,14 @@ for rec in refs:
 for w in warnings:
     print("WARNING:",w)
 
+# Current admission gates supplement the byte-exact historical v1 validators.
+# This entry point is not bound by previous milestone source inventories.
+if not errors:
+    from delivery_gates import validate_all
+    errors.extend(validate_all(ROOT))
+    from review_fixes_gate import validate_review_fixes
+    errors.extend(validate_review_fixes(ROOT))
+
 if errors:
     print("VALIDATION FAILED")
     for e in errors:

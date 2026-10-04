@@ -1,14 +1,16 @@
 # Übergabe an einen frischen Agenten
 
-Stand: 2026-10-04, nach Merge von [PR #31](https://github.com/KreutzM/Owli-3d/pull/31).
-Geprüfter Produktionscode auf `main`: `8dcbebac1e8df0487246f818cdd0c3396c9f5265`.
+Stand: 2026-10-04, nach der geprüften Korrekturlieferung
+[Goal #37](https://github.com/KreutzM/Owli-3d/issues/37).
+Vorgänger-/Review-Merge: `473f8726d32ac7852ef93884b3010b52b8836521`.
+Der genaue neue Produktionscommit ist im zugehörigen #37-PR und Git-Verlauf verankert.
 Diese Übergabe beschreibt einen Zwischenstand, keinen fertigen Owli-V1-Avatar.
 
 **Nächster Auftrag: [Goal #6](https://github.com/KreutzM/Owli-3d/issues/6).**
-Ausgangsszene: [`blender/scene/owli_feet_v01.blend`](../blender/scene/owli_feet_v01.blend).
+Ausgangsszene: [`blender/scene/owli_review_fixes_v01.blend`](../blender/scene/owli_review_fixes_v01.blend).
 Gesamtauftrag und Reihenfolge: [Epic #11](https://github.com/KreutzM/Owli-3d/issues/11).
-Der letzte Modellierungsbranch `feat/5-feet-grip` ist gemergt; es gibt keine
-unfertige Modellierungsarbeit, die aus dem bisherigen Chat übernommen werden muss.
+Die Findings-Nacharbeit hat ihren eigenen Branch `fix/37-review-findings` und
+vollständige versionierte Nachweise; der verbindliche Einstieg benötigt keine Chat-Historie.
 
 ## Sofortiger Einstieg
 
@@ -17,7 +19,8 @@ unfertige Modellierungsarbeit, die aus dem bisherigen Chat übernommen werden mu
    `design/character_spec.json`, `design/materials.json`, `design/rig_spec.json`,
    `references/manifest.json`, `validation/checklist.json`.
 2. Diese Übergabe, [Repo-Karte](repository-map.md), [Startplan #6](next-goal-6.md),
-   [Entscheidungen](decisions.md) und den [Fußbericht](../validation/reviews/feet_v01/report.md) lesen.
+   [Entscheidungen](decisions.md), [#37-Bericht](../validation/reviews/review_fixes_v01/report.md)
+   und [konkrete Folge-QA](review-fixes-qa-followup.md) lesen.
 3. GitHub-Issues #6/#11 und aktuellen Branch/Arbeitsbaum erneut prüfen. Bei einem
    neueren `main` dessen Änderungen berücksichtigen; der obige Commit ist ein
    belegter Ausgangspunkt, kein Befehl zum Zurücksetzen.
@@ -38,11 +41,14 @@ python scripts/project.py smoke
 ```
 
 Vor einem Branchwechsel oder Pull eigene lokale Änderungen sichern. Ein LFS-
-Pointer statt einer echten Blend-Datei ist kein Modellierungsstand. Die akzeptierte
-Fußszene hat SHA-256 `0fb1512b3a27c4ebe5b7cbdebf520643b7208f2c74f8a847545ffc51dda66797`
-und 1.020.254 Bytes. Der Validator des Fuß-Reviews bindet diese Datei an ihre Nachweise.
+Pointer statt einer echten Blend-Datei ist kein Modellierungsstand. Die neue
+geprüfte #37-Szene hat SHA-256
+`8685fc054428ec848f20a922c995487f9ac4a2797cbe3713eaeb5e364b02e8fb`
+und 1.068.211 Bytes. `review_fixes_gate.validate_review_fixes` bindet ihre eigene
+Lieferung. Die historische #5-Baseline bleibt unverändert:
+`0fb1512b3a27c4ebe5b7cbdebf520643b7208f2c74f8a847545ffc51dda66797`, 1.020.254 Bytes.
 
-## Was abgeschlossen und gemergt ist
+## Geprüfte Meilensteine
 
 | Ergebnis | Issues / PR | Autoritative Szene | Dauerhafter Bericht |
 |---|---|---|---|
@@ -53,6 +59,7 @@ und 1.020.254 Bytes. Der Validator des Fuß-Reviews bindet diese Datei an ihre N
 | Getrennte Augenlagen, Maske, geometrischer Blink | #16 / #29 | `owli_face_v01.blend` | `validation/reviews/face_v01/report.md` |
 | Ober-/Unterschnabel und kollisionsfreie Öffnungsprobe | #17, Container #4 / #30 | `owli_beak_v01.blend` | `validation/reviews/beak_v01/report.md` |
 | Zusammenhängende 3+1-Füße, acht Krallen, tragender Griff | #5 / #31 | `owli_feet_v01.blend` | `validation/reviews/feet_v01/report.md` |
+| Organische Maske/Bridge, angehobene Brauen, strikte v2-Gates | #37 mit #34/#35 | `owli_review_fixes_v01.blend` | `validation/reviews/review_fixes_v01/report.md` |
 
 Alle Szenen liegen unter `blender/scene/` und werden durch Git LFS übertragen.
 Die älteren Szenen sind eingefrorene Vergleichsstände, keine alternativen aktuellen
@@ -79,11 +86,17 @@ gebürstetes Metall, Cyan-Stangenakzente und ausgearbeitete Tech-Motive fehlen.
 Die Renderings sind geometrische Meilensteinansichten und entsprechen noch nicht
 dem fertigen Beauty-/Feder-Look der Referenzen.
 
+#37 verändert genau fünf Meshes: `FAC_Mask_L/R`, `FAC_MaskBridge`, `PRI_Brow_L/R`.
+Neue Parameter in `design/review_fixes.json`; breite Wangen führen auf den echten
+Kopf zurück, die helle Verbindung läuft unter den Schnabel, Brauen steigen verjüngt
+zu den Ohrbüscheln. Alle 45 übrigen Meshes, drei Pivots und das feste Studio bleiben
+exakt erhalten. Gesichts-Federfluss/Randfinish ist jetzt ausdrücklich Teil von #6.
+
 ## Noch offene Produktionskette
 
 | Reihenfolge | Goal | Abhängigkeit / Ergebnis |
 |---|---|---|
-| Jetzt | #6 | nach #5: Primärflügel, große Federgruppen auf Flügel/Körper/Schwanz, Gesten-Bindungsstrategie |
+| Jetzt | #6 | nach #37: Primärflügel, große Flügel/Körper/Schwanzlagen, zugewiesenes Gesichtsfederfinish, Gesten-Bindungsstrategie |
 | Danach | #18 | nach #4/#5/#6: tatsächlich zugewiesene Nicht-Augen-Materialien, Stirnmotiv und Stangenakzente |
 | Danach | #19 | nach #18: tiefe blue/cyan Augen und Iris-Netzwerkmotiv; damit Container #7 abschließen |
 | Danach | #20 | nach #7: gesamte Topologie und Deformationsbereitschaft prüfen |
@@ -96,6 +109,22 @@ Dieses Dokument heißt absichtlich `agent-handoff.md`: `docs/handoff.md` ist die
 noch ausstehende finale Produktübergabe aus #24.
 
 ## Verifikation und ihre Grenzen
+
+#37 liefert 41 Blink-/41 Beak-Zustände, ±12° Gaze, reale 3+1-Kontakte und alle vier
+Foot-Parameter-Ecken plus Mittelpunkt/Outside-Negatives. Drei frische Blender-Opens
+haben identische Geometrie/Proben und vier identische 1024px-RGBA-Ansichten.
+Ein unabhängiger Reviewer hat die endgültigen Bilder angesehen und `inspect`/`exercise`
+in einem weiteren frischen Blender-Prozess tatsächlich ausgeführt. Fünf korrigierte
+Mesh-Cages/evaluierte Flächen sind inklusive adjazenter/coplanarer Innenflächen und
+vier realer Negativfixtures geprüft; Inset-/Flächentoleranzen bleiben dokumentierte
+Grenzen. Gesamtavatar-/Rig-Kombinationsprüfungen sind konkret #20–#24 zugeordnet.
+
+Aktuelle CI-Abnahme nutzt `delivery_gates.py`/`history_gate.py` (Version 2)
+und `review_fixes_gate.py`. Komplette Quell-/Referenz-/Reloadinventare, rekursive
+Schemas, echte Worker-Daten und tatsächliche kanonische Pixelvergleiche sind Pflicht.
+Byte-exakte historische Version-1-Producer bleiben erhalten. 14 Git-Vorgängeranker
+und 384 geschützte Review-/Quellen-/Bild-/Blenddateien wurden byte/LFS-OID-geprüft;
+kein altes Approval/Pixel/Szene wurde auf einen neuen Quellhash umgeschrieben.
 
 PR #31 bestand Windows-/Ubuntu-CI; lokal bestanden 25 Python-Tests,
 Projektvalidierung, compileall und der vollständige Blender-Smoke. Der Fuß-Build

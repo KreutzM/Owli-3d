@@ -1,0 +1,73 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "scripts/project.py",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "log": "check-doctor.log",
+      "log_sha256": "ed7329977d8b398bb545a6be22d3e92fdc8af94bda8568165e1a423c05e51f7f"
+    },
+    {
+      "argv": [
+        "python",
+        "scripts/project.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "log": "check-validate.log",
+      "log_sha256": "134e362fa4246889321d8c8f96f2fe6596562ae03b695b7d9839b0d6ef8155ae"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "check-tests.log",
+      "log_sha256": "3c84a4b19a498753381dad663a8a5f5d83ca2f613e13305f0e4ea402f38f7238"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "compileall",
+        "-q",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "log": "check-compileall.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "python",
+        "scripts/project.py",
+        "smoke"
+      ],
+      "exit_code": 0,
+      "log": "check-smoke.log",
+      "log_sha256": "e7d5886ae05243496c657839945fdb3d5f18cba355dc40fb975f590fa059e89a"
+    }
+  ],
+  "tests": 45,
+  "versions": {
+    "python": "3.11.9",
+    "pillow": "12.2.0",
+    "blender": "5.2.1 LTS",
+    "blender_hash": "9e2066aef7ef",
+    "git": "2.53.0.windows.3",
+    "git_lfs": "3.7.1"
+  },
+  "historical_git_audit": "history-git-audit.json",
+  "independent_gates": "independent-gates-review.md",
+  "independent_visual_and_blender": "independent-visual-review.md",
+  "ci": "Windows/Ubuntu exact PR head checks; remote status is authoritative in the PR"
+}

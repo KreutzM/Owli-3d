@@ -6,7 +6,7 @@ import sys
 import unittest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from beak_review import validate_beak_delivery
+from delivery_gates import validate_beak_delivery
 
 
 class BeakReviewTests(unittest.TestCase):
@@ -30,6 +30,6 @@ class BeakReviewTests(unittest.TestCase):
 
     def test_stationary_or_unsafe_opening_is_rejected(self):
         proof=copy.deepcopy(self.proof)
-        proof['build']['opening_probes']['front_lower_vertex_drop_m']=0
+        proof['build']['opening_probes']['front_lower_vertex_drop_m']=0.0
         proof['build']['opening_probes']['minimum_sampled_mask_clearance_m']=-.001
         self.assertIn('Invalid visible opening or mask clearance',validate_beak_delivery(ROOT,proof,self.decision))
