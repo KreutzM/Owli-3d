@@ -1,0 +1,6194 @@
+{
+  "baseline": {
+    "primary_meshes": {
+      "PRI_Brow_L": {
+        "vertices": 578,
+        "edges": 1152,
+        "quads": 576,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00010269734818085952
+      },
+      "PRI_Brow_R": {
+        "vertices": 578,
+        "edges": 1152,
+        "quads": 576,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00010269734818086176
+      },
+      "PRI_HeadNeckTorso": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009298550022520839
+      },
+      "PRI_Tuft_L": {
+        "vertices": 1186,
+        "edges": 2368,
+        "quads": 1184,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00037378225446706956
+      },
+      "PRI_Tuft_R": {
+        "vertices": 1186,
+        "edges": 2368,
+        "quads": 1184,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00037378227664923257
+      }
+    },
+    "symmetry": true,
+    "identity_transforms": true,
+    "neck_loops": 22,
+    "body_head_weights_partition_unity": true,
+    "toe_rule_3_plus_1": true,
+    "deferred_parts_unchanged": true,
+    "no_rig": true,
+    "deformation_probes": {
+      "head_tilt": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009288071076357872,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.00924733286071548
+        },
+        "edge_length_ratio_range": [
+          0.7565018766516552,
+          1.2502770201157776
+        ],
+        "maximum_displacement_m": 0.0458357959267722
+      },
+      "head_turn": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00925413667818249,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.009212713857688022
+        },
+        "edge_length_ratio_range": [
+          0.8322163472151024,
+          1.1588823016581966
+        ],
+        "maximum_displacement_m": 0.04542918793447892
+      },
+      "wing_root_L": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009317774414770002,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.009277246069010123
+        },
+        "edge_length_ratio_range": [
+          0.7909438096698405,
+          1.1914437290089785
+        ],
+        "maximum_displacement_m": 0.010467626262582687
+      },
+      "wing_root_R": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009317776351438007,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.009277246592778336
+        },
+        "edge_length_ratio_range": [
+          0.7909438096698405,
+          1.1914437290089785
+        ],
+        "maximum_displacement_m": 0.010467626262582687
+      }
+    },
+    "frozen_envelope_deviation": {
+      "PRI_HeadNeckTorso": {
+        "evaluated_vertices_measured": 17922,
+        "maximum_distance_m": 0.0015810386976227164,
+        "mean_distance_m": 0.000206095073086791,
+        "tolerance_m": 0.0025
+      },
+      "PRI_Brow_L": {
+        "evaluated_vertices_measured": 2306,
+        "maximum_distance_m": 0.0007369051454588771,
+        "mean_distance_m": 0.00012062116223300967,
+        "tolerance_m": 0.0025
+      },
+      "PRI_Brow_R": {
+        "evaluated_vertices_measured": 2306,
+        "maximum_distance_m": 0.0007369051454588771,
+        "mean_distance_m": 0.00012062099991423604,
+        "tolerance_m": 0.0025
+      },
+      "PRI_Tuft_L": {
+        "evaluated_vertices_measured": 4738,
+        "maximum_distance_m": 0.0018191981362178922,
+        "mean_distance_m": 0.00017640154254796334,
+        "tolerance_m": 0.0025
+      },
+      "PRI_Tuft_R": {
+        "evaluated_vertices_measured": 4738,
+        "maximum_distance_m": 0.0018195249140262604,
+        "mean_distance_m": 0.000176133447684012,
+        "tolerance_m": 0.0025
+      }
+    },
+    "rejection_probes": {
+      "open_surface_rejected": true,
+      "reversed_face_rejected": true,
+      "disconnected_vertex_rejected": true,
+      "asymmetric_vertex_rejected": true
+    },
+    "unchanged_part_sha256": {
+      "BLK_Beak": "20238adcb53ae6ff2cc514f7872b55b6f45c5bbe2a7c48a5150f62a1f313067e",
+      "BLK_Chest": "b73780d04ee288518a807a820552c15a7acdd8c29fafd0c870071ab914a33f8c",
+      "BLK_ChestAccent_L": "055d4a36e8ec8d53c9cac50fe6fd95fce6a30b08d375e9ade4e1e5c04db1d7c6",
+      "BLK_ChestAccent_R": "20df4774459d3d42249aadf53e4be65cb84f741deaeebb5c3e92de87b9eba883",
+      "BLK_Eye_L": "f150546e657613b589a1f76ab71bf68853adfaa4a9de5b42574f97f7d48d2ba3",
+      "BLK_Eye_R": "902a5fb8374c637124ad001f5b93d3a06d09169d6e777af7aef094e718200c3a",
+      "BLK_ForeheadLink_0": "8dd07d953e16d32316f634f2f0f3f02882508beb84171e47b294cbb51f6ec4d5",
+      "BLK_ForeheadLink_1": "941e19cf8239c19e189c8874c522e84b3c0dcf0a55663981c6c8b58a609ef5d9",
+      "BLK_ForeheadLink_2": "673c394a54cebb96bd9cd72e05b1fffdeb76fc6ae20ad0791c3d895153e50b0b",
+      "BLK_ForeheadLink_3": "f40579c3e89604aada83285bb71f6293085715a027787b9acf35b3b2ceb920db",
+      "BLK_ForeheadNode_0": "9cd06fb028bcb977239207f53e41c20d4f2da04b38ef71cf7913a32ab00a4ad2",
+      "BLK_ForeheadNode_1": "397875345b6f0ea500e14b2438bebc5c3f054b0b4dfcf2d00d3e765c79734b9f",
+      "BLK_ForeheadNode_2": "c5a46d040dfb0187f971d11fc43175d70bd9baf155172c99763b50f1fd7ea4c6",
+      "BLK_ForeheadNode_3": "7b01800ff07960a81ee6a8e27a0a55d6419fd8e8d91a02bb75b6f39ff8bb181d",
+      "BLK_ForeheadNode_4": "20eaf706894227949bafb0a5ad975913d3574ed984a43e356a732faa3939470c",
+      "BLK_IrisGuide_L": "18f5a607817ffcbfd62109c7d206ca47837ca5c2bc30c944692381a34bad2999",
+      "BLK_IrisGuide_R": "84734a8f20e1fc04e3e34ae3bcef754d6fba7bbc6d3728610c1ad95d35b546e9",
+      "BLK_Mask_L": "26a8d5a915cf7cc39f1663d8d80368c4d4f4574a345ace6aa6695bca6ff28611",
+      "BLK_Mask_R": "852bf48e6bd9ce207053b0d26c3ca28aef4a727eca385b47500ddb17310eee4b",
+      "BLK_MaskBridge": "4f1f482222f129373017e9ac8fe51108e31f1bb280e7d1d0eb13f7d554f12faf",
+      "BLK_PerchBar": "0d597ad82e137394a4f48f6592205bb46bc4c8ddf8ce24f83f68739dc316d270",
+      "BLK_PerchBase": "d48ebc29ba98df4510c7d3e2fe6fb88f01c6d221a787f4c4e7cad46229b1d203",
+      "BLK_PerchStem": "b509e8fa3a259556b76e14c562eaedf6c254f5250b386638194f87defc241836",
+      "BLK_PupilGuide_L": "277f76e64fe8ac025a899d3c015b2185093aa47e44efa2df6ce6d7acc531686a",
+      "BLK_PupilGuide_R": "bfba2084885a60ab4e724feb872a9bf3c64cbae0598fab0deca6517b65540615",
+      "BLK_Tail": "03fc25108f8e82f7f9d64d38813c09c10304102cb474a6de6b9e6952fa110588",
+      "BLK_Wing_L": "e1656ffd17011f61a586cfb247568040479c3c4e5cfb33d3fc060e96c07a15ae",
+      "BLK_Wing_R": "81376c67789ecdfca08a0c29b6ffd8482ac55e494ee2f65472cfe43dde6f3272",
+      "GUIDE_Foot_L": "8803b35af0b16da4ab8a4709fd13c0bbe4c0aa9777ecf667160343eb33931e70",
+      "GUIDE_Foot_R": "b5a14245f2f28b4cec8179c67228940f2b59de343c45d396ef3c54a8f4a7eedd",
+      "GUIDE_Leg_L": "3d7d1ee6cbc430c8dfedace10b308bf438963f6d2ee8af1b6d0e38153a71d317",
+      "GUIDE_Leg_R": "0ba5c1d459b3593fd4ce9eb5c5030fbf54505adac1905f0ff99ad651a11b96b1",
+      "GUIDE_Toe_L_Front_1": "3cda6e5903c61048bfbe694d56fb2e56ff4410c26a68412e3be83e88fb35446e",
+      "GUIDE_Toe_L_Front_2": "740ae234cc4c892822c5b3f5539d2c1a5dc7fd7829f451ef2a73207cdcc3dd75",
+      "GUIDE_Toe_L_Front_3": "78f739f7b6d34c808d3bb253a4113d8e7ab0daf4fc3f4437b5d3c1d74529cbd0",
+      "GUIDE_Toe_L_Rear_1": "34dccdbd859df6abe7250dbd8c916f50cec7c59cdc99fcb6b6c822be1242d8c7",
+      "GUIDE_Toe_R_Front_1": "f08b3a9a1d3051654aa1d204c97dbab7f831826aa72d551ad17c072ca475c93d",
+      "GUIDE_Toe_R_Front_2": "cc8386b5810bbca3d775cd57f068176c257e5cf5bf74c81e2b348c582d90e6b7",
+      "GUIDE_Toe_R_Front_3": "5b421b334c35e23029e75e9824d21f3bb2fc51a5dc26b00abbfdfd2143bf0ff8",
+      "GUIDE_Toe_R_Rear_1": "0faa0e5012d37f45e8b1f51396a36a1c2dc177af2fc0ed136a32ac623dda53c2"
+    },
+    "global_scale_probe": true,
+    "repeated_build_identical": true,
+    "datablock_counts": [
+      54,
+      46,
+      7
+    ],
+    "geometry_sha256": "6da9a4f455aa381d8b47f4b523f620974411eb3c3024dad925374c92f196ee3d",
+    "studio": {
+      "objects": {
+        "VAL_3Q": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              -0.7071067690849304,
+              -0.03907044604420662,
+              0.706026554107666,
+              1.149999976158142
+            ],
+            [
+              0.7071067690849304,
+              -0.03907056152820587,
+              0.706026554107666,
+              1.149999976158142
+            ],
+            [
+              8.099560488972202e-08,
+              0.9984723329544067,
+              0.05525403842329979,
+              0.36000001430511475
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "PERSP",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_BACK": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.018746545538306236,
+              -0.9998242855072021,
+              -1.600000023841858
+            ],
+            [
+              0.0,
+              0.9998242855072021,
+              0.018746545538306236,
+              0.30000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "ORTHO",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_FILL_BACK": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              0.617821455001831,
+              0.1966957449913025,
+              -0.7613195180892944,
+              -0.699999988079071
+            ],
+            [
+              -0.7863184213638306,
+              0.15454667806625366,
+              -0.5981795191764832,
+              -0.550000011920929
+            ],
+            [
+              4.491100824566274e-08,
+              0.9682076573371887,
+              0.2501477301120758,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 2.0,
+          "size": 0.6000000238418579,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_FILL_FRONT": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              -0.6178215742111206,
+              -0.1966957449913025,
+              0.7613193988800049,
+              0.699999988079071
+            ],
+            [
+              0.786318302154541,
+              -0.15454667806625366,
+              0.5981796383857727,
+              0.550000011920929
+            ],
+            [
+              1.610796496187561e-09,
+              0.9682076573371887,
+              0.2501477301120758,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 2.0,
+          "size": 0.6000000238418579,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_FRONT": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              -1.0,
+              -8.575316456926885e-08,
+              -8.904602566417452e-08,
+              0.0
+            ],
+            [
+              -8.742277657347586e-08,
+              -0.018746783956885338,
+              0.9998242855072021,
+              1.600000023841858
+            ],
+            [
+              -8.740742174495608e-08,
+              0.9998242855072021,
+              0.018746783956885338,
+              0.30000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "ORTHO",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_KEY_BACK": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              0.7761139869689941,
+              -0.364449143409729,
+              0.5146104693412781,
+              0.6499999761581421
+            ],
+            [
+              0.6305926442146301,
+              0.44855278730392456,
+              -0.6333666443824768,
+              -0.800000011920929
+            ],
+            [
+              -2.5706317074991603e-08,
+              0.8160742521286011,
+              0.5779470205307007,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 5.0,
+          "size": 0.6499999761581421,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_KEY_FRONT": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              -0.7761140465736389,
+              0.36444905400276184,
+              -0.5146104097366333,
+              -0.6499999761581421
+            ],
+            [
+              -0.6305925250053406,
+              -0.44855284690856934,
+              0.6333667039871216,
+              0.800000011920929
+            ],
+            [
+              -5.95984488427348e-08,
+              0.8160742521286011,
+              0.5779470205307007,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 5.0,
+          "size": 0.6499999761581421,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_LEFT": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              -1.6292068494294654e-07,
+              0.018746783956885338,
+              -0.9998242855072021,
+              -1.600000023841858
+            ],
+            [
+              -1.0,
+              -1.93699301043182e-09,
+              1.629129968705456e-07,
+              0.0
+            ],
+            [
+              1.1174421388204792e-09,
+              0.9998242855072021,
+              0.018746783956885338,
+              0.30000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "ORTHO",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_TOP": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 2.0,
+          "size": 0.699999988079071,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        }
+      },
+      "camera_datablocks": [
+        "VAL_3Q_Data",
+        "VAL_BACK_Data",
+        "VAL_FRONT_Data",
+        "VAL_LEFT_Data"
+      ],
+      "light_datablocks": [
+        "VAL_FILL_BACK_Data",
+        "VAL_FILL_FRONT_Data",
+        "VAL_KEY_BACK_Data",
+        "VAL_KEY_FRONT_Data",
+        "VAL_TOP_Data"
+      ],
+      "world": {
+        "name": "OWLI_ValidationWorld",
+        "color": [
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224,
+          1.0
+        ],
+        "strength": 0.5
+      },
+      "render": {
+        "engine": "BLENDER_EEVEE",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "samples": 64,
+        "view_transform": "Standard",
+        "look": "None",
+        "exposure": 0.0,
+        "gamma": 1.0
+      },
+      "scene_object_count": 54
+    },
+    "framing": {
+      "VAL_FRONT": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.4551726281642914,
+              0.6138702034950256,
+              1.4410215616226196
+            ],
+            "max": [
+              0.5448278188705444,
+              0.7071727514266968,
+              1.502004623413086
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.38275882601737976,
+              0.38458943367004395,
+              1.4948934316635132
+            ],
+            "max": [
+              0.617241621017456,
+              0.6276071071624756,
+              1.549508810043335
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.5672416090965271,
+              0.41919541358947754,
+              1.4992114305496216
+            ],
+            "max": [
+              0.668965756893158,
+              0.598140299320221,
+              1.5441347360610962
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.33103469014167786,
+              0.41919538378715515,
+              1.4992114305496216
+            ],
+            "max": [
+              0.4327588677406311,
+              0.598140299320221,
+              1.5441347360610962
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.5258622765541077,
+              0.6511697173118591,
+              1.4737783670425415
+            ],
+            "max": [
+              0.6948278546333313,
+              0.8232731223106384,
+              1.5735982656478882
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.3051725924015045,
+              0.6511697173118591,
+              1.4737783670425415
+            ],
+            "max": [
+              0.47413814067840576,
+              0.8232731223106384,
+              1.5735982656478882
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.49775880575180054,
+              0.8729099035263062,
+              1.5061976909637451
+            ],
+            "max": [
+              0.5022415518760681,
+              0.9384995698928833,
+              1.509509563446045
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.49853670597076416,
+              0.8712125420570374,
+              1.5064228773117065
+            ],
+            "max": [
+              0.5514636635780334,
+              0.9177871942520142,
+              1.5095280408859253
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.4485367238521576,
+              0.8712125420570374,
+              1.5064228773117065
+            ],
+            "max": [
+              0.5014637112617493,
+              0.9177871942520142,
+              1.5095280408859253
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.49775880575180054,
+              0.8384330868721008,
+              1.506909966468811
+            ],
+            "max": [
+              0.5022416114807129,
+              0.8729938864707947,
+              1.5098844766616821
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.49051743745803833,
+              0.8632929921150208,
+              1.5026077032089233
+            ],
+            "max": [
+              0.5094829797744751,
+              0.8826106786727905,
+              1.5138119459152222
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.4939657151699066,
+              0.9323111176490784,
+              1.5039323568344116
+            ],
+            "max": [
+              0.5060346722602844,
+              0.9446040987968445,
+              1.5110623836517334
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.5439656972885132,
+              0.9099012017250061,
+              1.504176139831543
+            ],
+            "max": [
+              0.5560346841812134,
+              0.922194242477417,
+              1.5113061666488647
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.44396570324897766,
+              0.9099012017250061,
+              1.504176139831543
+            ],
+            "max": [
+              0.45603469014167786,
+              0.9221941828727722,
+              1.5113061666488647
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.4939657151699066,
+              0.8323285579681396,
+              1.5050196647644043
+            ],
+            "max": [
+              0.5060346722602844,
+              0.8446217179298401,
+              1.512149691581726
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.5341314077377319,
+              0.6594180464744568,
+              1.4732683897018433
+            ],
+            "max": [
+              0.6865586638450623,
+              0.8126944303512573,
+              1.502022624015808
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.31344178318977356,
+              0.659417986869812,
+              1.4732683897018433
+            ],
+            "max": [
+              0.4658689796924591,
+              0.8126944303512573,
+              1.502022624015808
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.46206915378570557,
+              0.568878173828125,
+              1.4877196550369263
+            ],
+            "max": [
+              0.5379312634468079,
+              0.827701210975647,
+              1.5515022277832031
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.48965537548065186,
+              0.6086879372596741,
+              1.4924187660217285
+            ],
+            "max": [
+              0.7275864481925964,
+              0.8557997345924377,
+              1.5670682191848755
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.2724139988422394,
+              0.6086879372596741,
+              1.4924187660217285
+            ],
+            "max": [
+              0.5103450417518616,
+              0.8557997345924377,
+              1.5670682191848755
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.18103472888469696,
+              0.1572210043668747,
+              1.5848119258880615
+            ],
+            "max": [
+              0.8189657926559448,
+              0.22219884395599365,
+              1.6224991083145142
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.37068992853164673,
+              0.03214062377810478,
+              1.5300559997558594
+            ],
+            "max": [
+              0.629310667514801,
+              0.06457033008337021,
+              1.6803295612335205
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.4758623242378235,
+              0.04273144528269768,
+              1.5897517204284668
+            ],
+            "max": [
+              0.5241382122039795,
+              0.1815432608127594,
+              1.6192466020584106
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.5532741546630859,
+              0.6785379648208618,
+              1.4728765487670898
+            ],
+            "max": [
+              0.6674159169197083,
+              0.7930624485015869,
+              1.4865748882293701
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.3325845003128052,
+              0.6785379648208618,
+              1.4728766679763794
+            ],
+            "max": [
+              0.4467262625694275,
+              0.7930624485015869,
+              1.4865748882293701
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.39827612042427063,
+              0.10244078189134598,
+              1.62130868434906
+            ],
+            "max": [
+              0.6017244458198547,
+              0.40955275297164917,
+              1.7395879030227661
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.6258623003959656,
+              0.2386668473482132,
+              1.5664870738983154
+            ],
+            "max": [
+              0.7551727294921875,
+              0.6680094599723816,
+              1.6810981035232544
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.24482780694961548,
+              0.2386668175458908,
+              1.5664870738983154
+            ],
+            "max": [
+              0.374138206243515,
+              0.6680094599723816,
+              1.681098222732544
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.5413795709609985,
+              0.22342704236507416,
+              1.579222321510315
+            ],
+            "max": [
+              0.648276150226593,
+              0.2766612470149994,
+              1.6267764568328857
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.35172438621520996,
+              0.22342704236507416,
+              1.579222321510315
+            ],
+            "max": [
+              0.45862096548080444,
+              0.2766612470149994,
+              1.6267764568328857
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.5612071752548218,
+              0.22978369891643524,
+              1.5884612798690796
+            ],
+            "max": [
+              0.6284485459327698,
+              0.3467351198196411,
+              1.6347094774246216
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.3715519607067108,
+              0.22978366911411285,
+              1.5884612798690796
+            ],
+            "max": [
+              0.4387933909893036,
+              0.3467350900173187,
+              1.6347094774246216
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.617241621017456,
+              0.15874777734279633,
+              1.5752164125442505
+            ],
+            "max": [
+              0.6387933492660522,
+              0.2411627322435379,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.5844830274581909,
+              0.15874777734279633,
+              1.5752164125442505
+            ],
+            "max": [
+              0.6051726937294006,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.5508623123168945,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.5724141001701355,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.5844830274581909,
+              0.15972135961055756,
+              1.605332612991333
+            ],
+            "max": [
+              0.6051726937294006,
+              0.24213632941246033,
+              1.6318612098693848
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.42758646607398987,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.44913819432258606,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.39482784271240234,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.41551750898361206,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.36120715737342834,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.38275888562202454,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.39482784271240234,
+              0.15972134470939636,
+              1.605332612991333
+            ],
+            "max": [
+              0.41551750898361206,
+              0.24213629961013794,
+              1.6318612098693848
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.517611026763916,
+              0.8362555503845215,
+              1.49811589717865
+            ],
+            "max": [
+              0.7479066252708435,
+              0.8834242820739746,
+              1.560596227645874
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.2520937919616699,
+              0.8362554907798767,
+              1.49811589717865
+            ],
+            "max": [
+              0.482389360666275,
+              0.8834242820739746,
+              1.560596227645874
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.2744889557361603,
+              0.2501097321510315,
+              1.5049550533294678
+            ],
+            "max": [
+              0.7255115509033203,
+              0.8922833800315857,
+              1.7084581851959229
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.5746918320655823,
+              0.7997868061065674,
+              1.5577995777130127
+            ],
+            "max": [
+              0.7880842089653015,
+              0.9723963737487793,
+              1.6660255193710327
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.2119162529706955,
+              0.7997867465019226,
+              1.5577995777130127
+            ],
+            "max": [
+              0.42530861496925354,
+              0.9723963141441345,
+              1.6660255193710327
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.027603626251220703,
+        "inside_safe_frame": true
+      },
+      "VAL_LEFT": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.22930987179279327,
+              0.6181043982505798,
+              1.5719985961914062
+            ],
+            "max": [
+              0.33275818824768066,
+              0.7111483812332153,
+              1.6249829530715942
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.3206891715526581,
+              0.3857530355453491,
+              1.5308870077133179
+            ],
+            "max": [
+              0.4103443920612335,
+              0.6314857006072998,
+              1.669487714767456
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.32758575677871704,
+              0.41926005482673645,
+              1.5012110471725464
+            ],
+            "max": [
+              0.401723712682724,
+              0.5987221002578735,
+              1.5621315240859985
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.32758572697639465,
+              0.4236881732940674,
+              1.6381869316101074
+            ],
+            "max": [
+              0.4017236828804016,
+              0.6031501889228821,
+              1.6991075277328491
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.28793057799339294,
+              0.6514929533004761,
+              1.483776569366455
+            ],
+            "max": [
+              0.4568961262702942,
+              0.8235962986946106,
+              1.5835965871810913
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.28793054819107056,
+              0.6556301712989807,
+              1.611754059791565
+            ],
+            "max": [
+              0.4568960964679718,
+              0.82773357629776,
+              1.7115740776062012
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.3460340201854706,
+              0.8757542371749878,
+              1.5941821336746216
+            ],
+            "max": [
+              0.35051679611206055,
+              0.9413439631462097,
+              1.597494125366211
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.3460340201854706,
+              0.874071478843689,
+              1.5659005641937256
+            ],
+            "max": [
+              0.35051679611206055,
+              0.919679582118988,
+              1.5970245599746704
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.3460340201854706,
+              0.8741263151168823,
+              1.5953271389007568
+            ],
+            "max": [
+              0.35051679611206055,
+              0.9214993715286255,
+              1.6255877017974854
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.3460340201854706,
+              0.8412774801254272,
+              1.594894528388977
+            ],
+            "max": [
+              0.35051679611206055,
+              0.8758381605148315,
+              1.5978690385818481
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.3387926518917084,
+              0.8661373257637024,
+              1.5905921459197998
+            ],
+            "max": [
+              0.35775816440582275,
+              0.8854550123214722,
+              1.6017963886260986
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.34224092960357666,
+              0.93515545129776,
+              1.5919169187545776
+            ],
+            "max": [
+              0.35430988669395447,
+              0.9474484920501709,
+              1.5990469455718994
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.34224092960357666,
+              0.91180819272995,
+              1.5631657838821411
+            ],
+            "max": [
+              0.35430991649627686,
+              0.9241012334823608,
+              1.5702956914901733
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.3422408998012543,
+              0.9136828780174255,
+              1.6211555004119873
+            ],
+            "max": [
+              0.35430988669395447,
+              0.9259758591651917,
+              1.628285527229309
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.34224092960357666,
+              0.8351728916168213,
+              1.5930042266845703
+            ],
+            "max": [
+              0.35430988669395447,
+              0.8474660515785217,
+              1.600134253501892
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.28689610958099365,
+              0.6599156856536865,
+              1.488661766052246
+            ],
+            "max": [
+              0.33362308144569397,
+              0.8151735663414001,
+              1.5787113904953003
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.28689607977867126,
+              0.6640529036521912,
+              1.616639256477356
+            ],
+            "max": [
+              0.3336230516433716,
+              0.8193107843399048,
+              1.7066888809204102
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.31206852197647095,
+              0.5716901421546936,
+              1.5747042894363403
+            ],
+            "max": [
+              0.4172409474849701,
+              0.829963743686676,
+              1.6214898824691772
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.32068920135498047,
+              0.6077829003334045,
+              1.4644237756729126
+            ],
+            "max": [
+              0.4448271691799164,
+              0.8570279479026794,
+              1.6050615310668945
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.3206891715526581,
+              0.6118555068969727,
+              1.590401530265808
+            ],
+            "max": [
+              0.444827139377594,
+              0.8611004948616028,
+              1.7310394048690796
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.46810293197631836,
+              0.15183942019939423,
+              1.4183412790298462
+            ],
+            "max": [
+              0.53189617395401,
+              0.22758042812347412,
+              1.788969874382019
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.37068918347358704,
+              0.03214062377810478,
+              1.5300559997558594
+            ],
+            "max": [
+              0.6293099522590637,
+              0.06457027792930603,
+              1.6803295612335205
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.4758616089820862,
+              0.04273144528269768,
+              1.5897517204284668
+            ],
+            "max": [
+              0.5241374969482422,
+              0.1815432608127594,
+              1.6192466020584106
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.285861611366272,
+              0.6794138550758362,
+              1.4999706745147705
+            ],
+            "max": [
+              0.3073432743549347,
+              0.7956753969192505,
+              1.5674023628234863
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.2858615815639496,
+              0.6835510730743408,
+              1.6279481649398804
+            ],
+            "max": [
+              0.3073432445526123,
+              0.7998126149177551,
+              1.6953798532485962
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.5344823002815247,
+              0.09988734126091003,
+              1.5423225164413452
+            ],
+            "max": [
+              0.7327582240104675,
+              0.407096266746521,
+              1.663601279258728
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.444827139377594,
+              0.23491747677326202,
+              1.450507402420044
+            ],
+            "max": [
+              0.6344823837280273,
+              0.6631288528442383,
+              1.5301247835159302
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.4448270797729492,
+              0.24206063151359558,
+              1.6714686155319214
+            ],
+            "max": [
+              0.6344822645187378,
+              0.6702719926834106,
+              1.751085877418518
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.4594823122024536,
+              0.2214069366455078,
+              1.5167332887649536
+            ],
+            "max": [
+              0.5405167937278748,
+              0.2751259207725525,
+              1.5792847871780396
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.4594822824001312,
+              0.22496235370635986,
+              1.6267139911651611
+            ],
+            "max": [
+              0.5405167937278748,
+              0.27868133783340454,
+              1.689265489578247
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.47672370076179504,
+              0.2278120368719101,
+              1.5274720191955566
+            ],
+            "max": [
+              0.5543099045753479,
+              0.34456953406333923,
+              1.5677212476730347
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.47672367095947266,
+              0.23136745393276215,
+              1.6374527215957642
+            ],
+            "max": [
+              0.5543099045753479,
+              0.3481249511241913,
+              1.6777019500732422
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.45192429423332214,
+              0.1570470929145813,
+              1.5226093530654907
+            ],
+            "max": [
+              0.4961411952972412,
+              0.2390371412038803,
+              1.5359944105148315
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.45192429423332214,
+              0.15767736732959747,
+              1.5421059131622314
+            ],
+            "max": [
+              0.4961411952972412,
+              0.23965127766132355,
+              1.5549911260604858
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.45192429423332214,
+              0.15829148888587952,
+              1.5611026287078857
+            ],
+            "max": [
+              0.4961411952972412,
+              0.24028153717517853,
+              1.5744876861572266
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.5038579702377319,
+              0.15767736732959747,
+              1.5421059131622314
+            ],
+            "max": [
+              0.5480748414993286,
+              0.23965127766132355,
+              1.5549911260604858
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.45192426443099976,
+              0.16060250997543335,
+              1.6325900554656982
+            ],
+            "max": [
+              0.4961411654949188,
+              0.24259258806705475,
+              1.645975112915039
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.45192426443099976,
+              0.16123279929161072,
+              1.652086615562439
+            ],
+            "max": [
+              0.4961411654949188,
+              0.2432066947221756,
+              1.6649717092514038
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.45192426443099976,
+              0.16184690594673157,
+              1.6710832118988037
+            ],
+            "max": [
+              0.4961411654949188,
+              0.24383698403835297,
+              1.6844682693481445
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.5038579106330872,
+              0.16123279929161072,
+              1.652086615562439
+            ],
+            "max": [
+              0.5480747818946838,
+              0.2432066947221756,
+              1.6649717092514038
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.3310340344905853,
+              0.8347756266593933,
+              1.4523382186889648
+            ],
+            "max": [
+              0.4379306137561798,
+              0.8842577338218689,
+              1.5863773822784424
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.33103397488594055,
+              0.8397532105445862,
+              1.6063112020492554
+            ],
+            "max": [
+              0.4379305839538574,
+              0.8892353177070618,
+              1.7403502464294434
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.34290796518325806,
+              0.24882709980010986,
+              1.4652785062789917
+            ],
+            "max": [
+              0.6819136142730713,
+              0.8931006789207458,
+              1.733740210533142
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.43555983901023865,
+              0.7955942153930664,
+              1.4281086921691895
+            ],
+            "max": [
+              0.6190166473388672,
+              0.9687649011611938,
+              1.553694248199463
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.43555977940559387,
+              0.8023950457572937,
+              1.638481616973877
+            ],
+            "max": [
+              0.6190165281295776,
+              0.9755657911300659,
+              1.7640670537948608
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.024434208869934082,
+        "inside_safe_frame": true
+      },
+      "VAL_BACK": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.45517241954803467,
+              0.6220793128013611,
+              1.6949769258499146
+            ],
+            "max": [
+              0.5448275804519653,
+              0.7153818607330322,
+              1.7559599876403809
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.38275861740112305,
+              0.3896309733390808,
+              1.650865912437439
+            ],
+            "max": [
+              0.617241382598877,
+              0.6326485872268677,
+              1.7054812908172607
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.33103448152542114,
+              0.42426928877830505,
+              1.6561837196350098
+            ],
+            "max": [
+              0.432758629322052,
+              0.6032141447067261,
+              1.7011070251464844
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.567241370677948,
+              0.42426928877830505,
+              1.6561837196350098
+            ],
+            "max": [
+              0.6689655184745789,
+              0.6032141447067261,
+              1.7011070251464844
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.3051724135875702,
+              0.6559526920318604,
+              1.6217522621154785
+            ],
+            "max": [
+              0.47413793206214905,
+              0.8280560374259949,
+              1.7215722799301147
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.5258620977401733,
+              0.6559526920318604,
+              1.6217522621154785
+            ],
+            "max": [
+              0.6948276162147522,
+              0.8280560374259949,
+              1.7215722799301147
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.4977586269378662,
+              0.8785978555679321,
+              1.6821666955947876
+            ],
+            "max": [
+              0.5022413730621338,
+              0.9441875219345093,
+              1.6854785680770874
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.4485365152359009,
+              0.8769005537033081,
+              1.6823920011520386
+            ],
+            "max": [
+              0.5014634728431702,
+              0.9234751462936401,
+              1.6854970455169678
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.49853652715682983,
+              0.8769005537033081,
+              1.6823920011520386
+            ],
+            "max": [
+              0.5514634847640991,
+              0.9234751462936401,
+              1.6854970455169678
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.4977586269378662,
+              0.8441210985183716,
+              1.682879090309143
+            ],
+            "max": [
+              0.5022413730621338,
+              0.8786817789077759,
+              1.6858536005020142
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.4905172288417816,
+              0.8689809441566467,
+              1.6785767078399658
+            ],
+            "max": [
+              0.509482741355896,
+              0.8882986307144165,
+              1.6897809505462646
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.4939655065536499,
+              0.9379990696907043,
+              1.6799014806747437
+            ],
+            "max": [
+              0.5060344934463501,
+              0.9502921104431152,
+              1.6870315074920654
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.44396552443504333,
+              0.9155892133712769,
+              1.6801451444625854
+            ],
+            "max": [
+              0.45603448152542114,
+              0.927882194519043,
+              1.6872751712799072
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.5439655184745789,
+              0.9155892133712769,
+              1.6801451444625854
+            ],
+            "max": [
+              0.556034505367279,
+              0.927882194519043,
+              1.6872751712799072
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.4939655065536499,
+              0.8380165100097656,
+              1.6809887886047363
+            ],
+            "max": [
+              0.5060344934463501,
+              0.8503096699714661,
+              1.688118815422058
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.31344157457351685,
+              0.6665313243865967,
+              1.6933280229568481
+            ],
+            "max": [
+              0.4658687710762024,
+              0.8198077082633972,
+              1.722082257270813
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.5341312289237976,
+              0.6665313243865967,
+              1.6933280229568481
+            ],
+            "max": [
+              0.6865584254264832,
+              0.8198077082633972,
+              1.722082257270813
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.46206897497177124,
+              0.5739520192146301,
+              1.644692063331604
+            ],
+            "max": [
+              0.5379310250282288,
+              0.8327749967575073,
+              1.7084745168685913
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.27241379022598267,
+              0.6130830645561218,
+              1.6283949613571167
+            ],
+            "max": [
+              0.5103448033332825,
+              0.8601948022842407,
+              1.7030442953109741
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.48965516686439514,
+              0.6130830645561218,
+              1.6283949613571167
+            ],
+            "max": [
+              0.7275862097740173,
+              0.8601948022842407,
+              1.7030442953109741
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.18103447556495667,
+              0.15722036361694336,
+              1.5848119258880615
+            ],
+            "max": [
+              0.8189655542373657,
+              0.22219815850257874,
+              1.6224989891052246
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.37068966031074524,
+              0.03214000537991524,
+              1.5300558805465698
+            ],
+            "max": [
+              0.6293103694915771,
+              0.06456960737705231,
+              1.680329442024231
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.475862056016922,
+              0.04273077845573425,
+              1.5897516012191772
+            ],
+            "max": [
+              0.5241379141807556,
+              0.18154257535934448,
+              1.619246482849121
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.33258429169654846,
+              0.6861633658409119,
+              1.7087757587432861
+            ],
+            "max": [
+              0.4467260539531708,
+              0.8006877899169922,
+              1.7224739789962769
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.5532739758491516,
+              0.6861633658409119,
+              1.7087757587432861
+            ],
+            "max": [
+              0.6674156785011292,
+              0.8006877899169922,
+              1.7224739789962769
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.39827585220336914,
+              0.0974302664399147,
+              1.4663358926773071
+            ],
+            "max": [
+              0.6017241477966309,
+              0.4045421779155731,
+              1.5846149921417236
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.24482756853103638,
+              0.23717936873435974,
+              1.520495057106018
+            ],
+            "max": [
+              0.3741379380226135,
+              0.6665219664573669,
+              1.6351062059402466
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.6258620619773865,
+              0.23717936873435974,
+              1.520495057106018
+            ],
+            "max": [
+              0.7551724314689636,
+              0.6665219664573669,
+              1.6351062059402466
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.35172414779663086,
+              0.22342640161514282,
+              1.5792222023010254
+            ],
+            "max": [
+              0.45862069725990295,
+              0.2766605317592621,
+              1.6267763376235962
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.5413793325424194,
+              0.22342640161514282,
+              1.5792222023010254
+            ],
+            "max": [
+              0.6482758522033691,
+              0.2766605317592621,
+              1.6267763376235962
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.3715517222881317,
+              0.22920124232769012,
+              1.5704643726348877
+            ],
+            "max": [
+              0.4387930929660797,
+              0.346152663230896,
+              1.6167125701904297
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.5612068772315979,
+              0.22920124232769012,
+              1.5704643726348877
+            ],
+            "max": [
+              0.6284483075141907,
+              0.346152663230896,
+              1.6167125701904297
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.36120688915252686,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.38275861740112305,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.39482757449150085,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.41551724076271057,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.4275861978530884,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.44913792610168457,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.39482757449150085,
+              0.1587471067905426,
+              1.5752164125442505
+            ],
+            "max": [
+              0.41551724076271057,
+              0.24116204679012299,
+              1.6017448902130127
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.5508620738983154,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.5724138021469116,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.584482729434967,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.6051723957061768,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.617241382598877,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.6387931108474731,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.584482729434967,
+              0.1587471067905426,
+              1.5752164125442505
+            ],
+            "max": [
+              0.6051723957061768,
+              0.24116204679012299,
+              1.6017448902130127
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.2520935833454132,
+              0.8405860066413879,
+              1.6320923566818237
+            ],
+            "max": [
+              0.4823891520500183,
+              0.8877547383308411,
+              1.6945726871490479
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.5176108479499817,
+              0.8405860066413879,
+              1.6320923566818237
+            ],
+            "max": [
+              0.7479063868522644,
+              0.8877547383308411,
+              1.6945726871490479
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.27448874711990356,
+              0.24964378774166107,
+              1.490560531616211
+            ],
+            "max": [
+              0.7255112528800964,
+              0.8918173313140869,
+              1.694063663482666
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.21191604435443878,
+              0.7987629771232605,
+              1.5261503458023071
+            ],
+            "max": [
+              0.42530837655067444,
+              0.9713724851608276,
+              1.6343762874603271
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.5746915936470032,
+              0.7987629771232605,
+              1.5261503458023071
+            ],
+            "max": [
+              0.7880839705467224,
+              0.9713724851608276,
+              1.6343762874603271
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.028627514839172363,
+        "inside_safe_frame": true
+      },
+      "VAL_3Q": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.5589314699172974,
+              0.5745295882225037,
+              1.4928900003433228
+            ],
+            "max": [
+              0.6527453660964966,
+              0.6386779546737671,
+              1.5748934745788574
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.486735075712204,
+              0.41441625356674194,
+              1.5032532215118408
+            ],
+            "max": [
+              0.6373098492622375,
+              0.5833367705345154,
+              1.6437218189239502
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.5757223963737488,
+              0.44621145725250244,
+              1.5825614929199219
+            ],
+            "max": [
+              0.6556385159492493,
+              0.5649434328079224,
+              1.6602673530578613
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.46547573804855347,
+              0.4362436532974243,
+              1.4858359098434448
+            ],
+            "max": [
+              0.5509855151176453,
+              0.5627719759941101,
+              1.5635417699813843
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.5315863490104675,
+              0.5999168157577515,
+              1.542195200920105
+            ],
+            "max": [
+              0.6869856715202332,
+              0.714827835559845,
+              1.6859912872314453
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.426133930683136,
+              0.5999168753623962,
+              1.4518238306045532
+            ],
+            "max": [
+              0.5906538367271423,
+              0.721980631351471,
+              1.5956199169158936
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.5701324343681335,
+              0.7486258745193481,
+              1.5507228374481201
+            ],
+            "max": [
+              0.5745034217834473,
+              0.7934916019439697,
+              1.5564937591552734
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.5704909563064575,
+              0.7475070357322693,
+              1.5530866384506226
+            ],
+            "max": [
+              0.5966768264770508,
+              0.7770296931266785,
+              1.5753231048583984
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.5473417043685913,
+              0.7476207613945007,
+              1.5313392877578735
+            ],
+            "max": [
+              0.5740500688552856,
+              0.7816239595413208,
+              1.5561208724975586
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.5700826048851013,
+              0.7253010272979736,
+              1.552822470664978
+            ],
+            "max": [
+              0.5744028091430664,
+              0.7489774227142334,
+              1.5575989484786987
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.56322181224823,
+              0.7416682839393616,
+              1.5465879440307617
+            ],
+            "max": [
+              0.5813169479370117,
+              0.7560091018676758,
+              1.5627282857894897
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.5666007399559021,
+              0.7885621786117554,
+              1.5474228858947754
+            ],
+            "max": [
+              0.5781314373016357,
+              0.7979944348335266,
+              1.5576940774917603
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.5892276167869568,
+              0.771140992641449,
+              1.5686160326004028
+            ],
+            "max": [
+              0.6006085276603699,
+              0.7803317904472351,
+              1.5788871049880981
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.5433070659637451,
+              0.7756999731063843,
+              1.527666449546814
+            ],
+            "max": [
+              0.5549805164337158,
+              0.7851678729057312,
+              1.5379376411437988
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.5664635300636292,
+              0.7209811806678772,
+              1.5506277084350586
+            ],
+            "max": [
+              0.5779704451560974,
+              0.7299463748931885,
+              1.560898780822754
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.5946040153503418,
+              0.605231523513794,
+              1.5454227924346924
+            ],
+            "max": [
+              0.6840659976005554,
+              0.7089758515357971,
+              1.631860375404358
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.48986244201660156,
+              0.6055431365966797,
+              1.4550514221191406
+            ],
+            "max": [
+              0.5873352289199829,
+              0.7157493233680725,
+              1.5414890050888062
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.5210480690002441,
+              0.5433340668678284,
+              1.5257909297943115
+            ],
+            "max": [
+              0.6074283123016357,
+              0.7196187376976013,
+              1.6081565618515015
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.520767331123352,
+              0.5707047581672668,
+              1.5397334098815918
+            ],
+            "max": [
+              0.6840413808822632,
+              0.7373257875442505,
+              1.6958450078964233
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.41497644782066345,
+              0.5689231753349304,
+              1.450774073600769
+            ],
+            "max": [
+              0.5907109975814819,
+              0.7457515001296997,
+              1.6068856716156006
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.3290935456752777,
+              0.25121626257896423,
+              1.4940810203552246
+            ],
+            "max": [
+              0.6480151414871216,
+              0.34462136030197144,
+              1.7834782600402832
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.3834306299686432,
+              0.17660175263881683,
+              1.5369644165039062
+            ],
+            "max": [
+              0.6165693402290344,
+              0.24420364201068878,
+              1.7496564388275146
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.47818976640701294,
+              0.20455439388751984,
+              1.619287133216858
+            ],
+            "max": [
+              0.5218102335929871,
+              0.3001337945461273,
+              1.6632449626922607
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.6162974238395691,
+              0.6177448034286499,
+              1.5534515380859375
+            ],
+            "max": [
+              0.6765661239624023,
+              0.6954878568649292,
+              1.6126465797424316
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.5126670002937317,
+              0.6188032031059265,
+              1.4630801677703857
+            ],
+            "max": [
+              0.5788964629173279,
+              0.7013910412788391,
+              1.5222752094268799
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.35305294394493103,
+              0.24028386175632477,
+              1.6043378114700317
+            ],
+            "max": [
+              0.5295038223266602,
+              0.4516808092594147,
+              1.7785667181015015
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.49631035327911377,
+              0.338348925113678,
+              1.6524765491485596
+            ],
+            "max": [
+              0.6347518563270569,
+              0.6064826846122742,
+              1.7967392206192017
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.3166968822479248,
+              0.3113221526145935,
+              1.4964447021484375
+            ],
+            "max": [
+              0.46651050448417664,
+              0.6071673035621643,
+              1.6407073736190796
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.5003819465637207,
+              0.3239266276359558,
+              1.6363699436187744
+            ],
+            "max": [
+              0.5832077264785767,
+              0.36771947145462036,
+              1.71498441696167
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.41217929124832153,
+              0.31018999218940735,
+              1.5587069988250732
+            ],
+            "max": [
+              0.4996020495891571,
+              0.3566945195198059,
+              1.6373214721679688
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.5030311346054077,
+              0.3302575945854187,
+              1.6493116617202759
+            ],
+            "max": [
+              0.5670015811920166,
+              0.40994277596473694,
+              1.7123199701309204
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.4155976474285126,
+              0.31696373224258423,
+              1.5716487169265747
+            ],
+            "max": [
+              0.48247668147087097,
+              0.4008965790271759,
+              1.6346570253372192
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.5531820058822632,
+              0.2883104979991913,
+              1.6654512882232666
+            ],
+            "max": [
+              0.5826480388641357,
+              0.34335818886756897,
+              1.6949982643127441
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.5391069054603577,
+              0.2857842743396759,
+              1.6520367860794067
+            ],
+            "max": [
+              0.5683402419090271,
+              0.34125396609306335,
+              1.6812307834625244
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.52442467212677,
+              0.28314855694770813,
+              1.638269305229187
+            ],
+            "max": [
+              0.554169237613678,
+              0.3391702473163605,
+              1.6678162813186646
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.5159145593643188,
+              0.2897704541683197,
+              1.6733033657073975
+            ],
+            "max": [
+              0.5446093082427979,
+              0.3444899916648865,
+              1.7024973630905151
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.46838822960853577,
+              0.2730940878391266,
+              1.5877883434295654
+            ],
+            "max": [
+              0.4987095892429352,
+              0.3310185372829437,
+              1.617335319519043
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.4528893232345581,
+              0.27031397819519043,
+              1.5743738412857056
+            ],
+            "max": [
+              0.4829956591129303,
+              0.32870611548423767,
+              1.6035678386688232
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.43670862913131714,
+              0.26741114258766174,
+              1.5606063604354858
+            ],
+            "max": [
+              0.46741992235183716,
+              0.32641443610191345,
+              1.5901533365249634
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.42967942357063293,
+              0.27469971776008606,
+              1.5956404209136963
+            ],
+            "max": [
+              0.4592859148979187,
+              0.3322615623474121,
+              1.624834418296814
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.5368825197219849,
+              0.7140271663665771,
+              1.5545276403427124
+            ],
+            "max": [
+              0.6872190237045288,
+              0.754746675491333,
+              1.6940538883209229
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.40761634707450867,
+              0.7218533158302307,
+              1.4457995891571045
+            ],
+            "max": [
+              0.5727729201316833,
+              0.766390323638916,
+              1.585325837135315
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.3112640380859375,
+              0.31493356823921204,
+              1.4596952199935913
+            ],
+            "max": [
+              0.6722931265830994,
+              0.7678850889205933,
+              1.8035879135131836
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.4806136190891266,
+              0.6855868697166443,
+              1.6179617643356323
+            ],
+            "max": [
+              0.6530734896659851,
+              0.8041605949401855,
+              1.7858920097351074
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.30482280254364014,
+              0.6933596730232239,
+              1.4694068431854248
+            ],
+            "max": [
+              0.49514055252075195,
+              0.8248093724250793,
+              1.6373370885849
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.17519062757492065,
+        "inside_safe_frame": true
+      }
+    }
+  },
+  "reloaded": {
+    "primary_meshes": {
+      "PRI_Brow_L": {
+        "vertices": 578,
+        "edges": 1152,
+        "quads": 576,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00010269734818085952
+      },
+      "PRI_Brow_R": {
+        "vertices": 578,
+        "edges": 1152,
+        "quads": 576,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00010269734818086176
+      },
+      "PRI_HeadNeckTorso": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009298550022520839
+      },
+      "PRI_Tuft_L": {
+        "vertices": 1186,
+        "edges": 2368,
+        "quads": 1184,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00037378225446706956
+      },
+      "PRI_Tuft_R": {
+        "vertices": 1186,
+        "edges": 2368,
+        "quads": 1184,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00037378227664923257
+      }
+    },
+    "symmetry": true,
+    "identity_transforms": true,
+    "neck_loops": 22,
+    "body_head_weights_partition_unity": true,
+    "toe_rule_3_plus_1": true,
+    "deferred_parts_unchanged": true,
+    "no_rig": true,
+    "deformation_probes": {
+      "head_tilt": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009288071076357872,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.00924733286071548
+        },
+        "edge_length_ratio_range": [
+          0.7565018766516552,
+          1.2502770201157776
+        ],
+        "maximum_displacement_m": 0.0458357959267722
+      },
+      "head_turn": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.00925413667818249,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.009212713857688022
+        },
+        "edge_length_ratio_range": [
+          0.8322163472151024,
+          1.1588823016581966
+        ],
+        "maximum_displacement_m": 0.04542918793447892
+      },
+      "wing_root_L": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009317774414770002,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.009277246069010123
+        },
+        "edge_length_ratio_range": [
+          0.7909438096698405,
+          1.1914437290089785
+        ],
+        "maximum_displacement_m": 0.010467626262582687
+      },
+      "wing_root_R": {
+        "vertices": 4482,
+        "edges": 8960,
+        "quads": 4480,
+        "euler_characteristic": 2,
+        "connected_closed_shell": true,
+        "consistent_outward_normals": true,
+        "duplicate_vertices": 0,
+        "self_intersections": 0,
+        "maximum_valence": 4,
+        "volume_m3": 0.009317776351438007,
+        "evaluated": {
+          "vertices": 17922,
+          "edges": 35840,
+          "quads": 17920,
+          "euler_characteristic": 2,
+          "connected_closed_shell": true,
+          "consistent_outward_normals": true,
+          "duplicate_vertices": 0,
+          "self_intersections": 0,
+          "maximum_valence": 4,
+          "volume_m3": 0.009277246592778336
+        },
+        "edge_length_ratio_range": [
+          0.7909438096698405,
+          1.1914437290089785
+        ],
+        "maximum_displacement_m": 0.010467626262582687
+      }
+    },
+    "geometry_sha256": "6da9a4f455aa381d8b47f4b523f620974411eb3c3024dad925374c92f196ee3d",
+    "studio": {
+      "objects": {
+        "VAL_3Q": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              -0.7071067690849304,
+              -0.03907044604420662,
+              0.706026554107666,
+              1.149999976158142
+            ],
+            [
+              0.7071067690849304,
+              -0.03907056152820587,
+              0.706026554107666,
+              1.149999976158142
+            ],
+            [
+              8.099560488972202e-08,
+              0.9984723329544067,
+              0.05525403842329979,
+              0.36000001430511475
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "PERSP",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_BACK": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.018746545538306236,
+              -0.9998242855072021,
+              -1.600000023841858
+            ],
+            [
+              0.0,
+              0.9998242855072021,
+              0.018746545538306236,
+              0.30000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "ORTHO",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_FILL_BACK": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              0.617821455001831,
+              0.1966957449913025,
+              -0.7613195180892944,
+              -0.699999988079071
+            ],
+            [
+              -0.7863184213638306,
+              0.15454667806625366,
+              -0.5981795191764832,
+              -0.550000011920929
+            ],
+            [
+              4.491100824566274e-08,
+              0.9682076573371887,
+              0.2501477301120758,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 2.0,
+          "size": 0.6000000238418579,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_FILL_FRONT": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              -0.6178215742111206,
+              -0.1966957449913025,
+              0.7613193988800049,
+              0.699999988079071
+            ],
+            [
+              0.786318302154541,
+              -0.15454667806625366,
+              0.5981796383857727,
+              0.550000011920929
+            ],
+            [
+              1.610796496187561e-09,
+              0.9682076573371887,
+              0.2501477301120758,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 2.0,
+          "size": 0.6000000238418579,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_FRONT": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              -1.0,
+              -8.575316456926885e-08,
+              -8.904602566417452e-08,
+              0.0
+            ],
+            [
+              -8.742277657347586e-08,
+              -0.018746783956885338,
+              0.9998242855072021,
+              1.600000023841858
+            ],
+            [
+              -8.740742174495608e-08,
+              0.9998242855072021,
+              0.018746783956885338,
+              0.30000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "ORTHO",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_KEY_BACK": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              0.7761139869689941,
+              -0.364449143409729,
+              0.5146104693412781,
+              0.6499999761581421
+            ],
+            [
+              0.6305926442146301,
+              0.44855278730392456,
+              -0.6333666443824768,
+              -0.800000011920929
+            ],
+            [
+              -2.5706317074991603e-08,
+              0.8160742521286011,
+              0.5779470205307007,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 5.0,
+          "size": 0.6499999761581421,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_KEY_FRONT": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              -0.7761140465736389,
+              0.36444905400276184,
+              -0.5146104097366333,
+              -0.6499999761581421
+            ],
+            [
+              -0.6305925250053406,
+              -0.44855284690856934,
+              0.6333667039871216,
+              0.800000011920929
+            ],
+            [
+              -5.95984488427348e-08,
+              0.8160742521286011,
+              0.5779470205307007,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 5.0,
+          "size": 0.6499999761581421,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        },
+        "VAL_LEFT": {
+          "type": "CAMERA",
+          "matrix": [
+            [
+              -1.6292068494294654e-07,
+              0.018746783956885338,
+              -0.9998242855072021,
+              -1.600000023841858
+            ],
+            [
+              -1.0,
+              -1.93699301043182e-09,
+              1.629129968705456e-07,
+              0.0
+            ],
+            [
+              1.1174421388204792e-09,
+              0.9998242855072021,
+              0.018746783956885338,
+              0.30000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "projection": "ORTHO",
+          "lens": 65.0,
+          "ortho_scale": 0.5799999833106995,
+          "sensor_width": 36.0,
+          "sensor_fit": "AUTO",
+          "clip_start": 0.009999999776482582,
+          "clip_end": 100.0,
+          "shift_x": 0.0,
+          "shift_y": 0.0
+        },
+        "VAL_TOP": {
+          "type": "LIGHT",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "energy": 2.0,
+          "size": 0.699999988079071,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        }
+      },
+      "camera_datablocks": [
+        "VAL_3Q_Data",
+        "VAL_BACK_Data",
+        "VAL_FRONT_Data",
+        "VAL_LEFT_Data"
+      ],
+      "light_datablocks": [
+        "VAL_FILL_BACK_Data",
+        "VAL_FILL_FRONT_Data",
+        "VAL_KEY_BACK_Data",
+        "VAL_KEY_FRONT_Data",
+        "VAL_TOP_Data"
+      ],
+      "world": {
+        "name": "OWLI_ValidationWorld",
+        "color": [
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224,
+          1.0
+        ],
+        "strength": 0.5
+      },
+      "render": {
+        "engine": "BLENDER_EEVEE",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "samples": 64,
+        "view_transform": "Standard",
+        "look": "None",
+        "exposure": 0.0,
+        "gamma": 1.0
+      },
+      "scene_object_count": 54
+    },
+    "framing": {
+      "VAL_FRONT": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.4551726281642914,
+              0.6138702034950256,
+              1.4410215616226196
+            ],
+            "max": [
+              0.5448278188705444,
+              0.7071727514266968,
+              1.502004623413086
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.38275882601737976,
+              0.38458943367004395,
+              1.4948934316635132
+            ],
+            "max": [
+              0.617241621017456,
+              0.6276071071624756,
+              1.549508810043335
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.5672416090965271,
+              0.41919541358947754,
+              1.4992114305496216
+            ],
+            "max": [
+              0.668965756893158,
+              0.598140299320221,
+              1.5441347360610962
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.33103469014167786,
+              0.41919538378715515,
+              1.4992114305496216
+            ],
+            "max": [
+              0.4327588677406311,
+              0.598140299320221,
+              1.5441347360610962
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.5258622765541077,
+              0.6511697173118591,
+              1.4737783670425415
+            ],
+            "max": [
+              0.6948278546333313,
+              0.8232731223106384,
+              1.5735982656478882
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.3051725924015045,
+              0.6511697173118591,
+              1.4737783670425415
+            ],
+            "max": [
+              0.47413814067840576,
+              0.8232731223106384,
+              1.5735982656478882
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.49775880575180054,
+              0.8729099035263062,
+              1.5061976909637451
+            ],
+            "max": [
+              0.5022415518760681,
+              0.9384995698928833,
+              1.509509563446045
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.49853670597076416,
+              0.8712125420570374,
+              1.5064228773117065
+            ],
+            "max": [
+              0.5514636635780334,
+              0.9177871942520142,
+              1.5095280408859253
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.4485367238521576,
+              0.8712125420570374,
+              1.5064228773117065
+            ],
+            "max": [
+              0.5014637112617493,
+              0.9177871942520142,
+              1.5095280408859253
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.49775880575180054,
+              0.8384330868721008,
+              1.506909966468811
+            ],
+            "max": [
+              0.5022416114807129,
+              0.8729938864707947,
+              1.5098844766616821
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.49051743745803833,
+              0.8632929921150208,
+              1.5026077032089233
+            ],
+            "max": [
+              0.5094829797744751,
+              0.8826106786727905,
+              1.5138119459152222
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.4939657151699066,
+              0.9323111176490784,
+              1.5039323568344116
+            ],
+            "max": [
+              0.5060346722602844,
+              0.9446040987968445,
+              1.5110623836517334
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.5439656972885132,
+              0.9099012017250061,
+              1.504176139831543
+            ],
+            "max": [
+              0.5560346841812134,
+              0.922194242477417,
+              1.5113061666488647
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.44396570324897766,
+              0.9099012017250061,
+              1.504176139831543
+            ],
+            "max": [
+              0.45603469014167786,
+              0.9221941828727722,
+              1.5113061666488647
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.4939657151699066,
+              0.8323285579681396,
+              1.5050196647644043
+            ],
+            "max": [
+              0.5060346722602844,
+              0.8446217179298401,
+              1.512149691581726
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.5341314077377319,
+              0.6594180464744568,
+              1.4732683897018433
+            ],
+            "max": [
+              0.6865586638450623,
+              0.8126944303512573,
+              1.502022624015808
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.31344178318977356,
+              0.659417986869812,
+              1.4732683897018433
+            ],
+            "max": [
+              0.4658689796924591,
+              0.8126944303512573,
+              1.502022624015808
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.46206915378570557,
+              0.568878173828125,
+              1.4877196550369263
+            ],
+            "max": [
+              0.5379312634468079,
+              0.827701210975647,
+              1.5515022277832031
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.48965537548065186,
+              0.6086879372596741,
+              1.4924187660217285
+            ],
+            "max": [
+              0.7275864481925964,
+              0.8557997345924377,
+              1.5670682191848755
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.2724139988422394,
+              0.6086879372596741,
+              1.4924187660217285
+            ],
+            "max": [
+              0.5103450417518616,
+              0.8557997345924377,
+              1.5670682191848755
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.18103472888469696,
+              0.1572210043668747,
+              1.5848119258880615
+            ],
+            "max": [
+              0.8189657926559448,
+              0.22219884395599365,
+              1.6224991083145142
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.37068992853164673,
+              0.03214062377810478,
+              1.5300559997558594
+            ],
+            "max": [
+              0.629310667514801,
+              0.06457033008337021,
+              1.6803295612335205
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.4758623242378235,
+              0.04273144528269768,
+              1.5897517204284668
+            ],
+            "max": [
+              0.5241382122039795,
+              0.1815432608127594,
+              1.6192466020584106
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.5532741546630859,
+              0.6785379648208618,
+              1.4728765487670898
+            ],
+            "max": [
+              0.6674159169197083,
+              0.7930624485015869,
+              1.4865748882293701
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.3325845003128052,
+              0.6785379648208618,
+              1.4728766679763794
+            ],
+            "max": [
+              0.4467262625694275,
+              0.7930624485015869,
+              1.4865748882293701
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.39827612042427063,
+              0.10244078189134598,
+              1.62130868434906
+            ],
+            "max": [
+              0.6017244458198547,
+              0.40955275297164917,
+              1.7395879030227661
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.6258623003959656,
+              0.2386668473482132,
+              1.5664870738983154
+            ],
+            "max": [
+              0.7551727294921875,
+              0.6680094599723816,
+              1.6810981035232544
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.24482780694961548,
+              0.2386668175458908,
+              1.5664870738983154
+            ],
+            "max": [
+              0.374138206243515,
+              0.6680094599723816,
+              1.681098222732544
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.5413795709609985,
+              0.22342704236507416,
+              1.579222321510315
+            ],
+            "max": [
+              0.648276150226593,
+              0.2766612470149994,
+              1.6267764568328857
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.35172438621520996,
+              0.22342704236507416,
+              1.579222321510315
+            ],
+            "max": [
+              0.45862096548080444,
+              0.2766612470149994,
+              1.6267764568328857
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.5612071752548218,
+              0.22978369891643524,
+              1.5884612798690796
+            ],
+            "max": [
+              0.6284485459327698,
+              0.3467351198196411,
+              1.6347094774246216
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.3715519607067108,
+              0.22978366911411285,
+              1.5884612798690796
+            ],
+            "max": [
+              0.4387933909893036,
+              0.3467350900173187,
+              1.6347094774246216
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.617241621017456,
+              0.15874777734279633,
+              1.5752164125442505
+            ],
+            "max": [
+              0.6387933492660522,
+              0.2411627322435379,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.5844830274581909,
+              0.15874777734279633,
+              1.5752164125442505
+            ],
+            "max": [
+              0.6051726937294006,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.5508623123168945,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.5724141001701355,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.5844830274581909,
+              0.15972135961055756,
+              1.605332612991333
+            ],
+            "max": [
+              0.6051726937294006,
+              0.24213632941246033,
+              1.6318612098693848
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.42758646607398987,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.44913819432258606,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.39482784271240234,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.41551750898361206,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.36120715737342834,
+              0.15874774754047394,
+              1.5752164125442505
+            ],
+            "max": [
+              0.38275888562202454,
+              0.2411627173423767,
+              1.6017450094223022
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.39482784271240234,
+              0.15972134470939636,
+              1.605332612991333
+            ],
+            "max": [
+              0.41551750898361206,
+              0.24213629961013794,
+              1.6318612098693848
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.517611026763916,
+              0.8362555503845215,
+              1.49811589717865
+            ],
+            "max": [
+              0.7479066252708435,
+              0.8834242820739746,
+              1.560596227645874
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.2520937919616699,
+              0.8362554907798767,
+              1.49811589717865
+            ],
+            "max": [
+              0.482389360666275,
+              0.8834242820739746,
+              1.560596227645874
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.2744889557361603,
+              0.2501097321510315,
+              1.5049550533294678
+            ],
+            "max": [
+              0.7255115509033203,
+              0.8922833800315857,
+              1.7084581851959229
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.5746918320655823,
+              0.7997868061065674,
+              1.5577995777130127
+            ],
+            "max": [
+              0.7880842089653015,
+              0.9723963737487793,
+              1.6660255193710327
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.2119162529706955,
+              0.7997867465019226,
+              1.5577995777130127
+            ],
+            "max": [
+              0.42530861496925354,
+              0.9723963141441345,
+              1.6660255193710327
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.027603626251220703,
+        "inside_safe_frame": true
+      },
+      "VAL_LEFT": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.22930987179279327,
+              0.6181043982505798,
+              1.5719985961914062
+            ],
+            "max": [
+              0.33275818824768066,
+              0.7111483812332153,
+              1.6249829530715942
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.3206891715526581,
+              0.3857530355453491,
+              1.5308870077133179
+            ],
+            "max": [
+              0.4103443920612335,
+              0.6314857006072998,
+              1.669487714767456
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.32758575677871704,
+              0.41926005482673645,
+              1.5012110471725464
+            ],
+            "max": [
+              0.401723712682724,
+              0.5987221002578735,
+              1.5621315240859985
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.32758572697639465,
+              0.4236881732940674,
+              1.6381869316101074
+            ],
+            "max": [
+              0.4017236828804016,
+              0.6031501889228821,
+              1.6991075277328491
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.28793057799339294,
+              0.6514929533004761,
+              1.483776569366455
+            ],
+            "max": [
+              0.4568961262702942,
+              0.8235962986946106,
+              1.5835965871810913
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.28793054819107056,
+              0.6556301712989807,
+              1.611754059791565
+            ],
+            "max": [
+              0.4568960964679718,
+              0.82773357629776,
+              1.7115740776062012
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.3460340201854706,
+              0.8757542371749878,
+              1.5941821336746216
+            ],
+            "max": [
+              0.35051679611206055,
+              0.9413439631462097,
+              1.597494125366211
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.3460340201854706,
+              0.874071478843689,
+              1.5659005641937256
+            ],
+            "max": [
+              0.35051679611206055,
+              0.919679582118988,
+              1.5970245599746704
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.3460340201854706,
+              0.8741263151168823,
+              1.5953271389007568
+            ],
+            "max": [
+              0.35051679611206055,
+              0.9214993715286255,
+              1.6255877017974854
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.3460340201854706,
+              0.8412774801254272,
+              1.594894528388977
+            ],
+            "max": [
+              0.35051679611206055,
+              0.8758381605148315,
+              1.5978690385818481
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.3387926518917084,
+              0.8661373257637024,
+              1.5905921459197998
+            ],
+            "max": [
+              0.35775816440582275,
+              0.8854550123214722,
+              1.6017963886260986
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.34224092960357666,
+              0.93515545129776,
+              1.5919169187545776
+            ],
+            "max": [
+              0.35430988669395447,
+              0.9474484920501709,
+              1.5990469455718994
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.34224092960357666,
+              0.91180819272995,
+              1.5631657838821411
+            ],
+            "max": [
+              0.35430991649627686,
+              0.9241012334823608,
+              1.5702956914901733
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.3422408998012543,
+              0.9136828780174255,
+              1.6211555004119873
+            ],
+            "max": [
+              0.35430988669395447,
+              0.9259758591651917,
+              1.628285527229309
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.34224092960357666,
+              0.8351728916168213,
+              1.5930042266845703
+            ],
+            "max": [
+              0.35430988669395447,
+              0.8474660515785217,
+              1.600134253501892
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.28689610958099365,
+              0.6599156856536865,
+              1.488661766052246
+            ],
+            "max": [
+              0.33362308144569397,
+              0.8151735663414001,
+              1.5787113904953003
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.28689607977867126,
+              0.6640529036521912,
+              1.616639256477356
+            ],
+            "max": [
+              0.3336230516433716,
+              0.8193107843399048,
+              1.7066888809204102
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.31206852197647095,
+              0.5716901421546936,
+              1.5747042894363403
+            ],
+            "max": [
+              0.4172409474849701,
+              0.829963743686676,
+              1.6214898824691772
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.32068920135498047,
+              0.6077829003334045,
+              1.4644237756729126
+            ],
+            "max": [
+              0.4448271691799164,
+              0.8570279479026794,
+              1.6050615310668945
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.3206891715526581,
+              0.6118555068969727,
+              1.590401530265808
+            ],
+            "max": [
+              0.444827139377594,
+              0.8611004948616028,
+              1.7310394048690796
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.46810293197631836,
+              0.15183942019939423,
+              1.4183412790298462
+            ],
+            "max": [
+              0.53189617395401,
+              0.22758042812347412,
+              1.788969874382019
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.37068918347358704,
+              0.03214062377810478,
+              1.5300559997558594
+            ],
+            "max": [
+              0.6293099522590637,
+              0.06457027792930603,
+              1.6803295612335205
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.4758616089820862,
+              0.04273144528269768,
+              1.5897517204284668
+            ],
+            "max": [
+              0.5241374969482422,
+              0.1815432608127594,
+              1.6192466020584106
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.285861611366272,
+              0.6794138550758362,
+              1.4999706745147705
+            ],
+            "max": [
+              0.3073432743549347,
+              0.7956753969192505,
+              1.5674023628234863
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.2858615815639496,
+              0.6835510730743408,
+              1.6279481649398804
+            ],
+            "max": [
+              0.3073432445526123,
+              0.7998126149177551,
+              1.6953798532485962
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.5344823002815247,
+              0.09988734126091003,
+              1.5423225164413452
+            ],
+            "max": [
+              0.7327582240104675,
+              0.407096266746521,
+              1.663601279258728
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.444827139377594,
+              0.23491747677326202,
+              1.450507402420044
+            ],
+            "max": [
+              0.6344823837280273,
+              0.6631288528442383,
+              1.5301247835159302
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.4448270797729492,
+              0.24206063151359558,
+              1.6714686155319214
+            ],
+            "max": [
+              0.6344822645187378,
+              0.6702719926834106,
+              1.751085877418518
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.4594823122024536,
+              0.2214069366455078,
+              1.5167332887649536
+            ],
+            "max": [
+              0.5405167937278748,
+              0.2751259207725525,
+              1.5792847871780396
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.4594822824001312,
+              0.22496235370635986,
+              1.6267139911651611
+            ],
+            "max": [
+              0.5405167937278748,
+              0.27868133783340454,
+              1.689265489578247
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.47672370076179504,
+              0.2278120368719101,
+              1.5274720191955566
+            ],
+            "max": [
+              0.5543099045753479,
+              0.34456953406333923,
+              1.5677212476730347
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.47672367095947266,
+              0.23136745393276215,
+              1.6374527215957642
+            ],
+            "max": [
+              0.5543099045753479,
+              0.3481249511241913,
+              1.6777019500732422
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.45192429423332214,
+              0.1570470929145813,
+              1.5226093530654907
+            ],
+            "max": [
+              0.4961411952972412,
+              0.2390371412038803,
+              1.5359944105148315
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.45192429423332214,
+              0.15767736732959747,
+              1.5421059131622314
+            ],
+            "max": [
+              0.4961411952972412,
+              0.23965127766132355,
+              1.5549911260604858
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.45192429423332214,
+              0.15829148888587952,
+              1.5611026287078857
+            ],
+            "max": [
+              0.4961411952972412,
+              0.24028153717517853,
+              1.5744876861572266
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.5038579702377319,
+              0.15767736732959747,
+              1.5421059131622314
+            ],
+            "max": [
+              0.5480748414993286,
+              0.23965127766132355,
+              1.5549911260604858
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.45192426443099976,
+              0.16060250997543335,
+              1.6325900554656982
+            ],
+            "max": [
+              0.4961411654949188,
+              0.24259258806705475,
+              1.645975112915039
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.45192426443099976,
+              0.16123279929161072,
+              1.652086615562439
+            ],
+            "max": [
+              0.4961411654949188,
+              0.2432066947221756,
+              1.6649717092514038
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.45192426443099976,
+              0.16184690594673157,
+              1.6710832118988037
+            ],
+            "max": [
+              0.4961411654949188,
+              0.24383698403835297,
+              1.6844682693481445
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.5038579106330872,
+              0.16123279929161072,
+              1.652086615562439
+            ],
+            "max": [
+              0.5480747818946838,
+              0.2432066947221756,
+              1.6649717092514038
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.3310340344905853,
+              0.8347756266593933,
+              1.4523382186889648
+            ],
+            "max": [
+              0.4379306137561798,
+              0.8842577338218689,
+              1.5863773822784424
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.33103397488594055,
+              0.8397532105445862,
+              1.6063112020492554
+            ],
+            "max": [
+              0.4379305839538574,
+              0.8892353177070618,
+              1.7403502464294434
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.34290796518325806,
+              0.24882709980010986,
+              1.4652785062789917
+            ],
+            "max": [
+              0.6819136142730713,
+              0.8931006789207458,
+              1.733740210533142
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.43555983901023865,
+              0.7955942153930664,
+              1.4281086921691895
+            ],
+            "max": [
+              0.6190166473388672,
+              0.9687649011611938,
+              1.553694248199463
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.43555977940559387,
+              0.8023950457572937,
+              1.638481616973877
+            ],
+            "max": [
+              0.6190165281295776,
+              0.9755657911300659,
+              1.7640670537948608
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.024434208869934082,
+        "inside_safe_frame": true
+      },
+      "VAL_BACK": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.45517241954803467,
+              0.6220793128013611,
+              1.6949769258499146
+            ],
+            "max": [
+              0.5448275804519653,
+              0.7153818607330322,
+              1.7559599876403809
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.38275861740112305,
+              0.3896309733390808,
+              1.650865912437439
+            ],
+            "max": [
+              0.617241382598877,
+              0.6326485872268677,
+              1.7054812908172607
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.33103448152542114,
+              0.42426928877830505,
+              1.6561837196350098
+            ],
+            "max": [
+              0.432758629322052,
+              0.6032141447067261,
+              1.7011070251464844
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.567241370677948,
+              0.42426928877830505,
+              1.6561837196350098
+            ],
+            "max": [
+              0.6689655184745789,
+              0.6032141447067261,
+              1.7011070251464844
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.3051724135875702,
+              0.6559526920318604,
+              1.6217522621154785
+            ],
+            "max": [
+              0.47413793206214905,
+              0.8280560374259949,
+              1.7215722799301147
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.5258620977401733,
+              0.6559526920318604,
+              1.6217522621154785
+            ],
+            "max": [
+              0.6948276162147522,
+              0.8280560374259949,
+              1.7215722799301147
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.4977586269378662,
+              0.8785978555679321,
+              1.6821666955947876
+            ],
+            "max": [
+              0.5022413730621338,
+              0.9441875219345093,
+              1.6854785680770874
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.4485365152359009,
+              0.8769005537033081,
+              1.6823920011520386
+            ],
+            "max": [
+              0.5014634728431702,
+              0.9234751462936401,
+              1.6854970455169678
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.49853652715682983,
+              0.8769005537033081,
+              1.6823920011520386
+            ],
+            "max": [
+              0.5514634847640991,
+              0.9234751462936401,
+              1.6854970455169678
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.4977586269378662,
+              0.8441210985183716,
+              1.682879090309143
+            ],
+            "max": [
+              0.5022413730621338,
+              0.8786817789077759,
+              1.6858536005020142
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.4905172288417816,
+              0.8689809441566467,
+              1.6785767078399658
+            ],
+            "max": [
+              0.509482741355896,
+              0.8882986307144165,
+              1.6897809505462646
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.4939655065536499,
+              0.9379990696907043,
+              1.6799014806747437
+            ],
+            "max": [
+              0.5060344934463501,
+              0.9502921104431152,
+              1.6870315074920654
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.44396552443504333,
+              0.9155892133712769,
+              1.6801451444625854
+            ],
+            "max": [
+              0.45603448152542114,
+              0.927882194519043,
+              1.6872751712799072
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.5439655184745789,
+              0.9155892133712769,
+              1.6801451444625854
+            ],
+            "max": [
+              0.556034505367279,
+              0.927882194519043,
+              1.6872751712799072
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.4939655065536499,
+              0.8380165100097656,
+              1.6809887886047363
+            ],
+            "max": [
+              0.5060344934463501,
+              0.8503096699714661,
+              1.688118815422058
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.31344157457351685,
+              0.6665313243865967,
+              1.6933280229568481
+            ],
+            "max": [
+              0.4658687710762024,
+              0.8198077082633972,
+              1.722082257270813
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.5341312289237976,
+              0.6665313243865967,
+              1.6933280229568481
+            ],
+            "max": [
+              0.6865584254264832,
+              0.8198077082633972,
+              1.722082257270813
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.46206897497177124,
+              0.5739520192146301,
+              1.644692063331604
+            ],
+            "max": [
+              0.5379310250282288,
+              0.8327749967575073,
+              1.7084745168685913
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.27241379022598267,
+              0.6130830645561218,
+              1.6283949613571167
+            ],
+            "max": [
+              0.5103448033332825,
+              0.8601948022842407,
+              1.7030442953109741
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.48965516686439514,
+              0.6130830645561218,
+              1.6283949613571167
+            ],
+            "max": [
+              0.7275862097740173,
+              0.8601948022842407,
+              1.7030442953109741
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.18103447556495667,
+              0.15722036361694336,
+              1.5848119258880615
+            ],
+            "max": [
+              0.8189655542373657,
+              0.22219815850257874,
+              1.6224989891052246
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.37068966031074524,
+              0.03214000537991524,
+              1.5300558805465698
+            ],
+            "max": [
+              0.6293103694915771,
+              0.06456960737705231,
+              1.680329442024231
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.475862056016922,
+              0.04273077845573425,
+              1.5897516012191772
+            ],
+            "max": [
+              0.5241379141807556,
+              0.18154257535934448,
+              1.619246482849121
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.33258429169654846,
+              0.6861633658409119,
+              1.7087757587432861
+            ],
+            "max": [
+              0.4467260539531708,
+              0.8006877899169922,
+              1.7224739789962769
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.5532739758491516,
+              0.6861633658409119,
+              1.7087757587432861
+            ],
+            "max": [
+              0.6674156785011292,
+              0.8006877899169922,
+              1.7224739789962769
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.39827585220336914,
+              0.0974302664399147,
+              1.4663358926773071
+            ],
+            "max": [
+              0.6017241477966309,
+              0.4045421779155731,
+              1.5846149921417236
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.24482756853103638,
+              0.23717936873435974,
+              1.520495057106018
+            ],
+            "max": [
+              0.3741379380226135,
+              0.6665219664573669,
+              1.6351062059402466
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.6258620619773865,
+              0.23717936873435974,
+              1.520495057106018
+            ],
+            "max": [
+              0.7551724314689636,
+              0.6665219664573669,
+              1.6351062059402466
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.35172414779663086,
+              0.22342640161514282,
+              1.5792222023010254
+            ],
+            "max": [
+              0.45862069725990295,
+              0.2766605317592621,
+              1.6267763376235962
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.5413793325424194,
+              0.22342640161514282,
+              1.5792222023010254
+            ],
+            "max": [
+              0.6482758522033691,
+              0.2766605317592621,
+              1.6267763376235962
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.3715517222881317,
+              0.22920124232769012,
+              1.5704643726348877
+            ],
+            "max": [
+              0.4387930929660797,
+              0.346152663230896,
+              1.6167125701904297
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.5612068772315979,
+              0.22920124232769012,
+              1.5704643726348877
+            ],
+            "max": [
+              0.6284483075141907,
+              0.346152663230896,
+              1.6167125701904297
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.36120688915252686,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.38275861740112305,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.39482757449150085,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.41551724076271057,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.4275861978530884,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.44913792610168457,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.39482757449150085,
+              0.1587471067905426,
+              1.5752164125442505
+            ],
+            "max": [
+              0.41551724076271057,
+              0.24116204679012299,
+              1.6017448902130127
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.5508620738983154,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.5724138021469116,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.584482729434967,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.6051723957061768,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.617241382598877,
+              0.15972067415714264,
+              1.605332612991333
+            ],
+            "max": [
+              0.6387931108474731,
+              0.24213562905788422,
+              1.6318610906600952
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.584482729434967,
+              0.1587471067905426,
+              1.5752164125442505
+            ],
+            "max": [
+              0.6051723957061768,
+              0.24116204679012299,
+              1.6017448902130127
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.2520935833454132,
+              0.8405860066413879,
+              1.6320923566818237
+            ],
+            "max": [
+              0.4823891520500183,
+              0.8877547383308411,
+              1.6945726871490479
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.5176108479499817,
+              0.8405860066413879,
+              1.6320923566818237
+            ],
+            "max": [
+              0.7479063868522644,
+              0.8877547383308411,
+              1.6945726871490479
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.27448874711990356,
+              0.24964378774166107,
+              1.490560531616211
+            ],
+            "max": [
+              0.7255112528800964,
+              0.8918173313140869,
+              1.694063663482666
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.21191604435443878,
+              0.7987629771232605,
+              1.5261503458023071
+            ],
+            "max": [
+              0.42530837655067444,
+              0.9713724851608276,
+              1.6343762874603271
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.5746915936470032,
+              0.7987629771232605,
+              1.5261503458023071
+            ],
+            "max": [
+              0.7880839705467224,
+              0.9713724851608276,
+              1.6343762874603271
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.028627514839172363,
+        "inside_safe_frame": true
+      },
+      "VAL_3Q": {
+        "objects": {
+          "BLK_Beak": {
+            "min": [
+              0.5589314699172974,
+              0.5745295882225037,
+              1.4928900003433228
+            ],
+            "max": [
+              0.6527453660964966,
+              0.6386779546737671,
+              1.5748934745788574
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Chest": {
+            "min": [
+              0.486735075712204,
+              0.41441625356674194,
+              1.5032532215118408
+            ],
+            "max": [
+              0.6373098492622375,
+              0.5833367705345154,
+              1.6437218189239502
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_L": {
+            "min": [
+              0.5757223963737488,
+              0.44621145725250244,
+              1.5825614929199219
+            ],
+            "max": [
+              0.6556385159492493,
+              0.5649434328079224,
+              1.6602673530578613
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ChestAccent_R": {
+            "min": [
+              0.46547573804855347,
+              0.4362436532974243,
+              1.4858359098434448
+            ],
+            "max": [
+              0.5509855151176453,
+              0.5627719759941101,
+              1.5635417699813843
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_L": {
+            "min": [
+              0.5315863490104675,
+              0.5999168157577515,
+              1.542195200920105
+            ],
+            "max": [
+              0.6869856715202332,
+              0.714827835559845,
+              1.6859912872314453
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Eye_R": {
+            "min": [
+              0.426133930683136,
+              0.5999168753623962,
+              1.4518238306045532
+            ],
+            "max": [
+              0.5906538367271423,
+              0.721980631351471,
+              1.5956199169158936
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_0": {
+            "min": [
+              0.5701324343681335,
+              0.7486258745193481,
+              1.5507228374481201
+            ],
+            "max": [
+              0.5745034217834473,
+              0.7934916019439697,
+              1.5564937591552734
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_1": {
+            "min": [
+              0.5704909563064575,
+              0.7475070357322693,
+              1.5530866384506226
+            ],
+            "max": [
+              0.5966768264770508,
+              0.7770296931266785,
+              1.5753231048583984
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_2": {
+            "min": [
+              0.5473417043685913,
+              0.7476207613945007,
+              1.5313392877578735
+            ],
+            "max": [
+              0.5740500688552856,
+              0.7816239595413208,
+              1.5561208724975586
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadLink_3": {
+            "min": [
+              0.5700826048851013,
+              0.7253010272979736,
+              1.552822470664978
+            ],
+            "max": [
+              0.5744028091430664,
+              0.7489774227142334,
+              1.5575989484786987
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_0": {
+            "min": [
+              0.56322181224823,
+              0.7416682839393616,
+              1.5465879440307617
+            ],
+            "max": [
+              0.5813169479370117,
+              0.7560091018676758,
+              1.5627282857894897
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_1": {
+            "min": [
+              0.5666007399559021,
+              0.7885621786117554,
+              1.5474228858947754
+            ],
+            "max": [
+              0.5781314373016357,
+              0.7979944348335266,
+              1.5576940774917603
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_2": {
+            "min": [
+              0.5892276167869568,
+              0.771140992641449,
+              1.5686160326004028
+            ],
+            "max": [
+              0.6006085276603699,
+              0.7803317904472351,
+              1.5788871049880981
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_3": {
+            "min": [
+              0.5433070659637451,
+              0.7756999731063843,
+              1.527666449546814
+            ],
+            "max": [
+              0.5549805164337158,
+              0.7851678729057312,
+              1.5379376411437988
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_ForeheadNode_4": {
+            "min": [
+              0.5664635300636292,
+              0.7209811806678772,
+              1.5506277084350586
+            ],
+            "max": [
+              0.5779704451560974,
+              0.7299463748931885,
+              1.560898780822754
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_L": {
+            "min": [
+              0.5946040153503418,
+              0.605231523513794,
+              1.5454227924346924
+            ],
+            "max": [
+              0.6840659976005554,
+              0.7089758515357971,
+              1.631860375404358
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_IrisGuide_R": {
+            "min": [
+              0.48986244201660156,
+              0.6055431365966797,
+              1.4550514221191406
+            ],
+            "max": [
+              0.5873352289199829,
+              0.7157493233680725,
+              1.5414890050888062
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_MaskBridge": {
+            "min": [
+              0.5210480690002441,
+              0.5433340668678284,
+              1.5257909297943115
+            ],
+            "max": [
+              0.6074283123016357,
+              0.7196187376976013,
+              1.6081565618515015
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_L": {
+            "min": [
+              0.520767331123352,
+              0.5707047581672668,
+              1.5397334098815918
+            ],
+            "max": [
+              0.6840413808822632,
+              0.7373257875442505,
+              1.6958450078964233
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Mask_R": {
+            "min": [
+              0.41497644782066345,
+              0.5689231753349304,
+              1.450774073600769
+            ],
+            "max": [
+              0.5907109975814819,
+              0.7457515001296997,
+              1.6068856716156006
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBar": {
+            "min": [
+              0.3290935456752777,
+              0.25121626257896423,
+              1.4940810203552246
+            ],
+            "max": [
+              0.6480151414871216,
+              0.34462136030197144,
+              1.7834782600402832
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchBase": {
+            "min": [
+              0.3834306299686432,
+              0.17660175263881683,
+              1.5369644165039062
+            ],
+            "max": [
+              0.6165693402290344,
+              0.24420364201068878,
+              1.7496564388275146
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PerchStem": {
+            "min": [
+              0.47818976640701294,
+              0.20455439388751984,
+              1.619287133216858
+            ],
+            "max": [
+              0.5218102335929871,
+              0.3001337945461273,
+              1.6632449626922607
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_L": {
+            "min": [
+              0.6162974238395691,
+              0.6177448034286499,
+              1.5534515380859375
+            ],
+            "max": [
+              0.6765661239624023,
+              0.6954878568649292,
+              1.6126465797424316
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_PupilGuide_R": {
+            "min": [
+              0.5126670002937317,
+              0.6188032031059265,
+              1.4630801677703857
+            ],
+            "max": [
+              0.5788964629173279,
+              0.7013910412788391,
+              1.5222752094268799
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Tail": {
+            "min": [
+              0.35305294394493103,
+              0.24028386175632477,
+              1.6043378114700317
+            ],
+            "max": [
+              0.5295038223266602,
+              0.4516808092594147,
+              1.7785667181015015
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_L": {
+            "min": [
+              0.49631035327911377,
+              0.338348925113678,
+              1.6524765491485596
+            ],
+            "max": [
+              0.6347518563270569,
+              0.6064826846122742,
+              1.7967392206192017
+            ],
+            "inside_safe_frame": true
+          },
+          "BLK_Wing_R": {
+            "min": [
+              0.3166968822479248,
+              0.3113221526145935,
+              1.4964447021484375
+            ],
+            "max": [
+              0.46651050448417664,
+              0.6071673035621643,
+              1.6407073736190796
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_L": {
+            "min": [
+              0.5003819465637207,
+              0.3239266276359558,
+              1.6363699436187744
+            ],
+            "max": [
+              0.5832077264785767,
+              0.36771947145462036,
+              1.71498441696167
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Foot_R": {
+            "min": [
+              0.41217929124832153,
+              0.31018999218940735,
+              1.5587069988250732
+            ],
+            "max": [
+              0.4996020495891571,
+              0.3566945195198059,
+              1.6373214721679688
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_L": {
+            "min": [
+              0.5030311346054077,
+              0.3302575945854187,
+              1.6493116617202759
+            ],
+            "max": [
+              0.5670015811920166,
+              0.40994277596473694,
+              1.7123199701309204
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Leg_R": {
+            "min": [
+              0.4155976474285126,
+              0.31696373224258423,
+              1.5716487169265747
+            ],
+            "max": [
+              0.48247668147087097,
+              0.4008965790271759,
+              1.6346570253372192
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_1": {
+            "min": [
+              0.5531820058822632,
+              0.2883104979991913,
+              1.6654512882232666
+            ],
+            "max": [
+              0.5826480388641357,
+              0.34335818886756897,
+              1.6949982643127441
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_2": {
+            "min": [
+              0.5391069054603577,
+              0.2857842743396759,
+              1.6520367860794067
+            ],
+            "max": [
+              0.5683402419090271,
+              0.34125396609306335,
+              1.6812307834625244
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Front_3": {
+            "min": [
+              0.52442467212677,
+              0.28314855694770813,
+              1.638269305229187
+            ],
+            "max": [
+              0.554169237613678,
+              0.3391702473163605,
+              1.6678162813186646
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_L_Rear_1": {
+            "min": [
+              0.5159145593643188,
+              0.2897704541683197,
+              1.6733033657073975
+            ],
+            "max": [
+              0.5446093082427979,
+              0.3444899916648865,
+              1.7024973630905151
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_1": {
+            "min": [
+              0.46838822960853577,
+              0.2730940878391266,
+              1.5877883434295654
+            ],
+            "max": [
+              0.4987095892429352,
+              0.3310185372829437,
+              1.617335319519043
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_2": {
+            "min": [
+              0.4528893232345581,
+              0.27031397819519043,
+              1.5743738412857056
+            ],
+            "max": [
+              0.4829956591129303,
+              0.32870611548423767,
+              1.6035678386688232
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Front_3": {
+            "min": [
+              0.43670862913131714,
+              0.26741114258766174,
+              1.5606063604354858
+            ],
+            "max": [
+              0.46741992235183716,
+              0.32641443610191345,
+              1.5901533365249634
+            ],
+            "inside_safe_frame": true
+          },
+          "GUIDE_Toe_R_Rear_1": {
+            "min": [
+              0.42967942357063293,
+              0.27469971776008606,
+              1.5956404209136963
+            ],
+            "max": [
+              0.4592859148979187,
+              0.3322615623474121,
+              1.624834418296814
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_L": {
+            "min": [
+              0.5368825197219849,
+              0.7140271663665771,
+              1.5545276403427124
+            ],
+            "max": [
+              0.6872190237045288,
+              0.754746675491333,
+              1.6940538883209229
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Brow_R": {
+            "min": [
+              0.40761634707450867,
+              0.7218533158302307,
+              1.4457995891571045
+            ],
+            "max": [
+              0.5727729201316833,
+              0.766390323638916,
+              1.585325837135315
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_HeadNeckTorso": {
+            "min": [
+              0.3112640380859375,
+              0.31493356823921204,
+              1.4596952199935913
+            ],
+            "max": [
+              0.6722931265830994,
+              0.7678850889205933,
+              1.8035879135131836
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_L": {
+            "min": [
+              0.4806136190891266,
+              0.6855868697166443,
+              1.6179617643356323
+            ],
+            "max": [
+              0.6530734896659851,
+              0.8041605949401855,
+              1.7858920097351074
+            ],
+            "inside_safe_frame": true
+          },
+          "PRI_Tuft_R": {
+            "min": [
+              0.30482280254364014,
+              0.6933596730232239,
+              1.4694068431854248
+            ],
+            "max": [
+              0.49514055252075195,
+              0.8248093724250793,
+              1.6373370885849
+            ],
+            "inside_safe_frame": true
+          }
+        },
+        "object_count": 45,
+        "minimum_image_margin": 0.17519062757492065,
+        "inside_safe_frame": true
+      }
+    }
+  },
+  "reload_identical": true,
+  "render_metrics": {
+    "VAL_FRONT": {
+      "size": [
+        1024,
+        1024
+      ],
+      "foreground_bbox_px": [
+        185,
+        30,
+        839,
+        992
+      ],
+      "foreground_near_white_fraction": 0.0,
+      "background_rgb": [
+        54,
+        54,
+        54
+      ],
+      "foreground_mean_rgb": [
+        56.7003015732871,
+        61.613925026859704,
+        66.88227738359909
+      ],
+      "foreground_stddev_rgb": [
+        54.937204814508746,
+        46.324026178880814,
+        41.69012670458671
+      ],
+      "reload_pixels_identical": true
+    },
+    "VAL_LEFT": {
+      "size": [
+        1024,
+        1024
+      ],
+      "foreground_bbox_px": [
+        240,
+        26,
+        748,
+        992
+      ],
+      "foreground_near_white_fraction": 0.0,
+      "background_rgb": [
+        54,
+        54,
+        54
+      ],
+      "foreground_mean_rgb": [
+        39.7453373095833,
+        47.4524864995567,
+        58.329306036914645
+      ],
+      "foreground_stddev_rgb": [
+        40.16713376963134,
+        35.421967544187865,
+        34.18849007453544
+      ],
+      "reload_pixels_identical": true
+    },
+    "VAL_BACK": {
+      "size": [
+        1024,
+        1024
+      ],
+      "foreground_bbox_px": [
+        185,
+        32,
+        839,
+        992
+      ],
+      "foreground_near_white_fraction": 0.0,
+      "background_rgb": [
+        54,
+        54,
+        54
+      ],
+      "foreground_mean_rgb": [
+        25.12889839832427,
+        35.62445782112858,
+        51.82896240187885
+      ],
+      "foreground_stddev_rgb": [
+        13.025622036604384,
+        16.936943264357986,
+        22.824669111833003
+      ],
+      "reload_pixels_identical": true
+    },
+    "VAL_3Q": {
+      "size": [
+        1024,
+        1024
+      ],
+      "foreground_bbox_px": [
+        337,
+        191,
+        683,
+        835
+      ],
+      "foreground_near_white_fraction": 0.0,
+      "background_rgb": [
+        54,
+        54,
+        54
+      ],
+      "foreground_mean_rgb": [
+        53.753824822776984,
+        58.53452365578974,
+        64.7581814845274
+      ],
+      "foreground_stddev_rgb": [
+        51.324553674278256,
+        43.02477653333233,
+        38.913764289330146
+      ],
+      "reload_pixels_identical": true
+    }
+  },
+  "silhouette_comparison": {
+    "full/VAL_FRONT": {
+      "intersection_over_union": 0.9985881185558169,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "primary/VAL_FRONT": {
+      "intersection_over_union": 0.994841692663356,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "full/VAL_LEFT": {
+      "intersection_over_union": 0.9981807301017355,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "primary/VAL_LEFT": {
+      "intersection_over_union": 0.9962704762108896,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "full/VAL_BACK": {
+      "intersection_over_union": 0.9988054800575685,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "primary/VAL_BACK": {
+      "intersection_over_union": 0.9949926384884363,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "full/VAL_3Q": {
+      "intersection_over_union": 0.9986352433137107,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    },
+    "primary/VAL_3Q": {
+      "intersection_over_union": 0.9944487357742418,
+      "maximum_axis_pixel_distance_limit": 5,
+      "within_distance_limit": true
+    }
+  },
+  "design_approval": false,
+  "scene_sha256": "e31bd48e562395446681bb26d5f5fbbabe747cf50a76671d27f4ac3ef673516e",
+  "source_sha256": {
+    "design/head_body.json": "e8666b729d3fb699ec8712bd049754a5dc56454c7ec2683e08d362d551d11cfa",
+    "design/proportions.json": "c0eb27fe15eabdf3af6c7943d0ef82766c6be31b395ceb62b2cb9255a33e4d45",
+    "design/character_spec.json": "55edc6c49d5bb1b3402805f95c5f549fd48839513a54f5098026df07982f326b",
+    "design/materials.json": "3720997a6d69f911ca6f07c41dbd708adb74fba6a4a29b6019c66c900105db9f",
+    "design/silhouette_freeze.json": "d1b8c3f073afbd07d88ee86a992cef37fcb0d0ce126a4cc459a3f1097ae4937d",
+    "validation/reference_views.json": "b54fc4aa5b6bdf0ba07d7a96006ca207791b397f2374a465ede581855cb9d89f",
+    "scripts/head_body_review.py": "5a41ed583470d778d719567547366fade72d5257c40df6372d1445af24af8986",
+    "scripts/blender/00_scene_setup.py": "c0e9b79e375803e30e1e2095e8d52ee4c0feab4f3e112a50dfa2186512ee1556",
+    "scripts/blender/10_blockout.py": "ee8554d5afcd3ee280b08c69bcaf8f9b44119e3e68d11842c50be02c0ebaa120",
+    "scripts/blender/20_head_body.py": "a2022beca34c6d0223934382af3c834457d67459e90fcc21b44f9f2b9979f271",
+    "scripts/blender/40_feet_perch.py": "536ca72bf03a5a850a91210f785c32713c6d35ec2b6c65e482dc8b2871a443ae",
+    "scripts/blender/90_validation.py": "31c7d9d8f370f234e4296070f77e8cc2f32aab91b6b174093b4190890a211fce",
+    "scripts/blender/primary_geometry.py": "5890c7809e67ab02c82cf7b5157cb138cfda79d3659d5b846dd074f411865a2e",
+    "scripts/blender/verify_primary.py": "cf1406fe9af389a60ac756d4c9b71e05271c94377a20f6a4806e10153e3c8ed7",
+    "scripts/blender/primary_evidence.py": "2e96e7994bffaeff8209016a516f088412645c46b12c855d57217510b3f2b079",
+    "scripts/blender/blockout_geometry.py": "1f0df4b2670bf02114a9135f2ae34166bd9f21bf234f34dd3d90dbed5e402b9f",
+    "scripts/blender/validation_setup.py": "d8aeb3b79b237613ad176d6ce97f75062cafa850f4da1f0b21586aa459b53f41"
+  },
+  "frozen_scene_sha256": "a48291158dbb959ccfe3fa947c1b4504d2b6b998d48e40f6b02b6fa583b3c04c",
+  "config_sha256": "b54fc4aa5b6bdf0ba07d7a96006ca207791b397f2374a465ede581855cb9d89f",
+  "evidence_sha256": {
+    "contact_sheet.png": "528b5d35cfb4490eeda4060a14c5c72c168bdcf36b0a03070e1f3729d79ea24b",
+    "VAL_3Q.png": "5702772e192498613bdb26c1065a35a4d86c2d23b452db206f54ce73a581c4ab",
+    "VAL_3Q_comparison.png": "21972a8c8e5727c5615b713065938db7c1ee74aa60db7ae8b1b5a1567d3d3cf7",
+    "VAL_BACK.png": "dbfd30eee024c5009ae56f083a15db60bb5456842bd652f34c9e3a2370cb4615",
+    "VAL_BACK_comparison.png": "88eeeacd19a44dd9998f0c528ec498ef96e43859403fabe0355701376b233385",
+    "VAL_FRONT.png": "9ab3e79242fc508f7068bcb47971a47c90a18d8d1e32a5d5aea5bbd27206c221",
+    "VAL_FRONT_comparison.png": "96be30d31c3848c827b66ce02a4840598fb3797bb2eb360338fa81266501e8f4",
+    "VAL_LEFT.png": "c7b5f49446539ed8c8800fb6906fd941c86990f0b978c3495dcda3816ff47e01",
+    "VAL_LEFT_comparison.png": "a2e7d84021bab4a4c34784668f70018e2d4649ecb61671879841a4b1402c114f",
+    "evidence/baseline/full/VAL_3Q.png": "277b9cd0ae6fd428e342e79b63fea4de6e8f06763e2aa83fd4809cbda2de320f",
+    "evidence/baseline/full/VAL_BACK.png": "fa327042c6fbf5c934d9d86f977b9fc72c0ee95baf2091b7433e7fea96adf2f3",
+    "evidence/baseline/full/VAL_FRONT.png": "c445ef989f5c5047b3e01db4718ac0b3bd653e1e92267e56858bbb83bcc7e1d7",
+    "evidence/baseline/full/VAL_LEFT.png": "0f43152904dd466baa837f9e12b25382876962ca8b23745e4f432e7a7a500dca",
+    "evidence/baseline/primary/VAL_3Q.png": "4155917154f17b99d66c2d2fff2917f4c792536997dba6e6432b21c4c2009a24",
+    "evidence/baseline/primary/VAL_BACK.png": "b76bbf25dc5e5be8a389575a270e98bb379ddb14833f8aff63dde1b7e5133db5",
+    "evidence/baseline/primary/VAL_FRONT.png": "c52ba51605ecb4aec771e876773034c5fa27aabb55915ebf7968c4c4a723e852",
+    "evidence/baseline/primary/VAL_LEFT.png": "0511d91842c6f47048a75ef3e99ea1ced81d98f350203c99dca61b9c1b5f1957",
+    "evidence/candidate/full/VAL_3Q.png": "0a240e48b8af9e19648da295c7b0ec07d5fcf3ff909c20222d0496f923b7d5c4",
+    "evidence/candidate/full/VAL_BACK.png": "eb8f531aaf704620ac902d62d63a723969109eb6360ddf8e3914aba58a9a9fb7",
+    "evidence/candidate/full/VAL_FRONT.png": "7773d4578a46ecdc9545f992c1c1d9ef282a29b311c802a775ee1c863d46cb86",
+    "evidence/candidate/full/VAL_LEFT.png": "666e2d88fe508044886c32351d8ed408ebf1edf3881f170e75534b33299d3e7f",
+    "evidence/candidate/primary/VAL_3Q.png": "e995e4be5dd5d9805ac9f9cc159d8de37a52ecefb93c3e2a6a919914bdc3acb2",
+    "evidence/candidate/primary/VAL_BACK.png": "db2276a7ccadfd1cd3aae57b5e778c54bc7c4caf69b81f8e1bb4028a503882b4",
+    "evidence/candidate/primary/VAL_FRONT.png": "c407b07b5c221c755fc2000e2bb7ac03a6c55af3c480be576dc2246a603579be",
+    "evidence/candidate/primary/VAL_LEFT.png": "f259506ca20363a0b1f5e0ffc4f87c0a4e2353bf35deda3013f200fbcf30bf3c",
+    "evidence/head_tilt/VAL_3Q.png": "4a1388e66da952fc5dc082339bf1b1e6b1682936df8e33dc18b14d6266e4ef30",
+    "evidence/head_tilt/VAL_BACK.png": "b314e2b9cf6c2a6723cfa4b360cd0b7475ddbc6ab2b78355268ab30011509b3f",
+    "evidence/head_tilt/VAL_FRONT.png": "addbb6388be70cf42b7def71f304470277ecefb34c29e8fe3223fcc5d0ab68fe",
+    "evidence/head_tilt/VAL_LEFT.png": "319969b5bd01534c6d3b1d5842878be5aa24106b16fbb31c88489b3b83698a44",
+    "evidence/head_turn/VAL_3Q.png": "549c0db63ab321e3f62e26022ae48c3e30c62c5ffc909b87444d9a109b8bae29",
+    "evidence/head_turn/VAL_BACK.png": "9545df96d508fd194d444e724224952d190706f8a5e34cfb9f9cbccf07bbcd19",
+    "evidence/head_turn/VAL_FRONT.png": "5a4ee1008f3c24000da4dd4f2eae535086b68ea945ad477e776fd33bfa7eb95a",
+    "evidence/head_turn/VAL_LEFT.png": "7b19050e5677fcd62cbdd21e4ebd143cc656c57a0ce09cb07977f1bde4fd3eac",
+    "evidence/topology/VAL_3Q.png": "4d9ad7852275b67f45160abe64c6f28bf0144d73a66941cbefd3581ac0018d7d",
+    "evidence/topology/VAL_BACK.png": "dc34812facf6fc2434284cbdab1d2c6844e38ee9e1b3544f6975f1bba32326d7",
+    "evidence/topology/VAL_FRONT.png": "db27a796de96cbbe5c74273d979d9f24d9586f62dd22bd6acd1cdb9df1006589",
+    "evidence/topology/VAL_LEFT.png": "47a840c1473b7f50eca0bbf26813b35a9e8bcc57419fe879f1961232d213b3cd",
+    "evidence/wing_root_L/VAL_3Q.png": "476b093d9c3ce3201a9283c21ab2830a1f490e2b55545a6a1bb8f01d3d2b0c96",
+    "evidence/wing_root_L/VAL_BACK.png": "cdae3629889fb3659b42ddcc00d84014f823f5631625ff5719aada1daabc1aea",
+    "evidence/wing_root_L/VAL_FRONT.png": "733bf6e5fd668de552945844aa99e15c8357ffa5f41ff073ab857c971a4b67eb",
+    "evidence/wing_root_L/VAL_LEFT.png": "22812806e905359976e9f32dea8f2d389a0f6e7fbf1d61216a04e1f3fc656d3f",
+    "evidence/wing_root_R/VAL_3Q.png": "5741fe6926504784751eeb7674335c31ec348ee87915898f12a850b9557bacdd",
+    "evidence/wing_root_R/VAL_BACK.png": "51ff2f55abf448ec52c11a99b2b2084657683d991b74800eaf83d9166a033acf",
+    "evidence/wing_root_R/VAL_FRONT.png": "25a92e9a5e1db9e15bba82aec1b648610a37affba40afac8120635a078276f57",
+    "evidence/wing_root_R/VAL_LEFT.png": "9d36773e10ec1d5712cb80ec12eaafb622132fec0d368dd43d2a10b9f5fa692f"
+  }
+}

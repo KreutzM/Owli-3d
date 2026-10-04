@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "milestone": "head_body_v01",
+  "source": "design/proportions.json: frozen #14 evaluated outer envelopes",
+  "angular_segments": 64,
+  "body_step_m": 0.008,
+  "neck_step_m": 0.004,
+  "neck_band_m": [0.292, 0.352],
+  "envelope_blend_m": 0.002,
+  "subdivision_levels": 1,
+  "head_weight_band_m": [0.265, 0.385],
+  "neck_pivot_m": [0, -0.008, 0.325],
+  "wing_root_centers_m": [[-0.085, -0.018, 0.307], [0.085, -0.018, 0.307]],
+  "wing_root_radius_m": 0.045,
+  "deformation_probes": {"head_tilt_deg": 15, "head_turn_deg": 20, "wing_root_displacement_m": 0.012},
+  "surface_tolerance_m": 0.0025,
+  "silhouette_pixel_tolerance": 5,
+  "silhouette_iou_min": 0.99,
+  "notes": [
+    "One closed torso/neck/head shell; no internal head/body caps.",
+    "Separate closed brow and ear-tuft primary volumes retain intended feather-root overlap; feather integration follows #6.",
+    "Quad disk caps use distributed valence-3 corners, no high-valence polar fans.",
+    "Weights are preparation/probes, not the production rig. Face attachments and wing mesh rigging follow their own goals."
+  ]
+}

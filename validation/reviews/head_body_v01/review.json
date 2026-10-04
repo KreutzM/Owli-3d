@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "issue": 15,
+  "date": "2026-10-04",
+  "status": "primary_topology_accepted",
+  "scope": "head_neck_torso_and_coarse_brow_tufts",
+  "reviewer": "Codex: direct inspection of four fixed approved-reference boards, wire cages and movement diagnostics",
+  "blocking_findings": [],
+  "criteria": [
+    {
+      "id": "clean_symmetric_primary_topology",
+      "result": "pass",
+      "reason": "Continuous closed symmetric quad shell replaces overlapping head/body caps; five primary cages have identity transforms, distributed valence, no duplicates or nonlocal self intersections. Intended brow/tuft feather-root overlaps are documented.",
+      "evidence": [
+        "evidence/topology/VAL_FRONT.png",
+        "evidence/topology/VAL_LEFT.png",
+        "evidence/topology/VAL_BACK.png",
+        "evidence/topology/VAL_3Q.png"
+      ]
+    },
+    {
+      "id": "deformable_neck_and_wing_roots",
+      "result": "pass",
+      "reason": "Soft head/body weights and wing-root masks deform the inspected primary surface without cuts or rigid sockets. Head tilt/turn and both 12 mm root displacement probes pass control and subdivided audits. Full attachment rigging follows separately.",
+      "evidence": [
+        "evidence/head_tilt/VAL_FRONT.png",
+        "evidence/head_turn/VAL_3Q.png",
+        "evidence/wing_root_L/VAL_BACK.png",
+        "evidence/wing_root_R/VAL_BACK.png"
+      ]
+    },
+    {
+      "id": "four_view_freeze_preserved",
+      "result": "pass",
+      "reason": "All four approved-reference boards retain the coarse frozen envelope, face placement and perched anatomy. Small cap/neck/symmetry refinement stays within measured surface and isolated-primary silhouette gates; cameras unchanged.",
+      "evidence": [
+        "VAL_FRONT_comparison.png",
+        "VAL_LEFT_comparison.png",
+        "VAL_BACK_comparison.png",
+        "VAL_3Q_comparison.png"
+      ]
+    }
+  ],
+  "reference_authority": [
+    {
+      "file": "00_original_logo.png",
+      "rank": 1
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "rank": 2
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "rank": 3
+    },
+    {
+      "file": "01_beauty_3q_front.png",
+      "rank": 4
+    }
+  ],
+  "known_limits": [
+    "Intentional closed brow/tuft attachment roots overlap head; feather integration later.",
+    "Face/eyes/lids #16; beak #17; wings, feet, feather layers, lookdev and rig follow their own goals.",
+    "Probe weights do not constitute a finished rig or attached-character pose approval."
+  ],
+  "evidence_sha256": {
+    "VAL_3Q_comparison.png": "21972a8c8e5727c5615b713065938db7c1ee74aa60db7ae8b1b5a1567d3d3cf7",
+    "VAL_BACK_comparison.png": "88eeeacd19a44dd9998f0c528ec498ef96e43859403fabe0355701376b233385",
+    "VAL_FRONT_comparison.png": "96be30d31c3848c827b66ce02a4840598fb3797bb2eb360338fa81266501e8f4",
+    "VAL_LEFT_comparison.png": "a2e7d84021bab4a4c34784668f70018e2d4649ecb61671879841a4b1402c114f",
+    "evidence/head_tilt/VAL_FRONT.png": "addbb6388be70cf42b7def71f304470277ecefb34c29e8fe3223fcc5d0ab68fe",
+    "evidence/head_turn/VAL_3Q.png": "549c0db63ab321e3f62e26022ae48c3e30c62c5ffc909b87444d9a109b8bae29",
+    "evidence/topology/VAL_3Q.png": "4d9ad7852275b67f45160abe64c6f28bf0144d73a66941cbefd3581ac0018d7d",
+    "evidence/topology/VAL_BACK.png": "dc34812facf6fc2434284cbdab1d2c6844e38ee9e1b3544f6975f1bba32326d7",
+    "evidence/topology/VAL_FRONT.png": "db27a796de96cbbe5c74273d979d9f24d9586f62dd22bd6acd1cdb9df1006589",
+    "evidence/topology/VAL_LEFT.png": "47a840c1473b7f50eca0bbf26813b35a9e8bcc57419fe879f1961232d213b3cd",
+    "evidence/wing_root_L/VAL_BACK.png": "cdae3629889fb3659b42ddcc00d84014f823f5631625ff5719aada1daabc1aea",
+    "evidence/wing_root_R/VAL_BACK.png": "51ff2f55abf448ec52c11a99b2b2084657683d991b74800eaf83d9166a033acf",
+    "report.md": "c0b8bd3129c4fdf1ce9ae36da285363a2dd5219d33ac7c13b6ff20b05e8d1872",
+    "verification.json": "6cf52c7a7bae24dc2c75cb217e5f2c229c5a4d08229cfed49d0a99c5a1562047"
+  }
+}
