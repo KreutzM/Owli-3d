@@ -6,7 +6,7 @@ import sys
 import unittest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from face_review import validate_delivery
+from delivery_gates import validate_delivery
 
 
 class FaceReviewTests(unittest.TestCase):

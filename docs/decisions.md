@@ -318,3 +318,50 @@ fixed cameras. The profile exposes the rear hook; the full 3/4 view shows its ba
 while the bar naturally occludes the lowest tip. The explicitly isolated toe
 view resolves that anatomy without changing the camera. No blocking geometry
 finding remains for this milestone; final avatar controls follow in the rig goals.
+
+## 2026-10-04 — #37 organic face and complete admission gates
+
+IR-01 is a primary form correction: logo 00 controls friendly organic face
+language, 07 the head/profile and 08 the broad cream facial feather intent. The
+old ring-mask envelope and horizontal brow bars were a weaker interpretation.
+New parameterized discs fit their broad cheek border to the actual unchanged
+head, reduce the annular ridge, connect below the beak through a smooth widened
+bridge and raise/taper the brows toward the ear tufts. Exactly five meshes change;
+45 others, all three pivots and the full fixed studio remain exact. New four-view
+decision at `validation/reviews/review_fixes_v01/review.json` reassesses these
+primary volumes; the original silhouette freeze, approval reasons, scenes and
+pixels stay immutable. No concepts generated, no reference averaging.
+
+Current editable scene is `owli_review_fixes_v01.blend`, SHA256
+`8685fc054428ec848f20a922c995487f9ac4a2797cbe3713eaeb5e364b02e8fb`,
+1,068,211 bytes. Blue/cyan separate eye layers, nonlinear full blink, ±12-degree
+aim, 0–18-degree beak opening and actual 3+1 opposed grip remain verified.
+Outer cream boundary and cheek/bridge feather flow are explicitly assigned to
+large facial feather groups in #6, alongside its full wing/body/tail production.
+Final eye shaders and network detailing remain #18/#19. This is primary form
+acceptance, not completed V1 beauty/rig acceptance.
+
+IR-02/03 are corrected by new gate version 2, not by rewriting historical source
+or approval hashes. Old face/beak/feet/history producers remain byte-exact v1
+evidence. Current `delivery_gates` and recursive `delivery_shapes` require every
+source/reference/reload key, concrete nonempty typed comparison data and valid
+geometry digests. `history_gate` walks an external code-owned inventory anchored
+in real predecessor Git bytes and permits only known top-level dependency maps.
+Empty/short maps, missing snapshots, altered archives/criteria and matched null
+reload claims fail. Fourteen pre-feet anchors and 384 protected review files
+were independently compared against actual Git/LFS bytes.
+
+IR-04 adds focused cage/evaluated triangle-interior checks, adjacency included,
+and a projected coplanar area test because BVH alone misses planar overlaps.
+Four actual malformed fixtures reject. Small features below the documented
+inset/area/plane tolerances remain a stated limit; a vertex pad contact does not
+claim pressure physics. The complete future combined avatar QA has concrete
+owners #20–#24 in `docs/review-fixes-qa-followup.md` and corresponding issues.
+
+IR-05 uses an explicit new scratch work directory and only the named new output
+milestone. Accepted inputs and historical artifacts are checked unchanged before
+and after. In-process Eevee live images exhibit small RGB cache differences even
+with exact cages; the saved-build renderer and two additional fresh processes
+give exact canonical RGBA pixels. Live images are retained, not relabeled as
+identical. Both the unchanged complete numerical-stage smoke and the additional
+#5-to-#37 production path run; #6 starts from a copy of the delivered #37 scene.

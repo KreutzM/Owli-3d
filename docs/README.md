@@ -2,6 +2,13 @@
 
 Für einen neuen Agenten: **[Aktueller Übergabestand](agent-handoff.md)**.
 
+- [Korrekturgoal #37](next-goal-37.md): organische Gesichtskorrektur, strenge
+  Nachweisgates und reproduzierbarer eigener Runner.
+- [Korrekturbericht IR-01–05](../validation/reviews/review_fixes_v01/report.md):
+  neue Szene, Vieransichtenentscheidung und technische Primärnachweise.
+- [Konkrete Folge-QA](review-fixes-qa-followup.md): Gesichts-Federfinish in #6
+  und ehrlich deferred kombinierte Rig-Prüfungen in #20–#24.
+
 - [Unabhängiges Zwischenreview nach #5](reviews/independent-interim-after-feet.md):
   tatsächliche Blender-Prüfung, Referenzvergleich, Reproduktion, Findings und
   Bedingungen für #6; Folgearbeit #34/#35.
