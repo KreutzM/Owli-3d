@@ -17,9 +17,14 @@ Ziel ist ein sauber modellierter, riggbarer und später animierbarer 3D-Avatar i
 
 1. `AGENTS.md` lesen.
 2. Die Pflichtlektüre in der Reihenfolge aus `AGENTS.md` lesen, beginnend mit `DESIGN_FREEZE.md`.
-3. `python scripts/project.py doctor` ausführen.
-4. `python scripts/project.py smoke` ausführen.
-5. Erst Blockout, dann Silhouette-Review, dann Federn/Materialien, dann Rig.
+3. [Aktuelle Agent-Übergabe](docs/agent-handoff.md) lesen: geprüfter Stand,
+   Ausgangsszene, nächste Aufgabe, Befehle und bekannte Fallstricke.
+4. `python scripts/project.py doctor` und die dort genannten Bestandschecks ausführen.
+5. Beim nächsten offenen Goal fortsetzen; bereits akzeptierte Meilensteine erhalten.
+
+Dokumentationsindex: [docs/README.md](docs/README.md).
+Der nächste Produktionsauftrag ist [#6](https://github.com/KreutzM/Owli-3d/issues/6);
+konkreter Einstieg: [Startplan #6](docs/next-goal-6.md).
 
 ## Kernreferenzen
 

@@ -1,5 +1,9 @@
 # Fixed four-view validation studio
 
+Current continuation state and accepted input scene:
+[agent handoff](agent-handoff.md). The sections below describe milestone recipes;
+do not regenerate accepted evidence merely to begin a new goal.
+
 The authoritative recipe is `validation/reference_views.json`: cameras, five
 neutral white area lights, world, color management, resolution and reference
 panels. Coordinates use meters and +Y faces Owli's front. The existing camera
@@ -250,3 +254,31 @@ is `beak_geometry.set_open(root,value)`, for [0,1] over the documented degree ra
 Final speech animation, rig controls and combined head/face pose validation follow
 separately. The manual report and hash-bound three-criterion review must be authored
 after inspecting all four neutral reference views and the visible opening probes.
+
+## Connected feet and opposed perch grip (#5)
+
+`python scripts/feet_review.py` validates the accepted #17 evidence and historical
+bindings, then works from a copied `owli_beak_v01.blend`. Production entry point:
+`40_feet_perch.py`; parameters: `design/feet.json`. The dedicated saved output is
+`blender/scene/owli_feet_v01.blend`, with permanent evidence and a separate manual
+three-criterion decision under `validation/reviews/feet_v01/`.
+
+Actual Blender checks audit connected quad skins and separate closed claws,
+branch adjacency, triangle clipping against the real faceted bar, nearest-surface
+contact and weight-bearing pad crown support. Independent surface pairs allow
+only matching terminal-cap contacts; structural attachment joints are documented.
+Build repetition, half/double scaling, parameter limits, deliberately invalid
+grips, preservation of 37 other meshes and three pivots, and two fresh saved-scene
+reloads are checked. Canonical four-view pixels match across both reloads.
+
+Full reference boards retain production visibility. Grip details are recorded
+pixel crops from those renders, without a camera change. Additional explicitly
+isolated toe views reveal normally occluded rear tips. Provisional gray perch
+inspection shading must not be mistaken for final #18 lookdev.
+
+For read-only integrity checks run the tests or `validate_feet_delivery` as shown
+in the [repo map](repository-map.md). The previous guide stage and CLI source are
+byte-exact archives. `scripts/history_bindings.py` audits the metadata-only
+dependency relocation recorded under `validation/history/pre_feet_v01/`; scenes,
+pixels and prior visual decisions did not change. Future source changes must
+preserve or legitimately regenerate this chain, not bypass its hash checks.

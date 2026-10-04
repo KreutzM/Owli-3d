@@ -1,5 +1,11 @@
 # Repository- und Werkzeugprüfung — 2026-10-03
 
+> Historischer Erstaudit. Die unten genannten offenen Issues und fehlenden
+> Studio-/Produktionsfunktionen beziehen sich auf den 03.10., nicht auf den
+> aktuellen Stand. Verbindliche Fortsetzung und erneut geprüfte Werkzeuge:
+> [Agent-Übergabe vom 04.10.](agent-handoff.md). #2–#5 sind inzwischen abgeschlossen;
+> Studio, Primärformen, Gesicht, Schnabel und Produktionsfüße haben eigene Nachweise.
+
 ## Produktionsauftrag
 
 V1 ist ein organischer, stilisierter Owli-Avatar auf einer Stange. Zuerst

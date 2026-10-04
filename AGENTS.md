@@ -17,6 +17,11 @@ V1 is a perched avatar. Owli does not need to fly.
 7. `references/manifest.json`
 8. `validation/checklist.json`
 
+After this required sequence, read `docs/agent-handoff.md` for the latest accepted
+scene, remaining goals, reproduction commands and historical evidence constraints.
+For the next open production goal, also read its linked GitHub issue and the
+corresponding continuation plan; do not restart completed milestones from scratch.
+
 ## Reference authority
 
 When visual references disagree, use this priority:
