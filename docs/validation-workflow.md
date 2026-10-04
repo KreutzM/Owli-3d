@@ -85,3 +85,30 @@ The original logo remains rank 1 for brand/face/color, and the parts/lookdev she
 rank 3 for construction/material intent. Image ambiguities do not override the
 explicit 3 forward + 1 rear rule. Findings, deviations and any justified future
 projection/scale change belong in `docs/decisions.md`.
+
+## Parameterized coarse blockout (#13)
+
+```powershell
+python scripts/project.py blockout-review
+```
+
+Builds scene setup, coarse volumes and 3+1 gripping foot guides in isolation.
+Rebuilds must preserve geometry and object/mesh/material counts. Parameter probes
+exercise eye spacing/depth, beak projection, wing mass, tail position and global
+character/perch scale; probes are restored before rendering. The saved milestone
+is reopened in a fresh Blender process, inspected and rerendered. All four 1024px
+images must be pixel-identical within the same render environment.
+
+Outputs: `blender/scene/owli_blockout_v01.blend` (LFS), four renders, reference
+comparison boards, contact sheet, manifest and verification under
+`validation/reviews/blockout_v01/`. Manually reviewed findings belong in its
+`report.md`, which generation preserves. The production file is unaffected.
+`design/proportions.json` stores all dimensions at reference height in meters;
+`character_spec.json` scales the complete scene. Ring schemas and provisional
+choices are documented in `docs/decisions.md`. Both stages preserve a loaded
+Blend's filename when saving, so milestone edits remain in the selected scene.
+
+`setup-review` refreshes the neutral studio fixture from the same coarse forms,
+clearing its debug material slots. Its evidence also includes the model probes
+and design-source hashes. It remains a studio check, separate from silhouette
+approval in #14. Neither command creates final materials, rig or flight geometry.

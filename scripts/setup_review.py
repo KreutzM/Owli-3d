@@ -49,13 +49,13 @@ def reference_image(root, file, crop):
     return image.crop(crop) if crop else image
 
 
-def review_boards(root, output, cfg):
+def review_boards(root, output, cfg, milestone="fixed studio setup fixture"):
     title_font = ImageFont.load_default(size=28)
     font = ImageFont.load_default(size=20)
     small = ImageFont.load_default(size=16)
     contact = Image.new("RGB", (2112, 2272), "#f3f4f6")
     contact_draw = ImageDraw.Draw(contact)
-    contact_draw.text((32, 16), "Owli | fixed studio setup fixture | no design approval", font=title_font, fill="#17233c")
+    contact_draw.text((32, 16), f"Owli | {milestone} | no design approval", font=title_font, fill="#17233c")
     for index, view in enumerate(cfg["views"]):
         name = view["name"]
         with Image.open(output / f"{name}.png") as source:
@@ -65,8 +65,8 @@ def review_boards(root, output, cfg):
         contact_draw.text((32+col*1056, 64+row*1080), name, font=font, fill="#17233c")
         board = Image.new("RGB", (1536, 1240), "#f3f4f6")
         draw = ImageDraw.Draw(board)
-        draw.text((20, 15), f"{name} | technical setup fixture", font=title_font, fill="#17233c")
-        draw.text((20, 58), "Fixed camera / neutral clay / 1024 px", font=font, fill="#17233c")
+        draw.text((20, 15), f"{name} | {milestone}", font=title_font, fill="#17233c")
+        draw.text((20, 58), "Fixed camera / provisional surfaces / 1024 px", font=font, fill="#17233c")
         board.paste(render, (20, 100))
         panel = view["reference_panel"]
         ref = reference_image(root, view["reference"], panel["crop_px"])
@@ -86,15 +86,15 @@ def review_boards(root, output, cfg):
     contact.save(output / "contact_sheet.png")
 
 
-def build_review(root, blender):
-    root = Path(root)
+def build_review(root, blender, milestone="setup"):
+    root = Path(root).resolve()
     subprocess.run([sys.executable, str(root / "scripts/validate_project.py"), "--strict-assets"], cwd=root, check=True)
     cfg_path = root / "validation/reference_views.json"
     cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
     scratch_parent = root / "tmp"
     scratch_parent.mkdir(exist_ok=True)
-    output = root / "validation/reviews/setup"
-    scene_output = root / "blender/scene/owli_validation_setup.blend"
+    output = root / "validation/reviews" / milestone
+    scene_output = root / "blender/scene" / ("owli_validation_setup.blend" if milestone == "setup" else "owli_blockout_v01.blend")
     scripts = root / "scripts/blender"
     with tempfile.TemporaryDirectory(prefix="studio-review-", dir=scratch_parent) as scratch:
         scratch = Path(scratch)
@@ -109,7 +109,19 @@ def build_review(root, blender):
             "from validation_setup import read_config\n"
             f"for stage in {[str(scripts / name) for name in ('00_scene_setup.py', '10_blockout.py', '40_feet_perch.py')]!r}:\n"
             "    runpy.run_path(stage, run_name='__main__')\n"
+            "import bpy\n"
+            "from verify_blockout import inspect, exercise\n"
+            "model_checks = dict(inspect(Path.cwd()), **exercise(Path.cwd()))\n"
+            "Path('blockout_checks.json').write_text(json.dumps(model_checks))\n"
             "before = geometry_digest(read_config(Path.cwd()))\n"
+            "counts = (len(bpy.data.objects), len(bpy.data.meshes), len(bpy.data.materials))\n"
+            f"for stage in {[str(scripts / name) for name in ('10_blockout.py', '40_feet_perch.py')]!r}:\n"
+            "    runpy.run_path(stage, run_name='__main__')\n"
+            "assert geometry_digest(read_config(Path.cwd())) == before, 'Repeated build changed geometry'\n"
+            "assert counts == (len(bpy.data.objects), len(bpy.data.meshes), len(bpy.data.materials)), 'Repeated build leaked datablocks'\n"
+            f"if {milestone!r} == 'setup':\n"
+            "    for obj in bpy.data.objects:\n"
+            "        if obj.type == 'MESH': obj.data.materials.clear()\n"
             f"runpy.run_path({str(scripts / '90_validation.py')!r}, run_name='__main__')\n"
             "assert geometry_digest(read_config(Path.cwd())) == before, 'Renderer changed model geometry'\n"
             "os.environ['OWLI_VERIFY_OUTPUT'] = str(Path('baseline_checks.json').resolve())\n"
@@ -123,7 +135,10 @@ def build_review(root, blender):
         subprocess.run(command + ["--python", str(build_driver)], cwd=scratch, env=env, check=True)
         reload_driver = scratch / "reload.py"
         reload_driver.write_text(
-            "import os, runpy\nfrom pathlib import Path\n"
+            "import os, runpy, sys, json\nfrom pathlib import Path\n"
+            f"sys.path.insert(0, {str(scripts)!r})\n"
+            "from verify_blockout import inspect\n"
+            "Path('reloaded_blockout_checks.json').write_text(json.dumps(inspect(Path.cwd())))\n"
             "os.environ['OWLI_VERIFY_OUTPUT'] = str(Path('reload_before_checks.json').resolve())\n"
             f"runpy.run_path({str(scripts / 'verify_validation_setup.py')!r}, run_name='__main__')\n"
             "os.environ['OWLI_VALIDATION_OUTPUT'] = str(Path('validation/reloaded').resolve())\n"
@@ -135,7 +150,9 @@ def build_review(root, blender):
         subprocess.run(command + [str(scratch / "blender/scene/owli.blend"), "--python", str(reload_driver)],
                        cwd=scratch, env=env, check=True)
         baseline = json.loads((scratch / "baseline_checks.json").read_text(encoding="utf-8"))
-        checks = {"baseline": baseline}
+        checks = {"blockout_checks": json.loads((scratch / "blockout_checks.json").read_text()),
+                  "reloaded_blockout_checks": json.loads((scratch / "reloaded_blockout_checks.json").read_text()),
+                  "baseline": baseline, "repeated_build_identical": True, "repeated_datablock_counts_identical": True}
         for key in ("reload_before", "reload_after"):
             data = json.loads((scratch / f"{key}_checks.json").read_text(encoding="utf-8"))
             if data != baseline:
@@ -157,7 +174,8 @@ def build_review(root, blender):
                       recipe_sources={str(path.relative_to(root)).replace("\\", "/"): sha256(path) for path in
                                       (root / "scripts/project.py", root / "scripts/setup_review.py", root / "scripts/validation_config.py")},
                       fixture_sources={name: sha256(scripts / name) for name in
-                                       ("00_scene_setup.py", "10_blockout.py", "40_feet_perch.py", "90_validation.py", "validation_setup.py", "verify_validation_setup.py")},
+                                       ("00_scene_setup.py", "10_blockout.py", "40_feet_perch.py", "90_validation.py", "validation_setup.py", "verify_validation_setup.py", "blockout_geometry.py", "verify_blockout.py")},
+                      design_sources={name: sha256(root / "design" / name) for name in ("proportions.json", "character_spec.json", "materials.json")},
                       design_approval=False)
         # Only replace evidence after both fresh Blender processes pass all checks.
         output.mkdir(parents=True, exist_ok=True)
@@ -167,5 +185,5 @@ def build_review(root, blender):
         shutil.copy2(scratch / "blender/scene/owli.blend", scene_output)
         checks["scene_sha256"] = sha256(scene_output)
         (output / "verification.json").write_text(json.dumps(checks, indent=2) + "\n", encoding="utf-8")
-        review_boards(root, output, cfg)
+        review_boards(root, output, cfg, milestone)
     print(f"SETUP REVIEW OK: 1024px, fixed cameras/lights, identical reload pixels. Evidence: {output}")

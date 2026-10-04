@@ -49,18 +49,20 @@ class ValidationStudioTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "overexposed"):
                 image_metrics(path)
 
-    def test_stored_review_matches_current_config_sources_and_pixels(self):
-        review = ROOT / "validation/reviews/setup"
+    def check_stored_review(self, milestone, scene):
+        review = ROOT / "validation/reviews" / milestone
         verification = json.loads((review / "verification.json").read_text(encoding="utf-8"))
         manifest = json.loads((review / "render_manifest.json").read_text(encoding="utf-8"))
         digest = hashlib.sha256((ROOT / "validation/reference_views.json").read_bytes()).hexdigest()
         self.assertEqual(verification["config_sha256"], digest, "Regenerate setup-review after changing the studio")
         self.assertEqual(manifest["config_sha256"], digest)
-        self.assertEqual(hashlib.sha256((ROOT / "blender/scene/owli_validation_setup.blend").read_bytes()).hexdigest(), verification["scene_sha256"])
+        self.assertEqual(hashlib.sha256((ROOT / "blender/scene" / scene).read_bytes()).hexdigest(), verification["scene_sha256"])
         for name, expected in verification["fixture_sources"].items():
             self.assertEqual(hashlib.sha256((ROOT / "scripts/blender" / name).read_bytes()).hexdigest(), expected, name)
         for path, expected in verification["recipe_sources"].items():
             self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)
+        for name, expected in verification["design_sources"].items():
+            self.assertEqual(hashlib.sha256((ROOT / "design" / name).read_bytes()).hexdigest(), expected, name)
         for file, expected in verification["reference_sha256"].items():
             self.assertEqual(hashlib.sha256((ROOT / "references/approved" / file).read_bytes()).hexdigest(), expected, file)
         for view in self.cfg["views"]:
@@ -71,3 +73,19 @@ class ValidationStudioTests(unittest.TestCase):
         self.assertTrue(verification["reload_before_identical"])
         self.assertTrue(verification["reload_after_identical"])
         self.assertFalse(verification["design_approval"])
+
+    def test_stored_setup_matches_current_sources_and_pixels(self):
+        self.check_stored_review('setup', 'owli_validation_setup.blend')
+
+    def test_stored_blockout_matches_current_sources_and_pixels(self):
+        self.check_stored_review('blockout_v01', 'owli_blockout_v01.blend')
+        proof = json.loads((ROOT/'validation/reviews/blockout_v01/verification.json').read_text())
+        self.assertTrue(proof['repeated_build_identical'])
+        self.assertTrue(proof['repeated_datablock_counts_identical'])
+        self.assertEqual(set(proof['blockout_checks']), {
+            'separate_spherical_eyes', 'mask_and_tuft_volumes', 'toe_rule_3_plus_1',
+            'rear_guides_behind_perch', 'all_toes_wrap_below_bar', 'no_toe_bar_intersection',
+            'no_rig_or_duplicate_geometry', 'eye_spacing_depth_parameters_effective',
+            'beak_wing_tail_parameters_effective', 'global_scale_all_geometry_effective', 'probe_restore_identical'})
+        self.assertTrue(all(proof['blockout_checks'].values()))
+        self.assertTrue(all(proof['reloaded_blockout_checks'].values()))
