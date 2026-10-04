@@ -128,3 +128,8 @@ exakten Lieferstand; keine blockierenden Findings bleiben. Die konkreten später
 Rig-Prüfungen wurden in den offenen Issues #20–#24 als Abnahmepunkte verankert.
 Die aktuelle Lieferung ist vor Merge ein prüfbarer Kandidat; Issues schließen
 erst nach dem eigenen erfolgreichen PR-Merge.
+
+Der erste Windows-CI-Checkout wandelte 14 historische Review-Logs nach CRLF um;
+die neue strikte Hashprüfung wies sie korrekt zurück. Die gezielte `-text`-Regel
+in `.gitattributes` bewahrt deren ursprüngliche Git-Bytes auf allen Plattformen;
+historische Logs und ihre Freigabebindungen wurden nicht geändert.

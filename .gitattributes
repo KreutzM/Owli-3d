@@ -11,3 +11,6 @@
 *.json text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+
+# Historical review logs are raw byte evidence, including original line endings.
+validation/reviews/independent_interim_after_feet/logs/*.log -text
