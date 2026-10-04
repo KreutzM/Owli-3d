@@ -55,7 +55,7 @@ def review_boards(root, output, cfg, milestone="fixed studio setup fixture"):
     small = ImageFont.load_default(size=16)
     contact = Image.new("RGB", (2112, 2272), "#f3f4f6")
     contact_draw = ImageDraw.Draw(contact)
-    contact_draw.text((32, 16), f"Owli | {milestone} | no design approval", font=title_font, fill="#17233c")
+    contact_draw.text((32, 16), f"Owli | {milestone} | render evidence; see written review", font=title_font, fill="#17233c")
     for index, view in enumerate(cfg["views"]):
         name = view["name"]
         with Image.open(output / f"{name}.png") as source:
@@ -80,7 +80,7 @@ def review_boards(root, output, cfg, milestone="fixed studio setup fixture"):
         else:
             paste_contained(board, ref, (1064, 100, 452, 1024))
         draw.text((20, 1140), f"Reference: {view['reference']} | panel: {panel['label']}", font=font, fill="#17233c")
-        draw.text((20, 1172), "References preserve aspect ratio; no metric alignment or silhouette approval.", font=font, fill="#17233c")
+        draw.text((20, 1172), "References preserve aspect ratio; visual decisions are recorded in the written review.", font=font, fill="#17233c")
         draw.text((20, 1204), "Authority: logo (1), technical turnaround (2), parts/lookdev (3), beauty (4).", font=small, fill="#17233c")
         board.save(output / f"{name}_comparison.png")
     contact.save(output / "contact_sheet.png")

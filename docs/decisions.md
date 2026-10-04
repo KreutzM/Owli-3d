@@ -104,3 +104,49 @@ checks repeat builds without object/mesh/material leaks, probe eye spacing/depth
 beak/wing/tail edits and uniform scale, restore the baseline, render four views,
 then reopen and rerender in a fresh Blender process. Controlled parameter probes
 are tests, not new design iterations or alternate approved character designs.
+
+## 2026-10-04 — Four-view coarse silhouette freeze (#14)
+
+The #13 baseline was reviewed simultaneously against logo 00 (face/brand/color),
+technical turnaround 07 (volume/profile/back), and parts 08 (beak/feet). It showed
+undersized eye read, an oversized shield-like cream chest, exposed leg columns,
+and a tail terminating too high in the back. Parameters now cover more of the
+legs with the lower body, shorten the cream chest into a tapered V, add two broad
+orange chest masses, enlarge eyes from 0.086 to 0.098 m diameter, move their centers
+from Y=0.096 to Y=0.074, widen/shorten the coarse beak projection, lower wing tips,
+and extend the centered tail below the perch bar. Tufts now sweep inward at their
+tips, and the brow tilt is reduced from 0.20 to 0.08 rad after a stern-expression
+finding. Mask lobes are narrowed to avoid broad cream side protrusions in back.
+
+Iterations are retained under validation/reviews/blockout_v01/iterations/:
+13_baseline, 14_iteration_01 and 14_iteration_02. Each includes four original
+renders and reference boards, parameters and verification. Iteration 01 was
+rejected for excessive eye projection; iteration 02 for stern brows and broad
+cream temple edges. The final iteration resolves these coarse placement blockers.
+Tiny cream temple seams remain a topology/feather integration task, not a large
+volume error. Overlapping component joins and smooth bulb-like primary masses
+are intentionally coarse; later topology must preserve the frozen outer envelope.
+
+Two orange chest masses are color/volume guides, not individual detailed feathers.
+A single sparse cyan graph reserves the forehead motif's position from logo/parts
+references. It is a matte geometry guide, not the finished emissive tech asset.
+Upper points can be visible above the head from back/profile; there is no second
+rear symbol. Final feather integration, emission and node styling belong to #18.
+No new design art, flight geometry, fine feather layers or rig was introduced.
+
+The coarse silhouette and face arrangement are frozen to the explicit hashes and
+12 reasoned checklist results in design/silhouette_freeze.json, with visible
+findings in validation/reviews/blockout_v01/report.md. This freezes the large
+head/body/wing/tail/beak envelope, seated pose and eye/mask placement. It does not
+approve production topology, deformation, final materials, eyelids, cornea,
+individual feather groups, final claw mechanics or animation. Those goals must
+respect this envelope; a later substantial silhouette change requires a new
+four-view review and an updated freeze decision, rather than changing cameras.
+
+The fixed studio remains unchanged. Technical verification never grants visual
+approval automatically: its design_approval=false refers to the automated check.
+The separately authored silhouette_freeze.json is the visual decision. It binds
+current parameters, checklist, camera recipe, reference hierarchy, source images,
+saved Blend and four final images. CI rejects missing checklist entries, blocking
+findings, wrong reference ranks or changed/stale freeze artifacts. The neutral
+setup fixture is refreshed separately from the same current primary volumes.
