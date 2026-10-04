@@ -1,0 +1,186 @@
+[
+  {
+    "name": "doctor",
+    "command": [
+      "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/project.py",
+      "doctor"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "validate",
+    "command": [
+      "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/project.py",
+      "validate"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "unittest",
+    "command": [
+      "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "compileall",
+    "command": [
+      "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-m",
+      "compileall",
+      "-q",
+      "scripts"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/project.py",
+      "smoke"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "scene-a",
+    "command": [
+      "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+      "--background",
+      "blender/scene/owli_feet_v01.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "validation/reviews/independent_interim_after_feet/inspect_scene.py"
+    ],
+    "env": {
+      "OWLI_INTERIM_MODE": "neutral",
+      "OWLI_INTERIM_OUTPUT": "tmp/independent-review-33/scene-a"
+    },
+    "cwd": "repository root",
+    "exit": 0
+  },
+  {
+    "name": "scene-b",
+    "command": [
+      "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+      "--background",
+      "blender/scene/owli_feet_v01.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "validation/reviews/independent_interim_after_feet/inspect_scene.py"
+    ],
+    "env": {
+      "OWLI_INTERIM_MODE": "neutral",
+      "OWLI_INTERIM_OUTPUT": "tmp/independent-review-33/scene-b"
+    },
+    "cwd": "repository root",
+    "exit": 0
+  },
+  {
+    "name": "probes",
+    "command": [
+      "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+      "--background",
+      "blender/scene/owli_feet_v01.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "validation/reviews/independent_interim_after_feet/inspect_scene.py"
+    ],
+    "env": {
+      "OWLI_INTERIM_MODE": "probes",
+      "OWLI_INTERIM_OUTPUT": "tmp/independent-review-33/probes"
+    },
+    "cwd": "repository root",
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "--background",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction\\tmp\\feet\\prototype.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\scripts\\blender\\feet_evidence.py"
+    ],
+    "cwd": "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction",
+    "mode": "build",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "--background",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction\\tmp\\feet\\prototype.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\scripts\\blender\\feet_evidence.py"
+    ],
+    "cwd": "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction",
+    "mode": "reload_a",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "--background",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction\\tmp\\feet\\prototype.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\scripts\\blender\\feet_evidence.py"
+    ],
+    "cwd": "D:\\Codex\\Owli-Tech\\Owli-3d\\tmp\\independent-review-33\\feet-reproduction",
+    "mode": "reload_b",
+    "exit_code": 0
+  },
+  {
+    "name": "history-rerun",
+    "command": [
+      "python",
+      "validation\\reviews\\independent_interim_after_feet\\history_audit.py"
+    ],
+    "cwd": "repository root",
+    "exit": 0
+  },
+  {
+    "name": "corners-rerun",
+    "command": [
+      "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+      "--background",
+      "blender/scene/owli_feet_v01.blend",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "validation\\reviews\\independent_interim_after_feet\\parameter_corners.py"
+    ],
+    "cwd": "repository root",
+    "exit": 0
+  },
+  {
+    "name": "coarse-rerun",
+    "command": [
+      "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+      "--background",
+      "--factory-startup",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "D:\\Codex\\Owli-Tech\\Owli-3d\\validation\\reviews\\independent_interim_after_feet\\history_coarse.py"
+    ],
+    "cwd": "tmp/history-coarse",
+    "exit": 0
+  }
+]

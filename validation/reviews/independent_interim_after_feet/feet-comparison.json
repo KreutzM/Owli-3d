@@ -1,0 +1,22 @@
+{
+  "reload_checks_identical": true,
+  "accepted_build_checks_identical": true,
+  "pixels": {
+    "VAL_FRONT": {
+      "reload_pixels_identical": true,
+      "accepted_pixels_identical": true
+    },
+    "VAL_LEFT": {
+      "reload_pixels_identical": true,
+      "accepted_pixels_identical": true
+    },
+    "VAL_BACK": {
+      "reload_pixels_identical": true,
+      "accepted_pixels_identical": true
+    },
+    "VAL_3Q": {
+      "reload_pixels_identical": true,
+      "accepted_pixels_identical": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "baseline_commit": "ee48046b792e3647f454bc4223788271283542b9",
+  "scene_sha256": "0fb1512b3a27c4ebe5b7cbdebf520643b7208f2c74f8a847545ffc51dda66797",
+  "scene_bytes": 1020254,
+  "scene_inspections_identical": true,
+  "pixels": {
+    "VAL_FRONT": {
+      "two_fresh_processes_pixel_identical": true,
+      "accepted_render_pixel_identical": true
+    },
+    "VAL_LEFT": {
+      "two_fresh_processes_pixel_identical": true,
+      "accepted_render_pixel_identical": true
+    },
+    "VAL_BACK": {
+      "two_fresh_processes_pixel_identical": true,
+      "accepted_render_pixel_identical": true
+    },
+    "VAL_3Q": {
+      "two_fresh_processes_pixel_identical": true,
+      "accepted_render_pixel_identical": true
+    }
+  },
+  "full_scene_evaluated_bounds_m": [
+    [
+      -0.1850000023841858,
+      -0.13367730379104614,
+      0.0
+    ],
+    [
+      0.1850000023841858,
+      0.15341782569885254,
+      0.5427436828613281
+    ]
+  ],
+  "surface_pair_count": 1225,
+  "intersection_pairs": 65,
+  "note": "BVH intersections include intentional attachment and touching contacts; see written classification. No universal intersection/physics or visual approval claim."
+}

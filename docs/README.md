@@ -2,6 +2,9 @@
 
 Für einen neuen Agenten: **[Aktueller Übergabestand](agent-handoff.md)**.
 
+- [Unabhängiges Zwischenreview nach #5](reviews/independent-interim-after-feet.md):
+  tatsächliche Blender-Prüfung, Referenzvergleich, Reproduktion, Findings und
+  Bedingungen für #6; Folgearbeit #34/#35.
 - [Repo-Karte](repository-map.md): Dateien, akzeptierte Artefakte und Prüf-APIs.
 - [Nächster Auftrag #6](next-goal-6.md): vollständiger Bauauftrag, Bindungsstrategie
   und konkrete Abschlussnachweise für Flügel/Körper-/Schwanzfedergruppen.

@@ -1,0 +1,17 @@
+{
+  "archived_coarse_signature": "3b37663f1510b23daa185028ca89caf6cdfbe6e5e9991317675453ca2ef42cc5",
+  "current_dispatch_signature": "3b37663f1510b23daa185028ca89caf6cdfbe6e5e9991317675453ca2ef42cc5",
+  "archived_coarse_geometry": "55ab04fd95adf20ad6d53c2c8feb616b8bd746d81307c3b45f84ef68029195b4",
+  "current_dispatch_geometry": "55ab04fd95adf20ad6d53c2c8feb616b8bd746d81307c3b45f84ef68029195b4",
+  "before_counts": [
+    55,
+    47,
+    7
+  ],
+  "after_counts": [
+    55,
+    47,
+    7
+  ],
+  "identical": true
+}
