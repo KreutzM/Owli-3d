@@ -61,7 +61,7 @@
     "evidence/open/full/VAL_LEFT.png": "ff4371d186f584065455f0211c796fcefea2a72befc2bbc283f9807ed3f39cbc",
     "render_manifest.json": "cd13f1ed6a0604febe9a8ec34340807b38bab39b672844183731177cd9d50270",
     "report.md": "86deb670168f27fbfc85ade544ef0956bff5c01391377a913df48abde1e03c8f",
-    "verification.json": "f1f03116066258a8413d6f87821281a3c6f0646b6014759472515522c0ef3520"
+    "verification.json": "511177b03189034a11888941b80a795ad59e515bd008c6184d300eb8ebe22b3f"
   },
   "limits": [
     "Tested geometric opening range 0\u201318 degrees; final rig/combined poses follow separately.",

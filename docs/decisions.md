@@ -272,3 +272,49 @@ are compared to #16; the narrow physical seam may remove a small interior stripe
 but must not redesign the exterior envelope. No camera or light changes hide the
 open jaw. Final shader tuning and combined avatar rig/pose validation remain later
 work; the geometry probe pivot is prepared for the future `beak_open` control.
+
+## 2026-10-04 — #5 connected feet and opposed perch grip
+
+Turnaround 07 defines the compact perched pose; parts/lookdev 08 defines thick
+orange toes and separate dark hooked keratin claws. Each foot now has one editable
+quad skin joining the pad, ankle and exactly three front branches plus one rear
+branch. The pad uses a cube-to-ellipsoid quad lattice with four open toe ports and
+an ankle port. Swept rings reuse those boundaries; there are no disconnected toe
+roots, hidden internal root caps or voxel/remesh surfaces. Separate closed claw
+meshes meet the distal toe caps and continue the opposing hooks below the bar.
+
+The grip follows the real 128-sided bar surface. Contact samples use the same
+angular intervals as the bar faces, so a polygon chord cannot accidentally sink
+through a mathematically circular guide. `verify_feet.py` checks closed connected
+surfaces, consistent outward normals, self intersections, each branch's actual
+mesh adjacency, signed halfspaces of the actual bar and triangle clipping against
+its interior. Contact requires a nearest-surface distance below 0.2 micrometers;
+that tolerance accommodates Blender float precision rather than a visible gap.
+
+The bar, stem and base keep their original outside dimensions and gain rounded
+ends and quad caps. Their structural intersections are intended joints. The ankle
+extends into the body for the later foot/leg rig. `design/feet.json` permits a
+16–22 mm bar radius and 50–62 mm foot half spacing. Increasing the radius raises
+the pad correspondingly to preserve support contact at the bar crown. Changes within these
+ranges still require a new four-view visual review. The nominal values match the
+approved coarse bar dimensions and foot spacing. The pad is lowered 1.5 mm from
+the old guide position so its underside actually supports weight at the crown.
+The dark claw starts at 101.25 degrees and continues to 157.5 degrees, making its
+hooked shape distinct from the orange skin. A neutral gray perch inspection shader
+separates the claws visually from the bar. Final brushed metal, cyan accents and
+keratin shaders remain the separately planned #18 lookdev goal.
+
+The development gates preserve all 37 unrelated predecessor meshes, repeat builds
+identically, exercise half/double global scale and both permitted parameter limits,
+and reject deliberately floating, penetrating and incorrectly placed rear claws.
+The production entry point is `40_feet_perch.py`; scenes before #4 retain the
+byte-exact archived coarse stage. The historical dependency relocation is audited
+under `validation/history/pre_feet_v01/` without changing prior scene bytes,
+pixels, criteria or approval decisions. The new saved scene is
+`blender/scene/owli_feet_v01.blend`; permanent four-view comparisons and the
+separate foot geometry decision are under `validation/reviews/feet_v01/`.
+Two fresh Blender reloads reproduce identical geometry and pixels in all four
+fixed cameras. The profile exposes the rear hook; the full 3/4 view shows its base
+while the bar naturally occludes the lowest tip. The explicitly isolated toe
+view resolves that anatomy without changing the camera. No blocking geometry
+finding remains for this milestone; final avatar controls follow in the rig goals.

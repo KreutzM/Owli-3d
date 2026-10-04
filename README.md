@@ -77,8 +77,9 @@ Technischer Review: [Setup-Bericht](validation/reviews/setup/report.md).
 
 Alle neun Referenz-PNGs sind vorhanden. Blockout und grobe Silhouette (#3) sind
 abgeschlossen. #15 liefert eine zusammenhängende, bearbeitbare Kopf-/Hals-/Torsofläche
-und symmetrische grobe Brow-/Ohrbüschelformen. Augen/Maske/Lider (#16), Schnabel (#17),
-Flügeltopologie, Krallen, Materialien, Rig und Animationen folgen unter Epic #11.
+und symmetrische grobe Brow-/Ohrbüschelformen. Augen/Maske/Lider (#16), Schnabel (#17)
+und zusammenhängende Füße/Krallen mit Stangengriff (#5) haben eigene geprüfte
+Meilensteine. Flügeltopologie, Materialien, Rig und Animationen folgen unter Epic #11.
 
 Große Blender-/3D-Artefakte sind für Git LFS vorgesehen.
 
@@ -110,3 +111,13 @@ Ober-/Unterschnabel und Öffnungsproben (#17) entstehen mit
 getrennten Schnabelteile mit dokumentiertem Unterkiefer-Pivot; der geschlossene
 Zustand erhält den geprüften Umriss. Nachweise und Grenzen stehen im
 [Schnabel-Review](validation/reviews/beak_v01/report.md).
+
+Füße, acht getrennte Krallen und die abgerundete Stange (#5) entstehen mit
+`python scripts/feet_review.py` aus dem geprüften Schnabelstand. Parameter:
+[`design/feet.json`](design/feet.json). LFS-Szene: `blender/scene/owli_feet_v01.blend`.
+Der [Fuß-Review](validation/reviews/feet_v01/report.md) enthält vier unveränderte
+Ansichten, Griffdetails, echte Kontakt-/Topologieprüfungen und Grenzen des
+Meilensteins. `40_feet_perch.py` baut nach #4 die Produktionsfüße; frühere
+Blockout-Szenen verwenden weiterhin den archivierten groben Zehenguide-Stand.
+Die Herkunft der alten Review-Nachweise bleibt über
+[historische Bindungen](validation/history/pre_feet_v01/README.md) nachvollziehbar.
