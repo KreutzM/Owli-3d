@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "milestone": "face_v01",
+  "status": "face_geometry_accepted",
+  "reviewer": "Codex manual visual inspection of approved references and actual fixed-camera neutral/blink/gaze renders",
+  "reference_authority": [
+    "00_original_logo.png",
+    "07_turnaround_technical.png",
+    "08_parts_lookdev_technical.png"
+  ],
+  "blocking_findings": [],
+  "criteria": [
+    {
+      "id": "layered_eyes_and_aim_pivots",
+      "result": "pass",
+      "reason": "Separate volumetric globe, annular iris, pupil and cornea meshes have frozen sphere-center pivots and no eye-layer surface intersections. Actual +/-12-degree aim probes preserve child placement and clearance.",
+      "evidence": [
+        "verification.json",
+        "evidence/layers/VAL_3Q.png",
+        "evidence/cornea_geometry/VAL_3Q.png",
+        "evidence/look_left/VAL_FRONT.png"
+      ]
+    },
+    {
+      "id": "readable_collision_free_mask",
+      "result": "pass",
+      "reason": "Front and 3/4 comparisons retain the logo-governed bright cream face around the two large cyan/blue eyes. Thick annular openings replace closed coarse lobes; actual BVH pair checks find no mask intersection with either eye or the beak.",
+      "evidence": [
+        "verification.json",
+        "VAL_FRONT_comparison.png",
+        "VAL_3Q_comparison.png"
+      ]
+    },
+    {
+      "id": "full_blink_without_penetration_or_gaps",
+      "result": "pass",
+      "reason": "Forty-one mesh states are closed and free of self intersections; every rendered lid triangle clears the cornea by at least 1.0248 mm. At full closure front/back seams coincide exactly and 10,034 rays cover both complete cornea apertures. Front, profile and 3/4 views show a contact seam without exposed iris.",
+      "evidence": [
+        "verification.json",
+        "evidence/closed/VAL_FRONT.png",
+        "evidence/closed/VAL_LEFT.png",
+        "evidence/closed/VAL_3Q.png",
+        "evidence/half/VAL_FRONT.png",
+        "evidence/wink_L/VAL_FRONT.png"
+      ]
+    },
+    {
+      "id": "four_view_friendly_face",
+      "result": "pass",
+      "reason": "All four fixed reference comparisons preserve frozen eye spacing/depth, large attentive eyes, cream mask, orange beak and the unchanged body/head silhouette. Back shows no eye protrusion; profile and 3/4 expose real depth. Final gloss/network motifs and feather layers remain explicitly deferred.",
+      "evidence": [
+        "VAL_FRONT_comparison.png",
+        "VAL_LEFT_comparison.png",
+        "VAL_BACK_comparison.png",
+        "VAL_3Q_comparison.png",
+        "contact_sheet.png",
+        "report.md"
+      ]
+    }
+  ],
+  "evidence_sha256": {
+    "VAL_3Q_comparison.png": "e50c5b6537daacaddc81958e2d0d6340bb1026c597165d5654acc05db5681f72",
+    "VAL_BACK_comparison.png": "0e890642fe986dfea22617a6d7550a6aafa5f98182c95fb46e01344ca142b768",
+    "VAL_FRONT_comparison.png": "6862f5be4b6f6fe3b0258dd291ff07686486516bbf1394fa619a32b6bddd472a",
+    "VAL_LEFT_comparison.png": "6776bf35b80e0bdcf0c91a04be59eb317b200e70b61639b2cb9a258aea06e313",
+    "contact_sheet.png": "c4e7b443a735ed8c4c0ed583b162593e5930780fc5824f74a2303e4804cbc1f3",
+    "evidence/closed/VAL_3Q.png": "1276e51b5434ee1abfba30ad9443f6b1d9e252b65486921016a2cc5600c87338",
+    "evidence/closed/VAL_FRONT.png": "c1f441b93e8de10ce6b80b985222e8d0f94d8292cc8006132ef5a458e787267f",
+    "evidence/closed/VAL_LEFT.png": "176ba1c6a4c630000402f43a1aa0e4c5daf4aba0ee9f6e70c1e926d9e5db6e50",
+    "evidence/cornea_geometry/VAL_3Q.png": "2d181909d32786269268a6cf011a0fd5754952961c4c009bd6af657fca7d3095",
+    "evidence/half/VAL_FRONT.png": "f3111d3534c363ef57edd8f3ce52b11632043212d9706dad8a61b6035647e0ba",
+    "evidence/layers/VAL_3Q.png": "ac89cb5c3ef1a90938033801669490df4cdb1ba3ce1d0ec3b6c5baa94c47f664",
+    "evidence/look_left/VAL_FRONT.png": "52fb41742cb7819d0aafb4ad30e81149c45b4120537a144faef84eb8efff605d",
+    "evidence/wink_L/VAL_FRONT.png": "ab3fe77d8e22bbe3acd290121c8ee163fcb8938fc34dbd25390d719d6342e06e",
+    "render_manifest.json": "168598a1689390d4ef3015d6b96b7919e30ca05083fb82422349be29933f9ef3",
+    "report.md": "bbb1e89a74b4d2e5c18cc4c3ede96d8ddc4ce517bf6f2c4dbe46075070511596",
+    "verification.json": "aa0fa18f89786dc2aecb4dfc164a0e0b7fae68e030e2424fe09e2b39458f1299"
+  },
+  "limits": [
+    "Diagnostic matte eye colors and transparent cornea; final shaders/network motifs deferred.",
+    "All-quad spherical lid probe construction; final animatable controls and head attachment deferred.",
+    "Visible canthus/closed contact seams are intentional; facial feather groups follow later.",
+    "Tested gaze is +/-12 degrees; broader and combined rig poses need separate validation.",
+    "Coarse beak unchanged for #17; parent #4 remains open."
+  ]
+}

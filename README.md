@@ -97,3 +97,10 @@ Gespeicherter LFS-Stand: `blender/scene/owli_head_body_v01.blend`.
 Vieransichten-, Topologie- und Verformungsnachweise:
 [`Head-/Body-Review`](validation/reviews/head_body_v01/report.md).
 Der ursprüngliche Blockout bleibt als eingefrorener Vergleichsstand erhalten.
+
+Augen, Gesichtsmaske und geometrische Blinkproben (#16) entstehen mit
+`python scripts/face_review.py`. Der eigene Meilenstein
+`blender/scene/owli_face_v01.blend` enthält getrennte Augen-/Iris-/Cornea-Meshes,
+Blick-Pivots und parametrische Lider. Dauerhafte Nachweise und Grenzen stehen in
+[validation/reviews/face_v01/report.md](validation/reviews/face_v01/report.md).
+Finale Augenshader und animierbare Rig-Controls folgen separat.

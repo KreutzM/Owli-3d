@@ -164,3 +164,50 @@ cache output is not the canonical delivery. The automated `design_approval=false
 does not grant visual approval; the written report records the four-view decision,
 remaining overlaps and deferred work. CI binds stored proofs to current sources,
 LFS scene and images and recomputes the silhouette gates from their alpha images.
+
+## Layered eyes, mask and geometric blink (#16)
+
+```powershell
+python scripts/face_review.py
+python scripts/project.py validate
+python scripts/project.py smoke
+python -m compileall -q scripts
+python -m unittest discover -s tests -v
+```
+
+The dedicated runner validates the #14 freeze and current #15 source/artifact hashes,
+copies the accepted primary scene into an isolated workspace, and builds the face
+from `design/face.json`. `21_eyes_mask.py` is the reusable production stage. The
+LFS output is `blender/scene/owli_face_v01.blend`; permanent neutral reference boards,
+separate layers/cornea, half/full blink, unilateral blink and four gaze probes live
+under `validation/reviews/face_v01/`. All probes use the same four fixed cameras.
+
+Live Blender checks inspect every new surface for closure, connectedness, normal
+winding, duplicate vertices and nonlocal self intersections. Spherical iris/pupil/
+cornea shells are distinct meshes parented to eye-center aim pivots. Pairwise BVH
+checks reject eye-layer intersections and mask intersections with either eye or
+the existing beak. The mask is a thick annulus with a real opening, not a closed
+ellipsoid covering the eyeball. Genus-one iris/mask shells and rigid spherical
+pole fans are intentional; deforming lid cages are all quads.
+
+`face_geometry.set_blink(root, value)` reconstructs the actual lid cage on its
+clearance sphere for values in [0,1]; a dictionary permits independent L/R values.
+It is a geometric probe API, not a final rig controller. Linear shape-key blending
+would cut through the eye, so the future rig must use nonlinear reconstruction or
+an equivalent sphere-constrained deformation. The verifier exercises 41 positions,
+calculates the exact closest point on every rendered lid triangle, checks BVH
+collisions and audits each resulting shell. At closure, front and back meeting
+edges coincide exactly and over 10,000 rays cover the whole cornea aperture.
+
+Repeated builds must preserve geometry and datablock counts. New face geometry is
+also rebuilt at 80% scale and compared in world coordinates. All 36 unaffected
+meshes retain geometry, transforms, material assignments, weights and subdivision
+settings. Deliberately open/reversed lids, unsafe clearance and the rejected folded
+canthus construction must fail. Two fresh Blender processes inspect the saved
+neutral scene, repeat all blink/gaze checks and produce identical canonical pixels.
+
+CI verifies current source, scene, reference and evidence hashes plus a separately
+authored four-criterion `review.json`. `design_approval=false` in automated output
+does not grant visual acceptance. Final glossy shaders/network iris motifs and
+animatable controls remain in later goals; the transparent cornea inspection
+material reveals geometry beneath it without implying final lookdev approval.
