@@ -1,0 +1,134 @@
+{
+  "snapshot_date": "2026-10-04",
+  "source_commit": "8dcbebac1e8df0487246f818cdd0c3396c9f5265",
+  "source_scene": "blender/scene/owli_feet_v01.blend",
+  "scene_sha256": "0fb1512b3a27c4ebe5b7cbdebf520643b7208f2c74f8a847545ffc51dda66797",
+  "method": "Read-only fresh Blender 5.2.1 LTS open; bpy.data inventory; no file save",
+  "objects": 62,
+  "mesh_objects": 50,
+  "armatures": [],
+  "actions": [],
+  "collections": {
+    "BEAK": [
+      "BAK_LowerPivot",
+      "BAK_Upper",
+      "BAK_Lower"
+    ],
+    "BLOCKOUT": [
+      "BLK_Tail",
+      "BLK_Chest",
+      "BLK_ChestAccent_L",
+      "BLK_ChestAccent_R"
+    ],
+    "CAMERAS": [
+      "VAL_FRONT",
+      "VAL_LEFT",
+      "VAL_BACK",
+      "VAL_3Q"
+    ],
+    "CLAWS": [],
+    "Collection": [],
+    "EYES": [
+      "FAC_EyeAim_L",
+      "FAC_Globe_L",
+      "FAC_Iris_L",
+      "FAC_Pupil_L",
+      "FAC_Cornea_L",
+      "FAC_EyeAim_R",
+      "FAC_Globe_R",
+      "FAC_Iris_R",
+      "FAC_Pupil_R",
+      "FAC_Cornea_R"
+    ],
+    "FEATHERS": [],
+    "FEET": [
+      "GRP_Claw_L_Front_1",
+      "GRP_Claw_L_Front_2",
+      "GRP_Claw_L_Front_3",
+      "GRP_Claw_L_Rear_1",
+      "GRP_Foot_L",
+      "GRP_Claw_R_Front_1",
+      "GRP_Claw_R_Front_2",
+      "GRP_Claw_R_Front_3",
+      "GRP_Claw_R_Rear_1",
+      "GRP_Foot_R"
+    ],
+    "LIGHTS": [
+      "VAL_KEY_FRONT",
+      "VAL_KEY_BACK",
+      "VAL_FILL_FRONT",
+      "VAL_FILL_BACK",
+      "VAL_TOP"
+    ],
+    "PERCH": [
+      "GRP_PerchBar",
+      "GRP_PerchStem",
+      "GRP_PerchBase"
+    ],
+    "PRIMARY_FORM": [
+      "PRI_HeadNeckTorso",
+      "PRI_Tuft_L",
+      "PRI_Brow_L",
+      "PRI_Tuft_R",
+      "PRI_Brow_R",
+      "FAC_Mask_L",
+      "FAC_Lid_Upper_L",
+      "FAC_Lid_Lower_L",
+      "FAC_Mask_R",
+      "FAC_Lid_Upper_R",
+      "FAC_Lid_Lower_R",
+      "FAC_MaskBridge"
+    ],
+    "REFERENCE": [],
+    "RIG": [],
+    "TECH": [
+      "BLK_ForeheadNode_0",
+      "BLK_ForeheadNode_1",
+      "BLK_ForeheadNode_2",
+      "BLK_ForeheadNode_3",
+      "BLK_ForeheadNode_4",
+      "BLK_ForeheadLink_0",
+      "BLK_ForeheadLink_1",
+      "BLK_ForeheadLink_2",
+      "BLK_ForeheadLink_3"
+    ],
+    "WINGS": [
+      "BLK_Wing_L",
+      "BLK_Wing_R"
+    ]
+  },
+  "groups": {
+    "GRP_Foot_L": [
+      "toe_Front_1",
+      "toe_Front_2",
+      "toe_Front_3",
+      "toe_Rear_1"
+    ],
+    "GRP_Foot_R": [
+      "toe_Front_1",
+      "toe_Front_2",
+      "toe_Front_3",
+      "toe_Rear_1"
+    ],
+    "PRI_HeadNeckTorso": [
+      "body",
+      "head_neck",
+      "wing_root_L",
+      "wing_root_R"
+    ]
+  },
+  "materials": [
+    "BLK_Swatch_cream",
+    "BLK_Swatch_cyan_reference",
+    "BLK_Swatch_deep_navy",
+    "BLK_Swatch_mid_blue",
+    "BLK_Swatch_orange_reference",
+    "FAC_CorneaInspection",
+    "GRP_PerchDiagnostic"
+  ],
+  "empty_objects": [
+    "BAK_LowerPivot",
+    "FAC_EyeAim_L",
+    "FAC_EyeAim_R"
+  ]
+}
