@@ -1,0 +1,94 @@
+{
+  "status": "feet_geometry_accepted",
+  "scope": "connected_foot_claw_and_perch_geometry_goal_5",
+  "reviewer": "Codex visual inspection of final full-character, fixed-camera crops and isolated anatomy PNGs",
+  "blocking_findings": [],
+  "criteria": [
+    {
+      "id": "connected_editable_3_plus_1_anatomy",
+      "result": "pass",
+      "reason": "Each orange foot skin is one closed connected quad surface with three separate front branches and one rear branch, with four independently editable closed dark claws. Front/back and isolated 3/4 geometry confirm the actual four digits; all 37 unrelated predecessor meshes are preserved.",
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ],
+      "evidence": [
+        "VAL_FRONT_grip_detail.png",
+        "VAL_BACK_grip_detail.png",
+        "evidence/candidate/toes/VAL_3Q.png",
+        "verification.json"
+      ]
+    },
+    {
+      "id": "opposed_contact_without_penetration_or_floating",
+      "result": "pass",
+      "reason": "The rear toe opposes the three front toes behind the bar and curls below it. Profile exposes the complete opposed grip. The 3/4 production crop shows the rear bases; the isolated unchanged-camera toe view resolves the normally occluded tips. Real pad crown support, triangle clipping, nearest-surface contacts and 45 surface collision pairs establish a mechanically supported grip within Blender float tolerance.",
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ],
+      "evidence": [
+        "VAL_LEFT_grip_detail.png",
+        "VAL_3Q_grip_detail.png",
+        "evidence/candidate/toes/VAL_3Q.png",
+        "verification.json"
+      ]
+    },
+    {
+      "id": "parameterized_secondary_perch_and_four_views",
+      "result": "pass",
+      "reason": "Frozen nominal bar/stem/base outside dimensions are retained with rounded quad ends. Compact feet sit naturally on the crown; the simple support remains secondary in all four full-character comparisons. Radius and placement limits are exposed and exercised, with coupled pad height. Gray perch and diagnostic keratin colors are explicit inspection treatments; the separately scheduled #18 lookdev supplies final shaders.",
+      "references": [
+        {
+          "file": "00_original_logo.png",
+          "rank": 1
+        },
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ],
+      "evidence": [
+        "VAL_FRONT_comparison.png",
+        "VAL_LEFT_comparison.png",
+        "VAL_BACK_comparison.png",
+        "VAL_3Q_comparison.png",
+        "verification.json"
+      ]
+    }
+  ],
+  "known_boundaries": [
+    "Final brushed-metal/cyan/keratin lookdev remains the existing #18 goal.",
+    "Front-facing bar naturally occludes the lowest rear claw tips; the fixed profile and explicitly isolated 3/4 anatomy views expose them.",
+    "Toe groups are anatomical attachments for later rigging, not finished controls."
+  ],
+  "evidence_sha256": {
+    "VAL_3Q_comparison.png": "27f16778e52a9cd92eb5e9498a36a88960bb706430e8e1b793ae601a70619985",
+    "VAL_3Q_grip_detail.png": "5d59536fc3a04fdd259dfcf09260ab1b7f3594f5ae87ec694118a2606f9a8c8a",
+    "VAL_BACK_comparison.png": "6d514ce1df639b1d2f170c4bc4849ad4f0fc93435f087daf52d5c729060a2ca6",
+    "VAL_BACK_grip_detail.png": "aa72a163f5428c38996087030fa15377e4ebcce9bf0977e4bb648376a91ed369",
+    "VAL_FRONT_comparison.png": "3bb475ba8b3fb7d0e3e17b78ab5923672f06f278d226300a0d131b2d9c1ca69b",
+    "VAL_FRONT_grip_detail.png": "4acdb3b1f1f33d4e0d3c1c1f1bfbc7536a6bcb32a8b51605cf56d4b07c1df6b2",
+    "VAL_LEFT_comparison.png": "2d2283fe5951b9b607617f0c1c56bebc4fff377c19a74a631b9dcac99f096c11",
+    "VAL_LEFT_grip_detail.png": "938720a0c1da348d2c6d1f4d9df3688177dfe18646105c3e77d61c563cf61f17",
+    "evidence/candidate/toes/VAL_3Q.png": "b9a05c812f5e7934270e9a66bb3f0f7fcf0ab64aec7b0c32dc5bf61c89ad6744",
+    "report.md": "a971796eb57c495c8ce5f1545358840dc1bfb9e678e80bb1c84b2a14d3b98e16",
+    "verification.json": "2ca08f566395867c35d105298a3771ecd2a106a90a7a092f92b418d8fe6c3b84"
+  }
+}

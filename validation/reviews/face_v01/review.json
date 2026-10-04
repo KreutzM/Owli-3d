@@ -74,7 +74,7 @@
     "evidence/wink_L/VAL_FRONT.png": "ab3fe77d8e22bbe3acd290121c8ee163fcb8938fc34dbd25390d719d6342e06e",
     "render_manifest.json": "168598a1689390d4ef3015d6b96b7919e30ca05083fb82422349be29933f9ef3",
     "report.md": "bbb1e89a74b4d2e5c18cc4c3ede96d8ddc4ce517bf6f2c4dbe46075070511596",
-    "verification.json": "aa0fa18f89786dc2aecb4dfc164a0e0b7fae68e030e2424fe09e2b39458f1299"
+    "verification.json": "d8734066fc026640944f5947db17ea9b07cac9b1763a89846381e9245ea9ee32"
   },
   "limits": [
     "Diagnostic matte eye colors and transparent cornea; final shaders/network motifs deferred.",

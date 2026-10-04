@@ -2396,14 +2396,14 @@
     "08_parts_lookdev_technical.png": "6438c5a11db515e6d73f72a9617d511839b407e1e6c7022b80aa475b2a362488"
   },
   "recipe_sources": {
-    "scripts/project.py": "1275061cfecfdc4b16207e22fa94071f508193f2ec14dfa0fdfa6429d483ccaa",
+    "scripts/legacy/project.py": "1275061cfecfdc4b16207e22fa94071f508193f2ec14dfa0fdfa6429d483ccaa",
     "scripts/setup_review.py": "2f1da790264aea6185396c6a2d9575841ff7742c3beab243a1056d745a43ed0c",
     "scripts/validation_config.py": "60dd8b2ba258736f14c209d6f1285ed9807e6c1609465a876e5f5035e3cbe513"
   },
   "fixture_sources": {
     "00_scene_setup.py": "c0e9b79e375803e30e1e2095e8d52ee4c0feab4f3e112a50dfa2186512ee1556",
     "10_blockout.py": "db89f0e72b2dce7344139aacda1756bd3e1d341a7f10f3c3ef244081fdef2e0f",
-    "40_feet_perch.py": "536ca72bf03a5a850a91210f785c32713c6d35ec2b6c65e482dc8b2871a443ae",
+    "legacy/40_feet_perch.py": "536ca72bf03a5a850a91210f785c32713c6d35ec2b6c65e482dc8b2871a443ae",
     "90_validation.py": "31c7d9d8f370f234e4296070f77e8cc2f32aab91b6b174093b4190890a211fce",
     "validation_setup.py": "d8aeb3b79b237613ad176d6ce97f75062cafa850f4da1f0b21586aa459b53f41",
     "verify_validation_setup.py": "93aa96373f41126b5de209195295e395881de01c7c5d07d3150f71a6b033edbb",

@@ -6632,7 +6632,7 @@
     "design/proportions.json": "c0eb27fe15eabdf3af6c7943d0ef82766c6be31b395ceb62b2cb9255a33e4d45",
     "design/character_spec.json": "55edc6c49d5bb1b3402805f95c5f549fd48839513a54f5098026df07982f326b",
     "design/materials.json": "3720997a6d69f911ca6f07c41dbd708adb74fba6a4a29b6019c66c900105db9f",
-    "design/silhouette_freeze.json": "d1b8c3f073afbd07d88ee86a992cef37fcb0d0ce126a4cc459a3f1097ae4937d",
+    "design/silhouette_freeze.json": "3838a94e272affdf4bd4609879ac09acd834baafd9461bd262f279c940398089",
     "validation/reference_views.json": "b54fc4aa5b6bdf0ba07d7a96006ca207791b397f2374a465ede581855cb9d89f",
     "scripts/beak_review.py": "b9ab2302f6de25223ae766d4d81569f7b7e7f5ad4811254d9cafb0bffaa3769f",
     "scripts/head_body_review.py": "5a41ed583470d778d719567547366fade72d5257c40df6372d1445af24af8986",
