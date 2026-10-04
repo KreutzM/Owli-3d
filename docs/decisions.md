@@ -150,3 +150,50 @@ current parameters, checklist, camera recipe, reference hierarchy, source images
 saved Blend and four final images. CI rejects missing checklist entries, blocking
 findings, wrong reference ranks or changed/stale freeze artifacts. The neutral
 setup fixture is refreshed separately from the same current primary volumes.
+
+## 2026-10-04 — Editable primary head/neck/torso topology (#15)
+
+The #14 outer envelopes remain authoritative. Stage 20 samples evaluated head and
+torso envelopes and replaces both closed overlapping coarse objects with one
+closed, continuous quad shell. Horizontal circumferential loops pass through
+the neck; there are no hidden head-bottom/body-top caps inside this shell.
+Distributed quad-disk caps avoid high-valence polar fans. Brow and swept ear-tuft
+masses become separate closed quad primary volumes, mirrored in X. Their deliberate
+closed attachment roots still overlap the head, as the design calls for feather
+groups; joining those feather roots is separate from eliminating torso/head
+internal surfaces. Face mask, lids, eyes, beak, wings, chest guides, tail and 3+1
+feet are preserved byte-for-byte at mesh/matrix level for their own goals.
+
+Reference authority remains logo 00 for face/color identity, turnaround 07 for
+outer volumes and parts 08 for construction intent. No camera, illumination,
+reference crop, material palette, anatomy or perched/no-flight decision changed.
+The small shape adjustment from replacing coarse subdivision caps and smoothing
+the envelope junction is measured against the old evaluated surfaces and checked
+in full and isolated-primary silhouettes. This is topology refinement within the
+existing freeze, not a new general design or concept-art phase.
+
+Numerical ray/quad tessellation noise in the coarse source is not interpreted as
+an asymmetric design. Paired torso rings are symmetrized, and the right tuft is
+constructed from the left by reflection and reversed winding. Sampling occurs
+at reference scale and the completed cage is uniformly scaled afterward, avoiding
+scale-dependent BVH tessellation. Additional end loops prevent subdivision pulling
+the seated lower-body envelope inward; small insets at the extrema avoid microscopic
+sliver caps. Early diagnostic builds exposed symmetry, cap and scale problems;
+these were fixed before accepting or publishing the milestone.
+
+Body/head weights partition unity with a broad soft transition from Z=0.265 to
+0.385 m; the neck pivot is Z=0.325 m. Independent left/right wing-root masks provide
+soft attachment regions rather than cut-out sockets or a rigid shell. Head tilt
+15 degrees, turn 20 degrees and each wing-root displacement 12 mm are exercised
+on the actual cage and subdivided result. Weights are preparation, not final rig
+approval: facial/tuft attachments, wing deformation, final bone layout and volume
+preservation still require their subsequent production goals. Rigging should reuse
+the editable cage/loops and refine these initial weights in combined pose tests.
+
+The full avatar retains intentional coarse face/chest/wing overlaps. Neck/body
+continuity is delivered here; face-mask/eyelid construction belongs to #16, beak
+articulation to #17, feathers to #6 and final surface/tech treatment to #18/#19.
+The navy/blue boundary is a debug material assignment, not a seam in the new mesh.
+Do not mistake the matte diagnostic palette or four-view topology acceptance for
+completion of the production character. The LFS milestone, fresh-open verification,
+fixed-view reference comparisons and limits are documented in its review report.

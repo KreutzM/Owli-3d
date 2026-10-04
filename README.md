@@ -75,11 +75,10 @@ Technischer Review: [Setup-Bericht](validation/reviews/setup/report.md).
 
 ## Aktueller Arbeitsstand
 
-Alle neun Referenz-PNGs sind vorhanden. Der nächste Produktionsschritt ist
-[Issue #3: Blockout und Silhouette](https://github.com/KreutzM/Owli-3d/issues/3).
-Der grobe Blockout enthält parametrische Primärvolumen und 3+1-Griffguides.
-Finale Kopf-/Flügeltopologie, Krallen, Materialien, Rig und Animationen folgen
-in den unter Epic #11 geschnittenen Produktionsaufgaben.
+Alle neun Referenz-PNGs sind vorhanden. Blockout und grobe Silhouette (#3) sind
+abgeschlossen. #15 liefert eine zusammenhängende, bearbeitbare Kopf-/Hals-/Torsofläche
+und symmetrische grobe Brow-/Ohrbüschelformen. Augen/Maske/Lider (#16), Schnabel (#17),
+Flügeltopologie, Krallen, Materialien, Rig und Animationen folgen unter Epic #11.
 
 Große Blender-/3D-Artefakte sind für Git LFS vorgesehen.
 
@@ -91,3 +90,10 @@ Referenzvergleiche: [`Blockout-Review`](validation/reviews/blockout_v01/report.m
 Der grobe Silhouetten-Freeze aus Issue #14 ist in
 [`design/silhouette_freeze.json`](design/silhouette_freeze.json) dokumentiert.
 Alle zwölf Checklistenbefunde und die Iterationen stehen im Blockout-Review.
+
+Der Kopf-/Körper-Meilenstein wird mit `python scripts/head_body_review.py`
+reproduziert. Parameter: [`design/head_body.json`](design/head_body.json).
+Gespeicherter LFS-Stand: `blender/scene/owli_head_body_v01.blend`.
+Vieransichten-, Topologie- und Verformungsnachweise:
+[`Head-/Body-Review`](validation/reviews/head_body_v01/report.md).
+Der ursprüngliche Blockout bleibt als eingefrorener Vergleichsstand erhalten.

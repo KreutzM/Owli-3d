@@ -127,3 +127,40 @@ refresh approval hashes. Run `python -m unittest discover -s tests -v` to check
 both studio/model evidence and the current manual freeze. Historical candidates
 under `blockout_v01/iterations/` document rejected findings and remain historical;
 the active artifact is `blender/scene/owli_blockout_v01.blend`.
+
+## Editable head/neck/torso milestone (#15)
+
+```powershell
+python scripts/head_body_review.py
+python -m compileall -q scripts
+python -m unittest discover -s tests -v
+```
+
+The dedicated runner first verifies the current #14 freeze. It builds in an
+isolated directory and runs `20_head_body.py`, using `design/head_body.json`.
+It preserves all deferred geometry and the old blockout evidence. Delivery is
+`blender/scene/owli_head_body_v01.blend` (LFS), with durable evidence under
+`validation/reviews/head_body_v01/`. The report is manually written and preserved.
+
+Checks inspect control and subdivided surfaces for connected closed quad shells,
+outward winding, duplicate vertices, nonlocal self intersections, symmetry,
+distributed pole valence and identity transforms. Real weighted head tilt/turn
+and left/right wing-root displacement probes inspect the resulting meshes;
+they are topology tests, not a finished avatar rig. Deliberately opened, reversed,
+disconnected and asymmetric meshes must fail. Repeated builds, datablock counts,
+unchanged deferred-part hashes and global resizing are checked separately.
+
+All five primary surfaces are measured against the evaluated frozen envelopes.
+Transparent fixed-camera images compare both the whole character and the primary
+surfaces alone, preventing unchanged wings/face from hiding a topology silhouette
+change. IoU and bidirectional silhouette-distance gates are in the parameter file.
+Wire and deformation views expose the primary cage without face/wing occlusion.
+Four standard 1024px comparison boards retain the original approved reference map.
+
+Canonical standard renders come from opening the saved scene in a fresh Blender
+process. A second independent opening repeats geometry, deformation and studio
+checks and must yield pixel-identical canonical renders. Build-process render
+cache output is not the canonical delivery. The automated `design_approval=false`
+does not grant visual approval; the written report records the four-view decision,
+remaining overlaps and deferred work. CI binds stored proofs to current sources,
+LFS scene and images and recomputes the silhouette gates from their alpha images.
