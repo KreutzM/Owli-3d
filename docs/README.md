@@ -16,8 +16,11 @@ Für einen neuen Agenten: **[Aktueller Übergabestand](agent-handoff.md)**.
 - [Federbericht #6](../validation/reviews/feathers_v01/report.md): tatsächliche
   Flügel-/Körper-/Schwanzgruppen, Gesichtsfederfinish und unabhängige Abnahme.
 - [Gelieferter Bauauftrag #6](next-goal-6.md): historischer Startplan und Umfang.
-- [Nächster Auftrag #18](next-goal-18.md): zugewiesene Materialien, Stirnmotiv
-  und dezente Stangenakzente aus der geprüften Feder-Szene.
+- [Materialbericht #18](../validation/reviews/materials_v01/report.md): tatsächliche
+  Zuordnung, Tech, Brustkorrektur F-01, frische Blender-Nachweise und Reviews.
+- [Gelieferter Bauauftrag #18](next-goal-18.md): historischer Einstieg/Umfang.
+- [Nächster Auftrag #19](next-goal-19.md): tiefe Blue/Cyan-Augen und F-03;
+  Nasenlöcher F-02 aus #40 zusätzlich vor #20.
 - [Geprüftes Szeneninventar nach #5](scene-inventory-after-feet.json): tatsächlich
   vorhandene Objekte, Collections, Gruppen und Materialien im Ausgangs-Blend.
 - [Entscheidungsverlauf](decisions.md): Modellierungsentscheidungen und Grenzen.
@@ -31,6 +34,7 @@ Für einen neuen Agenten: **[Aktueller Übergabestand](agent-handoff.md)**.
   archivierte Originalquellen und unveränderte ältere Freigaben.
 
 GitHub: [Gesamt-Epic #11](https://github.com/KreutzM/Owli-3d/issues/11),
-[nächstes Goal #18](https://github.com/KreutzM/Owli-3d/issues/18).
+[nächstes Goal #19](https://github.com/KreutzM/Owli-3d/issues/19),
+[offene Nacharbeit #40](https://github.com/KreutzM/Owli-3d/issues/40).
 `docs/handoff.md` ist für die spätere finale Produktübergabe in #24 reserviert;
 es existiert noch kein fertiger V1-Avatar mit vollständigem Rig/Animationsset.

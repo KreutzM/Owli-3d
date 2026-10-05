@@ -1,217 +1,115 @@
-# Übergabe an einen frischen Agenten
+# Übergabe für einen frischen Agenten
 
-Stand: 2026-10-05, nach der geprüften Federlieferung
-[Goal #6](https://github.com/KreutzM/Owli-3d/issues/6).
-Akzeptierter Vorgänger-/Korrekturmerge: `966b7f02489ebad4890ba17a6c64f4c03adc2803`.
-Der neue Produktionscommit ist im zugehörigen #6-PR und Git-Verlauf verankert;
-Integration/CI und Issue-Abschluss im GitHub-Lieferdatensatz prüfen.
-Diese Übergabe beschreibt einen Zwischenstand, keinen fertigen Owli-V1-Avatar.
+Stand 2026-10-05: Materiallieferung [#18](https://github.com/KreutzM/Owli-3d/issues/18).
+Dies ist ein Zwischenstand, kein fertiger Owli-V1-Avatar.
+**Nächster Auftrag: [#19](https://github.com/KreutzM/Owli-3d/issues/19), Augenlookdev
+mit F-03 aus [Nacharbeit #40](https://github.com/KreutzM/Owli-3d/issues/40).**
 
-**Nächster Auftrag: [Goal #18](https://github.com/KreutzM/Owli-3d/issues/18).**
-Ausgangsszene: [`blender/scene/owli_feathers_v01.blend`](../blender/scene/owli_feathers_v01.blend).
-Gesamtauftrag und Reihenfolge: [Epic #11](https://github.com/KreutzM/Owli-3d/issues/11).
-Die Federproduktion liegt auf `feat/6-wings-feathers` mit vollständigen versionierten
-Nachweisen; der verbindliche Einstieg benötigt keine Chat-Historie.
+## Verbindlicher Einstieg
 
-## Sofortiger Einstieg
+AGENTS und dessen acht Pflichtquellen in genau der angegebenen Reihenfolge
+lesen. Danach diese Übergabe, [Startplan #19](next-goal-19.md), tatsächliche
+GitHub-Issues #19/#40/#11, [Repo-Karte](repository-map.md),
+[Entscheidungen](decisions.md) und [Materialbericht](../validation/reviews/materials_v01/report.md).
+Referenzen 00 > 07 > 08 tatsächlich ansehen; bestehende Meilensteine bewahren.
+Aktuellen Branch/main erneut prüfen; ältere Chatstände nicht als Startbefehl nehmen.
 
-1. `AGENTS.md` lesen und danach dessen acht Pflichtquellen in genau dieser Reihenfolge:
-   `DESIGN_FREEZE.md`, `CHARACTER.md`, `design/reference_hierarchy.json`,
-   `design/character_spec.json`, `design/materials.json`, `design/rig_spec.json`,
-   `references/manifest.json`, `validation/checklist.json`.
-2. Diese Übergabe, [Repo-Karte](repository-map.md), [Startplan #18](next-goal-18.md),
-   [Entscheidungen](decisions.md), [#6-Bericht](../validation/reviews/feathers_v01/report.md)
-   und [konkrete Folge-QA](review-fixes-qa-followup.md) lesen.
-3. GitHub-Issues #18/#11 und aktuellen Branch/Arbeitsbaum erneut prüfen. Bei einem
-   neueren `main` dessen Änderungen berücksichtigen; der obige Commit ist ein
-   belegter Ausgangspunkt, kein Befehl zum Zurücksetzen.
-4. Referenzen 00, 07 und 08 tatsächlich ansehen. Bilder sind in
-   `references/approved/`; keine neuen allgemeinen Konzepte generieren.
-5. Werkzeuge und bestehende Nachweise prüfen, dann einen eigenen Branch für #18
-   anlegen. Die akzeptierte Szene in einen neuen Arbeits-/Meilensteinstand kopieren.
+Aktuelle LFS-Szene: `blender/scene/owli_materials_v01.blend`, 1,793,740 Bytes,
+SHA256 `ca5522b3948e2d3501eb47c0b0f3099a7ca9d7e596e8e9af5b9f6128353acaa3`. Der zugehörige #18-PR/Git-Verlauf verankert Produktionscommit,
+Integration/CI und Issueabschluss; vor Fortsetzung tatsächlichen Merge prüfen.
+Maschinen-/Quellen-/Bildbindungen in `validation/reviews/materials_v01/verification.json`,
+separate visuelle Abnahme in `review.json`.
 
 ```powershell
 git status --short --branch
 git fetch origin
 git lfs pull
-python -m pip install -r requirements.txt
 python scripts/project.py doctor
 python scripts/project.py validate
 python scripts/feathers_gate.py
+python scripts/materials_gate.py
 python -m unittest discover -s tests -v
+python -m compileall -q scripts
 python scripts/project.py smoke
 ```
 
-Vor einem Branchwechsel oder Pull eigene lokale Änderungen sichern. Ein LFS-
-Pointer statt einer echten Blend-Datei ist kein Modellierungsstand. Die neue
-geprüfte #6-Szene hat SHA-256
-`76ee3f1c0f8b4314aee40585445c14e3b2d193b7aa04c7e2c86e6f810f576b0a`
-und 1.385.718 Bytes. `feathers_gate.validate_feathers` bindet ihre eigene Lieferung.
-Die historische #37-Szene bleibt unverändert mit SHA256 `8685fc054428ec848f20a922c995487f9ac4a2797cbe3713eaeb5e364b02e8fb`;
-die historische #5-Baseline ebenso:
-`0fb1512b3a27c4ebe5b7cbdebf520643b7208f2c74f8a847545ffc51dda66797`, 1.020.254 Bytes.
+Eigene Änderungen vor Branchwechsel sichern. Ein LFS-Pointer ist kein echter
+Blend-Arbeitsstand. Historische Runner zum Prüfen vorhandener Nachweise nicht neu ausführen.
 
-## Geprüfte Meilensteine
+## Tatsächlicher Szeneninhalt
 
-| Ergebnis | Issues / PR | Autoritative Szene | Dauerhafter Bericht |
-|---|---|---|---|
-| Referenzen, Repo-/Werkzeuggerüst | #2 / #10 | neun verifizierte PNGs | `docs/tooling-audit.md` ist der historische Erstaudit |
-| Festes Validierungsstudio | #12 / #25 | `owli_validation_setup.blend` | `validation/reviews/setup/report.md` |
-| Parametrischer Blockout und grober Silhouetten-Freeze | #13/#14, Container #3 / #26/#27 | `owli_blockout_v01.blend` | `validation/reviews/blockout_v01/report.md`, `design/silhouette_freeze.json` |
-| Zusammenhängender Kopf/Hals/Torso, Brow/Büschel | #15 / #28 | `owli_head_body_v01.blend` | `validation/reviews/head_body_v01/report.md` |
-| Getrennte Augenlagen, Maske, geometrischer Blink | #16 / #29 | `owli_face_v01.blend` | `validation/reviews/face_v01/report.md` |
-| Ober-/Unterschnabel und kollisionsfreie Öffnungsprobe | #17, Container #4 / #30 | `owli_beak_v01.blend` | `validation/reviews/beak_v01/report.md` |
-| Zusammenhängende 3+1-Füße, acht Krallen, tragender Griff | #5 / #31 | `owli_feet_v01.blend` | `validation/reviews/feet_v01/report.md` |
-| Organische Maske/Bridge, angehobene Brauen, strikte v2-Gates | #37 mit #34/#35 | `owli_review_fixes_v01.blend` | `validation/reviews/review_fixes_v01/report.md` |
-| Primärflügel, 48 große Federgruppen, Cream-Finish, gemeinsame Gestenprobe | #6 | `owli_feathers_v01.blend` | `validation/reviews/feathers_v01/report.md` |
-
-Alle Szenen liegen unter `blender/scene/` und werden durch Git LFS übertragen.
-Die älteren Szenen sind eingefrorene Vergleichsstände, keine alternativen aktuellen
-Produktionsdateien. `blender/scene/owli.blend` ist der allgemeine Runner-Zielpfad;
-seine Existenz oder Aktualität ersetzt nicht den akzeptierten Meilenstein.
-
-## Tatsächlicher Inhalt der aktuellen Szene
-
-Frisch in Blender geöffnet: 109 Objekte, davon 95 Mesh-Objekte, vier Kameras,
-fünf Studio-Lichter und fünf Empty-Pivots. Keine Armature, keine Actions.
+117 Objekte/103 Meshes, fünf Empty-Pivots, vier feste Kameras, fünf Lichter,
+14 Materialdatablocks, keine Armature/Actions. Meter, Z oben, +Y vorne; links −X.
 
 | Bereich | Tatsächlicher Stand |
 |---|---|
-| Kopf/Körper | `PRI_HeadNeckTorso` ist eine zusammenhängende Fläche; `PRI_Brow_L/R` und `PRI_Tuft_L/R` sind getrennte Primärformen. Gruppen `body`, `head_neck`, `wing_root_L/R` dienen der Vorbereitung und Probe. |
-| Augen/Maske | `FAC_Globe/Iris/Pupil/Cornea_L/R`, `FAC_Mask_L/R`, `FAC_MaskBridge`, `FAC_Lid_Upper/Lower_L/R`; `FAC_EyeAim_L/R` sind Blick-Pivots. |
-| Schnabel | `BAK_Upper`, `BAK_Lower`, `BAK_LowerPivot`; Öffnung um lokales negatives X, 0–18 Grad. |
-| Füße/Stange | `GRP_Foot_L/R`, je `GRP_Claw_<side>_Front_1..3` und `Rear_1`; `GRP_PerchBar/Stem/Base`. Zehengruppen `toe_Front_1..3`, `toe_Rear_1`. |
-| Flügel/Federn | `FTH_WingPrimary_L/R`, `FTH_TailPrimary` und 48 geschlossene Quad-Gruppen für Flügel, Kopf/Rücken, Brust/Flanken, Schwanz und Cream-Gesicht; `FTH_WingRoot_L/R` besitzen die gemeinsam bewegten Flügelteile. |
-| Noch grob | `BLK_ForeheadNode_*` und `BLK_ForeheadLink_*`. |
-| Noch leer | Collection `RIG`; die Krallen liegen tatsächlich in `FEET`, die Collection `CLAWS` ist leer. |
+| Kopf/Körper | Zusammenhängender PRI_HeadNeckTorso, separate Brow/Tuft; Gruppen body/head_neck/wing_roots vorbereitet |
+| Augen/Gesicht | FAC_Globe/Iris/Pupil/Cornea je L/R unverändert diagnostisch; organische Maske/Bridge/Lider mit echten Blink-/Gazefunktionen |
+| Schnabel | BAK_Upper/Lower und LowerPivot; reale 0–18°-Öffnung; Nasenlöcher fehlen |
+| Federn/Flügel | 51 FTH-Meshes, davon 48 geschlossene breite Gruppen; WingRoot L/R bewegen die Teile gemeinsam 0–12° mit 45-mm-Schulterblend und festen Roots |
+| Füße/Stange | Je drei vordere/eine hintere Zehe und Kralle; acht Krallenkontakte; GRP_PerchBar/Stem/Base |
+| Materialien | Zehn tatsächlich zugewiesene Nicht-Augen-Shaders, sRGB→linear; satin/matte Federn, Keratin, gebürstetes Metall, Cyan-Emission |
+| Tech | Sieben TECH_ForeheadNodes/sechs Links auf der Stirn, vier schmale TECH_PerchRings; noch keine finale Rigbindung |
 
-Die sieben Materialien sind fünf `BLK_Swatch_*`-Diagnosefarben,
-`FAC_CorneaInspection` und `GRP_PerchDiagnostic`. Finale Feder-/Augenshader,
-gebürstetes Metall, Cyan-Stangenakzente und ausgearbeitete Tech-Motive fehlen.
-Die Renderings sind geometrische Meilensteinansichten und entsprechen noch nicht
-dem fertigen Beauty-/Feder-Look der Referenzen.
+F-01 ist gelöst: acht Cream-/Orange-Gruppen gezielt angepasst, breitere Cream-
+Brust mit diagonalen begrenzten Gold/Orange-Verläufen, ohne homogene Orangefläche.
+78 alte Cages, acht Augen samt Slots/Graphs, ursprüngliche Pivots und das Studio
+bleiben exakt. Krümmung verkürzt das Stirnmotiv in Profil/3Q. Die wenigen breiten
+Gruppen bleiben eine grobe Stilentscheidung; der Augenlook ist weiterhin unfertig.
 
-#6 ersetzt sechs grobe Flügel-/Schwanz-/Brustguides durch 51 neue Meshes.
-Alle 44 verbleibenden #37-Meshes, ursprünglichen Pivots und das feste Studio
-bleiben exakt erhalten, einschließlich organischer Maske/Brauen. Parameter in
-`design/wings_feathers.json`; tatsächliche Federwurzel-Sitzproben für alle 48
-Gruppen. Gemeinsame nichtlineare Flügeldeformation 0..12° mit 45mm Schulterblend,
-festen Root-Vertices und dauerhaftem `fth_rest`. Finale Controls folgen #23.
+## Nachweise und verbleibende Kette
 
-## Noch offene Produktionskette
+Vier Blender-Worker liefern exakte gespeicherte Laufzeitdaten und kanonische
+RGBA-Pixel; separate visuelle/technische Reviewer öffnen/rendern/proben selbst.
+Alle 51 FTH/17 TECH sowie 41 Blink-/41 Schnabelzustände, ±12° Gaze, sechs Gesten
+und 3+1-Griff werden tatsächlich geprüft. 83 Python-Tests plus Strictvalidate,
+Gates, Compileall und Blender-Smoke gehören zur Abnahme. Windows/Ubuntu-CI
+validiert Artefakte/Tests; Blender wird dort nicht installiert.
 
-| Reihenfolge | Goal | Abhängigkeit / Ergebnis |
-|---|---|---|
-| Jetzt | #18 | nach #4/#5/#6: tatsächlich zugewiesene Nicht-Augen-Materialien, Stirnmotiv und Stangenakzente |
-| Danach | #19 | nach #18: tiefe blue/cyan Augen und Iris-Netzwerkmotiv; damit Container #7 abschließen |
-| Danach | #20 | nach #7: gesamte Topologie und Deformationsbereitschaft prüfen |
-| Danach | #21 → #22 → #23 | Körper/Kopf-Rig → Gesicht → Flügel/Füße; damit Container #8 abschließen |
-| Danach | #9 | nach #8: ruhiges Animationsset mit echten Actions |
-| Zuletzt | #24 | nach #9: `owli_v1.blend`, finales QA und `docs/handoff.md`; Epic #11 abschließen |
+| Reihenfolge | Goal |
+|---|---|
+| Nächstes | #19: tiefe Blue/Cyan-Augen, Cornea/Reflexe/Netzwerk; F-03-Verhältnis/Ringe ausdrücklich bewerten |
+| Zusätzlich vor #20 | #40/F-02: zwei echte Nasenlochvertiefungen; #40 erst mit allen drei Findings am gemeinsamen Stand schließen |
+| Danach | #20 kombinierte Topologie/Deformationsbereitschaft nach #7 |
+| Danach | #21 → #22 → #23 Körper/Kopf → Gesicht → Flügel/Füße-Rig; Container #8 |
+| Danach | #9 Animation, #24 finale owli_v1.blend/QA/docs/handoff.md; Epic #11 |
 
-Die Container #3/#4/#7/#8 sind keine zusätzlichen unbegrenzten Modellierungsgoals.
-Dieses Dokument heißt absichtlich `agent-handoff.md`: `docs/handoff.md` ist die
-noch ausstehende finale Produktübergabe aus #24.
+Container #7 endet erst nach #19. Eine Materialabnahme erledigt Augen und
+Nasenlöcher nicht. Die kombinierte Rig-/Animations-QA aus
+[review-fixes-qa-followup](review-fixes-qa-followup.md) bleibt #20–#24.
 
-## Verifikation und ihre Grenzen
+## Historie und Arbeitsregeln
 
-#6 prüft 41 Blink-/41 Beak-Zustände und ±12° Gaze erneut gegen alle 51 neuen
-Meshes: 8.364 Lid-, 4.182 Beak- und je 408 Gaze-Paarproben. Sechs reale isolierte/
-kombinierte Halb-/Vollgesten erhalten feste Roots und stellen Neutral exakt wieder
-her. Acht Krallen-/Bar-Kontakte und 3+1-Griff bleiben erhalten. Vier Blender-Worker
-liefern gleiche gespeicherte Laufzeitdaten und kanonische RGBA-Pixel. Separate
-visuelle und technische Sub-Agents prüfen den exakten finalen Stand unabhängig;
-alle V6-01–03/G6-TECH-01-Findings sind geschlossen. Absichtlich wenige breite
-Gruppen lassen Primärflächen sichtbar; finale Shader/Controls bleiben deferred.
+#6/PR #39: Git `a8634936494512d64e311149f20ed4e24ea492ac`,
+`owli_feathers_v01.blend`, SHA256
+`76ee3f1c0f8b4314aee40585445c14e3b2d193b7aa04c7e2c86e6f810f576b0a`, 1,385,718 Bytes.
+#37: Git `966b7f02489ebad4890ba17a6c64f4c03adc2803`, Szene SHA256
+`8685fc054428ec848f20a922c995487f9ac4a2797cbe3713eaeb5e364b02e8fb`.
+Frühere Blockout/Head/Face/Beak/Feet-Belege bleiben in ihren eigenen Reviewordnern.
+`materials_contracts.py` fixiert 548 Vorgänger-Git/LFS-Anker und 68 Quellen;
+Stage50 ist aus a863493 bytegenau archiviert. `design/materials.json`, project.py
+und gemeinsam gebundene Helfer bleiben exakt. Neue Augenhelfer/-parameter
+bevorzugen; alte Approvals nicht auf neue Implementierungen umschreiben.
 
-Historisch liefert #37 41 Blink-/41 Beak-Zustände, ±12° Gaze, reale 3+1-Kontakte und alle vier
-Foot-Parameter-Ecken plus Mittelpunkt/Outside-Negatives. Drei frische Blender-Opens
-haben identische Geometrie/Proben und vier identische 1024px-RGBA-Ansichten.
-Ein unabhängiger Reviewer hat die endgültigen Bilder angesehen und `inspect`/`exercise`
-in einem weiteren frischen Blender-Prozess tatsächlich ausgeführt. Fünf korrigierte
-Mesh-Cages/evaluierte Flächen sind inklusive adjazenter/coplanarer Innenflächen und
-vier realer Negativfixtures geprüft; Inset-/Flächentoleranzen bleiben dokumentierte
-Grenzen. Gesamtavatar-/Rig-Kombinationsprüfungen sind konkret #20–#24 zugeordnet.
+Je Produktionsgoal eigener Branch/PR/LFS-Szene/Reviewordner; separate visuelle
+und technische Sub-Agents, ein Schreiber pro Produktionsdatei. Reviewer an finale
+Artefakte binden; betroffene Checks nach Änderungen erneut prüfen. `tmp/` und
+`validation/renders/` sind Scratch, keine Lieferung.
 
-Aktuelle CI-Abnahme nutzt `delivery_gates.py`/`history_gate.py` (Version 2)
-und `review_fixes_gate.py` plus `feathers_gate.py`. Komplette Quell-/Referenz-/Reloadinventare, rekursive
-Schemas, echte Worker-Daten und tatsächliche kanonische Pixelvergleiche sind Pflicht.
-Byte-exakte historische Version-1-Producer bleiben erhalten. 14 Git-Vorgängeranker
-und nun 462 geschützte Review-/Quellen-/Bild-/Blenddateien wurden byte/LFS-OID-geprüft;
-kein altes Approval/Pixel/Szene wurde auf einen neuen Quellhash umgeschrieben.
+Alte volle Verifier erwarten ersetzte Guides; generische Audit-/Funktions-APIs
+gezielt wiederverwenden. `digest_part` enthält Materialnamen; Cage-Erhaltung
+nutzt `materials_checks.shape_hashes`. Augenhash umfasst Slots und vollständige
+Graphs und hält volatile Usercounts außen. TECH-Tori haben Euler 0. `GRP_` ist
+für Fuß/Stange reserviert; neue Objekte brauchen eigene Kollisionsziele.
+`set_blink` rekonstruiert nichtlinear; lineare Lid-Keys können die Cornea schneiden.
 
-PR #31 bestand Windows-/Ubuntu-CI; lokal bestanden 25 Python-Tests,
-Projektvalidierung, compileall und der vollständige Blender-Smoke. Der Fuß-Build
-prüfte echte geschlossene Quad-Flächen, alle Zehen-/Krallenkontakte, tragenden
-Polsterkontakt, 45 unabhängige Kollisionspaare, Wiederholbarkeit, halbe/doppelte
-Skalierung und erlaubte Parametergrenzen. 37 andere Meshes und die drei Pivots
-blieben unverändert. Zwei frische Blender-Prozesse lieferten identische Geometrie
-und Pixel aus allen vier Kameras. Der ausführliche Bericht nennt tolerierte
-Kontaktstellen und die natürliche Verdeckung der hinteren Krallenspitzen.
+Der Render-CLI kann geladene Szenen speichern; nur Arbeitskopien verwenden.
+Stage50 weist nun tatsächlich zu und baut Tech, speichert im Smoke aber
+scratch-relativ nach owli.blend. Stage60 bleibt ein ungewichtetes Rig-Gerüst.
+`materials_review.py` publiziert nur den benannten eigenen Meilenstein.
+UTF-8/LF, read_bytes für Hashes; .gitattributes hält Crossplatform-Bytes gleich.
 
-CI installiert kein Blender. Sie prüft Quellen-/Artefakt-/Referenzbindungen und
-Tests; echte Blender-Prüfungen werden lokal im jeweiligen Review-Runner ausgeführt.
-Ein grüner Gerüst-Smoke allein beweist weder fertige Federn noch Materialzuweisung,
-Rig-Funktion oder Animation. `30_wings_feathers.py` baut jetzt tatsächliche
-Federgeometrie; `50_materials.py` erzeugt eine Bibliothek; `60_rig.py` ein ungewichtetes
-Gerüst. Deren Konsolenausgaben sind keine Produktionsfreigabe.
-
-## Fallstricke für die Fortsetzung
-
-- Meter, Z oben, +Y vorne; globale Referenzhöhe 0,45 m. Links ist negatives X.
-  Vier feste Kameras heißen `VAL_FRONT`, `VAL_LEFT`, `VAL_BACK`, `VAL_3Q`.
-  `validation/reference_views.json` steuert Licht, Framing und Referenzpanels.
-  Kameras nicht zum Kaschieren von Fehlern umstellen.
-- Quelle 00 regelt Marke/Gesicht/Farbe, 07 Form/Profil/Rücken, 08 Konstruktion/
-  Materialintention, Beauty nur unterstützend. Referenzen sind keine metrisch
-  exakten Orthoprojektionen. Grobe eingefrorene Formen nur mit dokumentierter
-  Vieransichten-Neubewertung ändern; keine widersprüchlichen Bilder mitteln.
-- `face_geometry.set_blink` rekonstruiert Lider nichtlinear auf einer Kugel.
-  Lineare Shape-Key-Interpolation würde ins Auge schneiden. Blick-Pivots und
-  `beak_geometry.set_open` sind Probe-APIs, noch keine fertigen Rig-Controls.
-- `scripts/project.py --scene/--output` gilt nur für `render`. Der Render-Befehl
-  speichert Studiozustand in die geladene Szene. Auf einer Arbeitskopie rendern,
-  nicht beiläufig ein akzeptiertes LFS-Artefakt überschreiben.
-- Gespeicherte Review-JSONs binden exakte Quellen, Parameter, Blend-Dateien und
-  PNGs. Änderungen an gemeinsam genutzten Helfern oder `project.py` können ältere
-  Nachweise ungültig machen. Nicht einfach Hashes nachtragen oder Tests schwächen.
-  Neue Goal-Helfer bevorzugen; notwendige Migrationen bytegenau archivieren und
-  semantisch auditieren. Siehe `validation/history/pre_feet_v01/README.md` und
-  `scripts/history_bindings.py` für das bereits eingeführte Verfahren.
-- Alte vollständige Blender-Verifier erwarten teilweise ihre damaligen
-  Guide-Objekte. Beispielsweise sucht der #16-Verifier noch `BLK_Beak` und
-  `GUIDE_Toe_*`, die im aktuellen Blend ersetzt sind. Historische Artefakte mit
-  ihren eigenen Validierern prüfen; generische Mesh-Audit-Helfer gezielt wiederverwenden.
-  Einen alten Gesamt-Verifier nicht ungeprüft auf die neue Gesamtszene anwenden.
-- `verify_feet.inspect` behandelt den Präfix `GRP_` als Fuß-/Stangengeometrie.
-  Neue Federobjekte mit eigenem Präfix benennen. Die aktuellen Material-/Rig-
-  Gerüste speichern fest nach `blender/scene/owli.blend`; sie sind noch keine
-  sicheren produktiven Editierbefehle für beliebige geladene Meilensteinszenen.
-- Auf Windows JSON/Markdown explizit als UTF-8 mit LF schreiben und lesen.
-  Für Rohhashes `read_bytes()` verwenden; Standard-Codepages können Umlaute
-  verfälschen. Neue Textdateien werden durch `.gitattributes` auf LF normalisiert.
-- `tmp/` und `validation/renders/` sind ignorierte Arbeitsbereiche, keine
-  Übergabenachweise. Dauerhafte Nachweise gehören nach `validation/reviews/`.
-- Bestehende Review-Runner können akzeptierte Artefakte neu erzeugen und deren
-  Hashes ändern. Für einen Einstieg zunächst Validierer/Tests verwenden;
-  alte Milestones nicht ohne Anlass regenerieren.
-
-## Werkzeuge und GitHub
-
-Auf diesem Windows-Rechner zuletzt erneut geprüft: Python 3.11.9, Pillow 12.2.0,
-Git 2.53.0, Git LFS 3.7.1, Blender 5.2.1 LTS unter
-`C:/Program Files/Blender Foundation/Blender 5.2/blender.exe`.
-FFmpeg, GitHub CLI und Make sind vorhanden; Blender muss nicht im PATH sein.
-`--blender` oder `BLENDER_EXECUTABLE` wählen eine andere Installation.
-
-Der frühere lokale `gh`-Token war ungültig; CLI-Existenz bedeutet keine erfolgreiche
-Authentifizierung. In dieser Sitzung funktionierten Git/SSH-Push sowie der
-verbundene GitHub-Connector für Issues, PRs, Checks und Merge. Ein frischer Agent
-muss die tatsächlich verfügbaren Zugänge prüfen. Keine Zugangsdaten versionieren.
-Im eingeschränkten Codex-Arbeitskontext brauchten Git-Schreiboperationen eine
-Sandbox-Freigabe; diese Umgebungseigenschaft ist keine GitHub-Repository-Regel.
-
-Je Produktionsgoal einen eigenen PR mit überprüfbaren Ergebnissen erstellen.
-Issue-Abschluss und Epic-Fortschritt an tatsächliche Lieferung und Merge binden.
-Für die nächste Übergabe dieses Dokument, das Goal-Issue und Epic #11 aktualisieren;
-vor allem neuen Ausgangscommit, Szene, Tests und verbleibende Grenzen nennen.
+Zuletzt verifiziert: Python 3.11.9, Pillow 12.2.0, Git 2.53.0, LFS 3.7.1,
+Blender 5.2.1 LTS unter `C:/Program Files/Blender Foundation/Blender 5.2/blender.exe`.
+Git/SSH-Push und GitHub-Connector funktionierten; früherer gh-Token ungültig.
+Sandboxfreigabe für Git-Writes ist eine Umgebungseigenschaft; keine Zugangsdaten versionieren.
