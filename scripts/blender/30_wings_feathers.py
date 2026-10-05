@@ -1,17 +1,10 @@
-"""Feather strategy scaffold.
-
-V1 uses large stylized feather groups over clean wing/body volumes. This script intentionally avoids
-literal full-feather simulation.
-"""
-import bpy
-
-if "WINGS" not in bpy.data.collections or "FEATHERS" not in bpy.data.collections:
-    raise RuntimeError("Run scene setup first.")
-
-for side in ("L","R"):
-    wing=bpy.data.objects.get(f"BLK_Wing_{side}")
-    if wing:
-        wing["feather_strategy"]="large layered groups; keep wing root deformable"
-        wing["gesture_requirement"]="must support restrained explanatory gesture"
-
-print("Wing/feather policy attached. Build a small number of readable layers, not hundreds of feathers.")
+"""Build actual broad feather groups on a working copy; smoke runs before40."""
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from feathers_geometry import build
+from blockout_geometry import save
+ROOT = Path.cwd()
+parts = build(ROOT)
+save(ROOT)
+print('FEATHERS BUILT:',len(parts),'editable components, symmetric layers and soft wing roots.')

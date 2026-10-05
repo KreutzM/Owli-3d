@@ -13,7 +13,7 @@ dass ihr Produktionsgoal abgeschlossen ist.
 | `design/proportions.json` | eingefrorene grobe Maße und Ringschemata |
 | `design/silhouette_freeze.json` | manuelle grobe Vieransichtenentscheidung mit Quellenbindungen |
 | `design/head_body.json`, `face.json`, `beak.json`, `feet.json` | implementierte Meilensteinparameter |
-| `blender/scene/` | LFS-Szenen; Fortsetzung nach #37 ist `owli_review_fixes_v01.blend`, #5 bleibt historische Baseline |
+| `blender/scene/` | LFS-Szenen; aktueller #6-Stand `owli_feathers_v01.blend`, #37 und frühere Szenen bleiben historische Baselines |
 | `validation/reference_views.json`, `checklist.json` | Studio und unveränderte Pflichtansichten / visuelle Checks |
 | `validation/reviews/<milestone>/` | dauerhafte Szenen-/Quellen-/Rendernachweise und separate manuelle Entscheidung |
 | `validation/history/pre_feet_v01/` | bytegenaue Original-Metadaten und geprüfte historische Quellenumbindung |
@@ -28,17 +28,22 @@ dass ihr Produktionsgoal abgeschlossen ist.
 | `scripts/blender/blockout_geometry.py`, `primary_geometry.py` | gemeinsame Mesh-/Material-/Skalierungs-/BVH- und Quad-Cap-Helfer; bereits hashgebunden |
 | `scripts/blender/00_scene_setup.py`, `10_blockout.py`, `20_head_body.py`, `21_eyes_mask.py`, `22_beak.py` | implementierte Stufen bis #4 |
 | `scripts/blender/40_feet_perch.py`, `feet_geometry.py`, `verify_feet.py`, `feet_probe.py`, `feet_evidence.py` | #5 Produktion, echte Mesh-/Kontaktprüfungen und isolierte Evidenzerzeugung |
-| `scripts/blender/30_wings_feathers.py` | Gerüst, nur Metadaten; muss für #6 durch reale Geometrie ergänzt werden |
+| `design/wings_feathers.json`, `scripts/blender/30_wings_feathers.py`, `feathers_geometry.py` | #6: tatsächliche Primärflügel und 48 parametrisierte geschlossene Federgruppen, gemeinsame Gestenprobe |
+| `scripts/blender/feathers_checks.py`, `feathers_evidence.py` | tatsächliche Root-/Mesh-/Funktionsprüfung und vier isolierte Blender-Worker |
+| `scripts/feathers_review.py`, `feathers_gate.py`, `feathers_contracts.py` | eigener #6-Producer, strikte vollständige Abnahme, 462 geschützte Vorgängeranker |
+| `validation/reviews/feathers_v01/` | aktueller Federbericht, 40 Evidenzbilder, vier Pflichtansichten, separate Entscheidung und unabhängige Berichte |
+| `scripts/blender/legacy/30_wings_feathers.py`, `validation/history/pre_feathers_v01/` | byte-exakte archivierte Metadatenstufe aus Git966b7f0 |
 | `scripts/blender/50_materials.py`, `60_rig.py` | Materialbibliothek bzw. Rig-Gerüst; keine fertige Zuordnung/Deformation |
 | `scripts/blender/90_validation.py`, `validation_setup.py`, `verify_validation_setup.py` | feste Kameras/Lichter, Framing, Rendering und Studio-Prüfung |
 | `scripts/blender/legacy/40_feet_perch.py` | ursprünglicher Guide-Code, unverändert für ältere Blockout-Rezepte |
 | `scripts/legacy/project.py` | historische CLI-Quellensicherung; nicht als aktuellen Runner verwenden |
-| `tests/`, `.github/workflows/validate.yml`, `requirements.txt`, `.gitattributes` | 45 aktuelle Tests, Windows/Ubuntu-CI, Python-Abhängigkeiten, LF-/LFS-Regeln |
+| `tests/`, `.github/workflows/validate.yml`, `requirements.txt`, `.gitattributes` | 64 Tests einschließlich 19 neuer Feathers-Gate-Tests, Windows/Ubuntu-CI, Python-Abhängigkeiten, LF-/LFS-Regeln |
 
 ## Nachweise lesen, ohne sie neu zu erzeugen
 
 ```powershell
 python scripts/project.py validate
+python scripts/feathers_gate.py
 python -m unittest discover -s tests -v
 python -c "import sys; sys.path.insert(0,'scripts'); from delivery_gates import validate_feet_delivery; from review_fixes_gate import validate_review_fixes; print(validate_feet_delivery()); print(validate_review_fixes())"
 ```
@@ -49,8 +54,7 @@ Modells noch einen tatsächlichen Blender-Test nach einer Modelländerung.
 
 ## Neue Übergabe strukturieren
 
-Für #6 sind `design/wings_feathers.json`, ein Geometry-/Verifier-/Evidence-Helfer,
-`scripts/wings_feathers_review.py`, `blender/scene/owli_feathers_v01.blend` und
-`validation/reviews/feathers_v01/` sinnvolle **vorgeschlagene** Namen. Diese Dateien
-existieren am dokumentierten Ausgangsstand noch nicht. Im Bericht und Issue die
-letztlich gewählten Namen festhalten. Bestehende akzeptierte Artefakte erhalten.
+Die tatsächliche #6-Lieferung nutzt `design/wings_feathers.json`,
+`scripts/feathers_review.py`, `blender/scene/owli_feathers_v01.blend` und
+`validation/reviews/feathers_v01/`. Die nächste Lieferung #18 erhält eigene
+Szenen/Nachweise; [Startplan #18](next-goal-18.md). Bestehende akzeptierte Artefakte erhalten.

@@ -365,3 +365,50 @@ with exact cages; the saved-build renderer and two additional fresh processes
 give exact canonical RGBA pixels. Live images are retained, not relabeled as
 identical. Both the unchanged complete numerical-stage smoke and the additional
 #5-to-#37 production path run; #6 starts from a copy of the delivered #37 scene.
+
+## 2026-10-05 — #6 accepted broad feather geometry
+
+Logo00 retains brand/cream face authority; turnaround07 determines folded side,
+back and compact tail; parts08 determines broad directional layering. The new
+stage30 replaces six coarse wing/tail/chest guides with clean primary wings,
+a tail foundation and 48 broad closed quad feather groups. The actual new meshes
+are parameterized in `design/wings_feathers.json` and reflected, rather than
+independently tessellating each side. Historical #37 mask/brows, eyes, lids,
+beak, feet/perch and tech guides remain unchanged geometry in the candidate.
+
+Wing primary and visible layers use the same nonlinear12-degree deformation
+field and durable neutral `fth_rest` coordinates under separate root empties.
+The shoulder blends over 45mm; vertices above 335mm stay fixed in the neutral root
+seat, while distal geometry follows the mirrored outward lift. This is a
+geometric gesture probe, not a finished avatar rig. Root embedding and neighboring
+feather overlap are intentional attachments, not pressure/simulation physics.
+
+Early builds exposed real folds from projecting a thick cream shell through
+discontinuous mask/head normals, asymmetric independently sampled left-wing
+indices, and a narrow wing-tip wall crossing. Smooth authored face depth spines,
+exact reflection and constant-Z radial wing thickness address those cases.
+Expanded all-new-mesh gaze checks also rejected an outer cream strip entering
+the globe; its bow now runs outside that volume. No gate was weakened to admit
+those candidates. Four real workers now pass repeated build, save and fresh reload;
+all canonical RGBA pixels and complete runtime datasets match. Separate visual and
+technical agents accepted the exact final run12 scene after reviewing the actual
+artifacts. V6-01–03 and G6-TECH-01 are closed through changed geometry.
+
+Face/tail roots now anchor to actual supporting ray hits; all 48 leaves have
+measured front/back seats. Worst front-root distance 0.780121mm; least embedded
+back sample 0.131826mm. Narrow recessed HeadCenter/BodyCenter/ChestCenter leaves
+close central gaps while preserving visible paired tier tips. Inward middle
+back tips establish overlap. Primary surfaces deliberately remain visible between
+few broad groups, rather than reproducing dense illustrated individual plumage.
+
+Delivered scene SHA256 `76ee3f1c0f8b4314aee40585445c14e3b2d193b7aa04c7e2c86e6f810f576b0a`,
+1,385,718 bytes, 109 objects/95 meshes/51 new meshes. All 44 retained #37 meshes
+and original pivots/studio remain exact. All 51 new surfaces pass cage/evaluated
+adjacent/coplanar audits. Full blink/gaze/beak are rechecked against new geometry;
+six gestures and exact 3+1/eight claw contacts pass. Final acceptance/report and
+independent evidence are under `validation/reviews/feathers_v01/`.
+
+The old30 metadata stage is archived byte-exact from Git966b7f0. Bound historical
+CLI/validators remain unchanged; current #6 adds `feathers_gate.py` and an explicit
+CI invocation alongside the prior validation. Final shader assignment/tech
+integration remain #18/#19, combined final topology/rig/animation QA #20–#24.

@@ -1,0 +1,97 @@
+{
+  "gate_version": 2,
+  "milestone": "feathers_v01",
+  "status": "feathers_geometry_accepted",
+  "scene_sha256": "76ee3f1c0f8b4314aee40585445c14e3b2d193b7aa04c7e2c86e6f810f576b0a",
+  "verification_sha256": "94a06f53083c5a273e74c082b0cffe9f7754756f887c108274f572bdb9bc8146",
+  "reference_authority": [
+    {
+      "file": "00_original_logo.png",
+      "rank": 1
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "rank": 2
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "rank": 3
+    }
+  ],
+  "views": {
+    "VAL_FRONT": {
+      "status": "pass",
+      "reason": "Continuous broad cream face/chest with visible descending V tiers, controlled orange accents, close folded wings and intact perched anatomy; inspected against logo00 and turnaround07."
+    },
+    "VAL_LEFT": {
+      "status": "pass",
+      "reason": "Seated cream sweeps and descending folded wing overlap, compact tail and opposed grip; fixed profile inspected against turnaround07/parts08."
+    },
+    "VAL_BACK": {
+      "status": "pass",
+      "reason": "Mirrored broad descending tiers with recessed center foundations and compact centered tail; intended primary skin between broad groups is documented."
+    },
+    "VAL_3Q": {
+      "status": "pass",
+      "reason": "Cream cheek/bridge and chest flow, actual wing thickness and layered folded silhouette read coherently; eye and beak openings remain free."
+    }
+  },
+  "criteria": {
+    "wing_primary": {
+      "status": "pass",
+      "reason": "Two actual closed quad primary wings with fixed seated shoulders, editable and reproduced from JSON."
+    },
+    "wing_layers": {
+      "status": "pass",
+      "reason": "Twelve actual broad upper/lower leaves with measured roots, exact reflected counterparts and shared real deformation field."
+    },
+    "body_layers": {
+      "status": "pass",
+      "reason": "Twelve descending back leaves, ten chest/flank leaves and three recessed center foundations; directional overlap independently inspected."
+    },
+    "tail_layers": {
+      "status": "pass",
+      "reason": "Closed primary with five compact fan leaves, mirrored pairs and actual measured root seats."
+    },
+    "face_finish": {
+      "status": "pass",
+      "reason": "Six broad outer-mask/cheek/bridge sweeps seat against preserved organic #37 mask/head; V6-01 and V6-03 resolved on final images."
+    },
+    "symmetry": {
+      "status": "pass",
+      "reason": "Actual reflected mesh coordinates pass measured 2e-6m tolerance; repeated parameter build is exact without leaks."
+    },
+    "gesture_binding": {
+      "status": "pass",
+      "reason": "Six real isolated/combined half/full gestures move all assigned primary/layer vertices with fixed shoulder roots and exact neutral restoration; independent extra five states pass."
+    },
+    "function_preserved": {
+      "status": "pass",
+      "reason": "41 blink and 41 beak states, four +/-12deg gaze states include all51 new targets; exact3+1 grip/eight contacts retained with foot/perch collision checks."
+    },
+    "history_preserved": {
+      "status": "pass",
+      "reason": "44 retained meshes and original pivots/studio are exact; 462 code-owned predecessor files match actual Git/LFS bytes; old stage30 archived without altering old evidence."
+    }
+  },
+  "blocking_findings": [],
+  "evidence_sha256": {
+    "VAL_3Q.png": "a993929983c747a7806c1afa548106017cffe6dfe6d7204a285dc2e1f233c78d",
+    "VAL_3Q_comparison.png": "ea14ad736639c52c9a8ca0d32f853d709be24dec43a5708240f210bf1980dfbd",
+    "VAL_BACK.png": "24cf98237ee7ab90a7ee88966d41c601392b962445a0b9821d18121ff8a7cd33",
+    "VAL_BACK_comparison.png": "a616a74a522e3bba7d8a1f47487ee8b2ccfbcac421df9ddfadadbba8ef1f463a",
+    "VAL_FRONT.png": "a4f779fedff2b6d815276bf3c086fcca3c70c107eea0a635be7b0766a388eedd",
+    "VAL_FRONT_comparison.png": "95a0ce51a727520239346fe4b582f443a96f27541cf6bf2bb5a27b90caaa1320",
+    "VAL_LEFT.png": "d5a1037f02dc7d8c6e2facdafb2c8974cb96f192bddf9a3e6e3f76c61264b136",
+    "VAL_LEFT_comparison.png": "340dd69655dbe26f3fbc6e41acd957f3670f5642192d056821a32d6d8ef79538",
+    "build_checks.json": "b3dfd716d6de6737a1e2d537635d71cb72d6a57ea8aceae045879b49610d30cc",
+    "contact_sheet.png": "a63341266551d2633adcf053413e73a5826f233789c65aba135fd7fe62795051",
+    "independent-technical-review.md": "d2348438a8cca3a8b8bddc3f658847f3189805ea761dbf27931730877e0ad8c9",
+    "independent-visual-review.md": "e83c1bfc763923719eeb63f35047416f14028711b09843af344aae331c5a504d",
+    "reload_a_checks.json": "b20d825eea98521e5b6927db6f150ffa6ec2e62eec3a71d4ab03cc457ca20f7f",
+    "reload_b_checks.json": "b31510fb3107e3f38e2c57bbeb8292d50e716f7b6060566670518c4ff9e8ad7c",
+    "report.md": "6aa0778cd76235a7fd243c4166168f06c81c9559a6f81850d716c0ef68c3ae52",
+    "saved_build_checks.json": "3f365f5b8693f32b5c95332aa0d624c461667bfc3fbfbfaf4d2cf0aa91fa6466",
+    "verification.json": "94a06f53083c5a273e74c082b0cffe9f7754756f887c108274f572bdb9bc8146"
+  }
+}

@@ -1,11 +1,18 @@
 # Startplan für Goal #6
 
+Status 2026-10-05: Geometrie und unabhängige Reviews geliefert. Aktueller
+[Federbericht](../validation/reviews/feathers_v01/report.md),
+[Nachweise](../validation/reviews/feathers_v01/README.md) und
+[Fortsetzung #18](next-goal-18.md). Der folgende Plan beschreibt den historischen
+Start-/Lieferauftrag; frühere Gerüstaussagen gelten für den Ausgang nach #37.
+
 Verbindlicher Umfang: [Issue #6](https://github.com/KreutzM/Owli-3d/issues/6).
 Dieser Plan ergänzt das Issue, schränkt dessen Lieferumfang aber nicht ein.
 Ausgang nach Abschluss/Merge von #37:
 `blender/scene/owli_review_fixes_v01.blend` und dessen
 [Korrekturbericht](../validation/reviews/review_fixes_v01/report.md).
-Für dieses Goal wurde noch kein neuer Modellierungsstand begonnen.
+Der neue geprüfte Stand ist `blender/scene/owli_feathers_v01.blend`;
+den historischen Ausgang nicht neu beginnen.
 
 ## Zuerst prüfen
 
@@ -55,8 +62,8 @@ Federüberlappungen von unbeabsichtigten Kollisionen unterscheiden; der bestehen
 Closed-Surface-Auditor darf nicht unverändert auf alle Karten erzwungen werden.
 
 Der generische Smoke führt numerische Stufen in sortierter Reihenfolge aus:
-`30_wings_feathers.py` läuft vor `40_feet_perch.py`. Ein eigener #6-Review-Runner
-soll dagegen vom akzeptierten #5 ausgehen. Beide Ablaufarten berücksichtigen;
+`30_wings_feathers.py` läuft vor `40_feet_perch.py`. Der eigene #6-Review-Runner
+geht dagegen vom akzeptierten #37 aus. Beide Ablaufarten berücksichtigen;
 keine bestehenden Produktionsprüfungen durch stilles Überspringen ersetzen.
 `project.py` und mehrere gemeinsam genutzte Helfer sind in alten Reviews
 hashgebunden. Neue Helfer bevorzugen; bei nötigen Änderungen die Nachweiskette

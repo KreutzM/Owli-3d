@@ -1,0 +1,775 @@
+{
+  "scene_sha256": "76ee3f1c0f8b4314aee40585445c14e3b2d193b7aa04c7e2c86e6f810f576b0a",
+  "objects": 109,
+  "meshes": 95,
+  "fresh_open_geometry_matches_saved_worker": true,
+  "fresh_open_fixed_studio_matches_accepted37": true,
+  "new_feather_mesh_names": [
+    "FTH_WingPrimary_R",
+    "FTH_WingPrimary_L",
+    "FTH_TailPrimary",
+    "FTH_Wing_Lower_0_R",
+    "FTH_Wing_Lower_1_R",
+    "FTH_Wing_Lower_2_R",
+    "FTH_Wing_Upper_0_R",
+    "FTH_Wing_Upper_1_R",
+    "FTH_Wing_Upper_2_R",
+    "FTH_Wing_Lower_0_L",
+    "FTH_Wing_Lower_1_L",
+    "FTH_Wing_Lower_2_L",
+    "FTH_Wing_Upper_0_L",
+    "FTH_Wing_Upper_1_L",
+    "FTH_Wing_Upper_2_L",
+    "FTH_HeadUpper_R",
+    "FTH_HeadUpper_L",
+    "FTH_HeadMiddle_R",
+    "FTH_HeadMiddle_L",
+    "FTH_HeadLower_R",
+    "FTH_HeadLower_L",
+    "FTH_BodyUpper_R",
+    "FTH_BodyUpper_L",
+    "FTH_BodyMiddle_R",
+    "FTH_BodyMiddle_L",
+    "FTH_BodyLower_R",
+    "FTH_BodyLower_L",
+    "FTH_CreamUpper_R",
+    "FTH_CreamUpper_L",
+    "FTH_CreamMiddle_R",
+    "FTH_CreamMiddle_L",
+    "FTH_CreamLower_R",
+    "FTH_CreamLower_L",
+    "FTH_Orange_R",
+    "FTH_Orange_L",
+    "FTH_Flank_R",
+    "FTH_Flank_L",
+    "FTH_HeadCenter",
+    "FTH_BodyCenter",
+    "FTH_ChestCenter",
+    "FTH_TailCenter",
+    "FTH_TailInner_R",
+    "FTH_TailInner_L",
+    "FTH_TailOuter_R",
+    "FTH_TailOuter_L",
+    "FTH_FaceOuter_R",
+    "FTH_FaceOuter_L",
+    "FTH_FaceCheek_R",
+    "FTH_FaceCheek_L",
+    "FTH_FaceBridge_R",
+    "FTH_FaceBridge_L"
+  ],
+  "editable_meshes": {
+    "FTH_WingPrimary_R": {
+      "vertices": 2370,
+      "faces": 2368,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_WingPrimary_L": {
+      "vertices": 2370,
+      "faces": 2368,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_TailPrimary": {
+      "vertices": 1794,
+      "faces": 1792,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_Wing_Lower_0_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Lower_1_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Lower_2_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Upper_0_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Upper_1_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Upper_2_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Lower_0_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Lower_1_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Lower_2_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Upper_0_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Upper_1_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_Wing_Upper_2_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": [
+        "wing_gesture"
+      ]
+    },
+    "FTH_HeadUpper_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_HeadUpper_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_HeadMiddle_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_HeadMiddle_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_HeadLower_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_HeadLower_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyUpper_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyUpper_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyMiddle_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyMiddle_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyLower_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyLower_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_CreamUpper_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_CreamUpper_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_CreamMiddle_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_CreamMiddle_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_CreamLower_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_CreamLower_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_Orange_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_Orange_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_Flank_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_Flank_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_HeadCenter": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_BodyCenter": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_ChestCenter": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_TailCenter": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_TailInner_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_TailInner_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_TailOuter_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_TailOuter_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_FaceOuter_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_FaceOuter_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_FaceCheek_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_FaceCheek_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_FaceBridge_R": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    },
+    "FTH_FaceBridge_L": {
+      "vertices": 342,
+      "faces": 340,
+      "modifier_types": [],
+      "vertex_groups": []
+    }
+  },
+  "studio": {
+    "objects": {
+      "VAL_3Q": {
+        "type": "CAMERA",
+        "matrix": [
+          [
+            -0.7071067690849304,
+            -0.03907044604420662,
+            0.706026554107666,
+            1.149999976158142
+          ],
+          [
+            0.7071067690849304,
+            -0.03907056152820587,
+            0.706026554107666,
+            1.149999976158142
+          ],
+          [
+            8.099560488972202e-08,
+            0.9984723329544067,
+            0.05525403842329979,
+            0.36000001430511475
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": "PERSP",
+        "lens": 65.0,
+        "ortho_scale": 0.5799999833106995,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "clip_start": 0.009999999776482582,
+        "clip_end": 100.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "VAL_BACK": {
+        "type": "CAMERA",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.018746545538306236,
+            -0.9998242855072021,
+            -1.600000023841858
+          ],
+          [
+            0.0,
+            0.9998242855072021,
+            0.018746545538306236,
+            0.30000001192092896
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": "ORTHO",
+        "lens": 65.0,
+        "ortho_scale": 0.5799999833106995,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "clip_start": 0.009999999776482582,
+        "clip_end": 100.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "VAL_FILL_BACK": {
+        "type": "LIGHT",
+        "matrix": [
+          [
+            0.617821455001831,
+            0.1966957449913025,
+            -0.7613195180892944,
+            -0.699999988079071
+          ],
+          [
+            -0.7863184213638306,
+            0.15454667806625366,
+            -0.5981795191764832,
+            -0.550000011920929
+          ],
+          [
+            4.491100824566274e-08,
+            0.9682076573371887,
+            0.2501477301120758,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 2.0,
+        "size": 0.6000000238418579,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      },
+      "VAL_FILL_FRONT": {
+        "type": "LIGHT",
+        "matrix": [
+          [
+            -0.6178215742111206,
+            -0.1966957449913025,
+            0.7613193988800049,
+            0.699999988079071
+          ],
+          [
+            0.786318302154541,
+            -0.15454667806625366,
+            0.5981796383857727,
+            0.550000011920929
+          ],
+          [
+            1.610796496187561e-09,
+            0.9682076573371887,
+            0.2501477301120758,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 2.0,
+        "size": 0.6000000238418579,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      },
+      "VAL_FRONT": {
+        "type": "CAMERA",
+        "matrix": [
+          [
+            -1.0,
+            -8.575316456926885e-08,
+            -8.904602566417452e-08,
+            0.0
+          ],
+          [
+            -8.742277657347586e-08,
+            -0.018746783956885338,
+            0.9998242855072021,
+            1.600000023841858
+          ],
+          [
+            -8.740742174495608e-08,
+            0.9998242855072021,
+            0.018746783956885338,
+            0.30000001192092896
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": "ORTHO",
+        "lens": 65.0,
+        "ortho_scale": 0.5799999833106995,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "clip_start": 0.009999999776482582,
+        "clip_end": 100.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "VAL_KEY_BACK": {
+        "type": "LIGHT",
+        "matrix": [
+          [
+            0.7761139869689941,
+            -0.364449143409729,
+            0.5146104693412781,
+            0.6499999761581421
+          ],
+          [
+            0.6305926442146301,
+            0.44855278730392456,
+            -0.6333666443824768,
+            -0.800000011920929
+          ],
+          [
+            -2.5706317074991603e-08,
+            0.8160742521286011,
+            0.5779470205307007,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 5.0,
+        "size": 0.6499999761581421,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      },
+      "VAL_KEY_FRONT": {
+        "type": "LIGHT",
+        "matrix": [
+          [
+            -0.7761140465736389,
+            0.36444905400276184,
+            -0.5146104097366333,
+            -0.6499999761581421
+          ],
+          [
+            -0.6305925250053406,
+            -0.44855284690856934,
+            0.6333667039871216,
+            0.800000011920929
+          ],
+          [
+            -5.95984488427348e-08,
+            0.8160742521286011,
+            0.5779470205307007,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 5.0,
+        "size": 0.6499999761581421,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      },
+      "VAL_LEFT": {
+        "type": "CAMERA",
+        "matrix": [
+          [
+            -1.6292068494294654e-07,
+            0.018746783956885338,
+            -0.9998242855072021,
+            -1.600000023841858
+          ],
+          [
+            -1.0,
+            -1.93699301043182e-09,
+            1.629129968705456e-07,
+            0.0
+          ],
+          [
+            1.1174421388204792e-09,
+            0.9998242855072021,
+            0.018746783956885338,
+            0.30000001192092896
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": "ORTHO",
+        "lens": 65.0,
+        "ortho_scale": 0.5799999833106995,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "clip_start": 0.009999999776482582,
+        "clip_end": 100.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "VAL_TOP": {
+        "type": "LIGHT",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 2.0,
+        "size": 0.699999988079071,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      }
+    },
+    "camera_datablocks": [
+      "VAL_3Q_Data",
+      "VAL_BACK_Data",
+      "VAL_FRONT_Data",
+      "VAL_LEFT_Data"
+    ],
+    "light_datablocks": [
+      "VAL_FILL_BACK_Data",
+      "VAL_FILL_FRONT_Data",
+      "VAL_KEY_BACK_Data",
+      "VAL_KEY_FRONT_Data",
+      "VAL_TOP_Data"
+    ],
+    "world": {
+      "name": "OWLI_ValidationWorld",
+      "color": [
+        0.07500000298023224,
+        0.07500000298023224,
+        0.07500000298023224,
+        1.0
+      ],
+      "strength": 0.5
+    },
+    "render": {
+      "engine": "BLENDER_EEVEE",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "samples": 64,
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "scene_object_count": 109
+  },
+  "no_save_performed": true,
+  "limit": "Read-only fresh-open inventory, not an independent rerun of the full pose/collision sweep."
+}

@@ -22,6 +22,36 @@ scene, remaining goals, reproduction commands and historical evidence constraint
 For the next open production goal, also read its linked GitHub issue and the
 corresponding continuation plan; do not restart completed milestones from scratch.
 
+## Sub-agent workflow
+
+Use sub-agents for independent visual and technical reviews of substantial
+modeling, lookdev, rigging, animation, and milestone-QA goals. This is an explicit
+delegation instruction for those goals, within the active session's capabilities
+and higher-priority rules. The primary agent chooses the task split and timing.
+
+- Assign separate visual and technical reviewers before milestone acceptance.
+  The visual reviewer checks the actual four required views against the approved
+  reference hierarchy. The technical reviewer checks relevant geometry/function
+  probes, reproducibility, evidence bindings, and preservation of historical
+  artifacts. Both return concrete findings, supporting evidence, and limitations.
+- Give each sub-agent a bounded task, the accepted scene/commit, relevant goal
+  criteria, and explicit file ownership. Each must follow the required reading
+  order and continuation plan. Reviewers inspect actual artifacts independently
+  and write only their own reports or scratch outputs unless separately assigned
+  implementation work.
+- Delegate implementation only when tasks have clearly separate files or
+  artifacts. Keep one writer per Blend file and production script at a time;
+  coordinate ownership before transferring work. Use separate working copies
+  and scratch directories for Blender probes and renders.
+- The primary agent integrates changes, evaluates and resolves findings, runs
+  the combined checks, and owns the final acceptance and handoff. A sub-agent's
+  verdict does not replace reference comparison or the iteration requirements.
+  Bind reviews to the final delivered artifacts; recheck affected scope after
+  subsequent changes and document any remaining work in a named goal.
+
+Small, isolated edits do not require delegation. If sub-agents are unavailable,
+document the review limitation without claiming an independent review occurred.
+
 ## Reference authority
 
 When visual references disagree, use this priority:
