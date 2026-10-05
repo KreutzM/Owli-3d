@@ -60,7 +60,9 @@ class MaterialsInventoryTests(unittest.TestCase):
 
     def test_producer_accepts_only_fresh_explicit_tmp_and_fixed_own_output(self):
         with tempfile.TemporaryDirectory() as parent:
-            root = Path(parent)
+            # Windows runners can expose an 8.3 alias (RUNNER~1) for Temp;
+            # checked_paths returns canonical resolved paths on every platform.
+            root = Path(parent).resolve()
             (root/'tmp').mkdir()
             work = root/'tmp/fresh'
             self.assertEqual(checked_paths(work, root/REVIEW_PATH, root/SCENE_PATH, root),
