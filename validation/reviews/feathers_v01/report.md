@@ -169,4 +169,4 @@ SHA256 anchors for the published independent and integration evidence:
 - `independent-technical-evidence.json`: `d50f70cd38df065e0eeb92c3123e53042e1f044d1726767045782254a6070c60`.
 - `run12-review-bindings.json`: `583174488046fd7ae8662f25427d05d88715f2c12fd806bc2697199469b3eddf`.
 - `run12-readonly-open.json`: `e9eb9b0968754623f2452c744c0d599e74771f233c8a7b9a5e53f49135cb36e5`.
-- `integration-checks.md`: `7dfea3dcaabec1b6b6b5b88a4f020d651684c5f3ee5e3a78be2017ee98ecc3c3`.
+- `integration-checks.md`: `460eaefb11b16b31adb0e1339cb3b2db140cb2408853cacf1b9d3194c59152c4`.

@@ -22,3 +22,14 @@ are separate real evidence, not assertions supplied by the Python unit tests.
 
 External Windows/Ubuntu CI and the exact-head PR merge are recorded in the
 GitHub PR/issue delivery; this local file does not pre-claim their result.
+
+## Windows checkout correction
+
+The first PR CI run37262497939 passed the Ubuntu delivery gate but Windows
+reported a stale protected `review_fixes_v01/.gitattributes` hash: its checkout
+used CRLF because the root rules did not classify `.gitattributes` itself.
+The root now specifies `.gitattributes text eol=lf`. No historical file, source
+proof or geometry was changed. An actual `git -c core.autocrlf=true checkout-index`
+to fresh scratch now preserves its protected SHA256
+`969460aaa0c55ba72617714a75087807b6fc97800fdb333734867f526cb77824` exactly.
+The final feathers gate passes again. The updated PR CI must pass before merge.
