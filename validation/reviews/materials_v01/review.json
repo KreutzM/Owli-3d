@@ -1,0 +1,99 @@
+{
+  "gate_version": 2,
+  "milestone": "materials_v01",
+  "status": "materials_lookdev_accepted",
+  "scene_sha256": "ca5522b3948e2d3501eb47c0b0f3099a7ca9d7e596e8e9af5b9f6128353acaa3",
+  "verification_sha256": "093efc0e7e339d7a8bdd4cb98b410cf5f3edfe02b310f26f3db2034d0358df1f",
+  "reference_authority": [
+    {
+      "file": "00_original_logo.png",
+      "rank": 1
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "rank": 2
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "rank": 3
+    }
+  ],
+  "views": {
+    "VAL_FRONT": {
+      "status": "pass",
+      "reason": "Cream-Brust breiter und nach unten verjüngt; warme Flanken diagonal und begrenzt. Zentriertes Cyan-Stirnnetz lesbar, Satin-/Keratin-/Metallrollen getrennt; Augen diagnostisch für #19."
+    },
+    "VAL_LEFT": {
+      "status": "pass",
+      "reason": "Sitzende Stirngeometrie und warme Brustkontur unter festem Profil erhalten; Cyan-Motiv durch Stirnkrümmung verkürzt. Stange/Griff und vier Zehen bleiben plausibel."
+    },
+    "VAL_BACK": {
+      "status": "pass",
+      "reason": "Navy/Blue/Cyan-Lagen und Flügel-/Schwanz-Symmetrie erhalten; kein zusätzliches Rückensymbol. Metall und schmale Stangenakzente untergeordnet."
+    },
+    "VAL_3Q": {
+      "status": "pass",
+      "reason": "Warmverläufe bilden V-Flanken statt homogenen Kragen; Cream-Mitte lesbar. Stirnhub trotz Verkürzung sichtbar; matte Federn, kontrollierter Keratinglanz und Metall bestätigen Materialintention."
+    }
+  },
+  "criteria": {
+    "assigned_non_eye_materials": {
+      "status": "pass",
+      "reason": "Alle 95 Nicht-Augen-Meshes mit tatsächlichen MAT-Slots und gültigen Polygonindizes; zehn verbundene Graphs nach frischem Open geprüft."
+    },
+    "nonmetal_satin_plumage": {
+      "status": "pass",
+      "reason": "Featherrollen Metallic0, Roughness.56/Cream.64, Sheen.18, tatsächliche UV-Verläufe/Feingrain; matte/satinierte Flächen in vier festen Ansichten beurteilt."
+    },
+    "keratin_beak_claws": {
+      "status": "pass",
+      "reason": "Orange Schnabel/Zehen und dunkle Krallen, Metallic0/Roughness.30, kontrollierte Highlights; Mundinnenfläche separat, Öffnungsfunktion erhalten."
+    },
+    "brushed_metal_perch": {
+      "status": "pass",
+      "reason": "Metall.85, Roughness.30, Anisotropic.65 und gerichtetes Grain; metallische Stange visuell gegen08 geprüft, Griff bleibt tragend."
+    },
+    "centered_forehead_motif": {
+      "status": "pass",
+      "reason": "Sieben Knoten/sechs Linien als geschlossene sitzende Meshes; zentraler runder Hub frontal lesbar und in 3Q sichtbar, Spiegelung exakt. Krümmungsgrenze dokumentiert."
+    },
+    "restrained_cyan_accents": {
+      "status": "pass",
+      "reason": "Emission2.0 mit korrekt linearem Cyan, feine Stirnlinien und schmale Ringe. Keine breite Überstrahlung der Cream-Maske; Basisring bleibt untergeordnet."
+    },
+    "palette_four_views": {
+      "status": "pass",
+      "reason": "00>07>08 tatsächlich verglichen; Navy/Blue/Cyan/Cream mit lokalem Orange erhalten, sRGB→linear explizit; alle vier festgelegten Kameras/Lichter unverändert."
+    },
+    "F01_cream_v_warm_diagonals": {
+      "status": "pass",
+      "reason": "Acht Brustgruppen gezielt angepasst; breite verjüngte Cream-Mitte und Root-out/Tip-in warme Übergänge. Vorher/Nachher und Chestdetail00/08 zeigen behobenen homogenen Gürtel/Kragen."
+    },
+    "function_history_preserved": {
+      "status": "pass",
+      "reason": "548 historische Git/LFS-Dateien exakt;78 Cages und acht EyeStates erhalten; reale41 Blink-/41 Schnabelzustände, ±12° Gaze, sechs Gesten und 3+1-Griff inklusivealler 17 TECH-Ziele. Vier Worker und unabhängige Opens/Pixels bestätigen Finalstand."
+    }
+  },
+  "blocking_findings": [],
+  "evidence_sha256": {
+    "VAL_3Q.png": "788fab5f4ceb6702ee74b300ddbe0ee80f2d6abd198071720f8551a417f329a9",
+    "VAL_3Q_comparison.png": "3f25421c74c74d33686bd369dd9e283eb484033f2f8ea18c3c6f34ec0d569452",
+    "VAL_BACK.png": "adc7bc3bb065163b5a3510ce984066a4da13e5a2a4c7bdb2e32e34282fff05af",
+    "VAL_BACK_comparison.png": "5fe9b51a3d0c99817250a2bbbe40b1c1232b402ac2ab718a679ebaa1022203b6",
+    "VAL_FRONT.png": "1c235212117dcd7e9731cf0961992d897047b870243e760581b59a8b019e98bb",
+    "VAL_FRONT_comparison.png": "029a2c0475d74e98a48a4faf888e3c53db1745172f1d239b6fa7342c6a86d453",
+    "VAL_LEFT.png": "6e626bb76f342781ff4bfdc9c00eb466cb03748d318f56cde0899bfcd298669a",
+    "VAL_LEFT_comparison.png": "742b02087447947969a117b5e4b4912382ae85501590c055a7ad2f383129ebf3",
+    "build_checks.json": "bdefb0c91a6aaaf7d88ccd7b7350ccdb8c033887730081886433cba31622db04",
+    "chest_before_after.png": "f83959c70dac8aad5bd2f8088bc948cecd03f2ca9b266172313cb2246432be59",
+    "contact_sheet.png": "75f56819d88c6ae61feae7ea90659f97fa2316d75db6b489550a56adccf4b225",
+    "independent-technical-evidence.json": "84aa2680a7479d7fb3b24d79839b485d506c02e5eb44f476289dd70f1bbc1579",
+    "independent-technical-review.md": "812cf13d308b9cc72408b80dc88022d5c8417c000f166a17e5dd18948a11c575",
+    "independent-visual-review.md": "2b11b238dc0fca762f073a5da4a78ffd415dcff03dc0d76dddc20c35af8991e2",
+    "reload_a_checks.json": "d71e68b108fd43718ce7f988b2a4d68edab5065843f463f09be4e3a58a6c93f6",
+    "reload_b_checks.json": "6416cac7240c2628ae7f89a8301ed734d5448da121bb497fed77408c2ebfc2d7",
+    "report.md": "30278f35333243aa93f972b59b928f727605c79167a4845513cd4684b921358d",
+    "saved_build_checks.json": "d43a57df8597090ace425fe58ce092ff39f1147ddad9d953c02a9608099a4418",
+    "verification.json": "093efc0e7e339d7a8bdd4cb98b410cf5f3edfe02b310f26f3db2034d0358df1f"
+  }
+}

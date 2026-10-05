@@ -63,3 +63,12 @@ unabhängige Berichte, vollständige eigene Quellen-/Referenz-/Worker-Inventare,
 Material-/Tech-Bericht mit Befehlen und Grenzen, Validate/Gates/Tests/Compileall/
 Blender-Smoke, eigener grüner PR. Issue erst nach erfüllter Lieferung schließen;
 Übergabe und Epic auf #19 aktualisieren. Finales Rig/Animation bleiben #20–#24.
+
+## Lieferung aus diesem Startplan
+
+Der ausgeführte #18-Stand liegt getrennt in `owli_materials_v01.blend`,
+SHA256 `ca5522b3948e2d3501eb47c0b0f3099a7ca9d7e596e8e9af5b9f6128353acaa3`, 1.793.740 Bytes.
+[Materialbericht](../validation/reviews/materials_v01/report.md) und separate
+Abnahme unter `materials_v01/`. Brust-F01 ist integriert; F02-Nasenlöcher
+bleibt #40, F03-Augen bleibt #19. Nächster [Startplan #19](next-goal-19.md);
+Integration/CI und Issue-Abschluss anhand des #18-PR prüfen.

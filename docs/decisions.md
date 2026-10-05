@@ -412,3 +412,36 @@ The old30 metadata stage is archived byte-exact from Git966b7f0. Bound historica
 CLI/validators remain unchanged; current #6 adds `feathers_gate.py` and an explicit
 CI invocation alongside the prior validation. Final shader assignment/tech
 integration remain #18/#19, combined final topology/rig/animation QA #20–#24.
+
+## 2026-10-05 — #18 assigned non-eye lookdev and chest F-01
+
+The original palette remains exact; actual shader values use IEC sRGB-to-linear
+conversion. Nonmetal satin feather ramps, soft cream, orange/dark keratin and
+fine directional brushed metal are assigned to all 95 non-eye meshes.
+Eight F-01 cream/warm groups intentionally change shape: a wider cream center
+and root-out/tip-in diagonal warm gradients replace separate homogeneous
+orange patches. Authority 00 > 07 > 08 remains unchanged. The few broad groups
+remain an abstraction of the illustrated feather layering.
+
+A seated cyan forehead graph replaces nine old guides. The hub is lower and
+more domed after an independent visual finding; crown foreshortening in
+profile/3Q is documented. Four slim perch accents remain secondary. A real
+11-micrometer symmetry rejection led to exact reflection of authored right
+TECH surfaces; audit tolerance was preserved. Torus rings correctly use Euler 0.
+G18-TECH-01 exposed contradictory individual blink clearances admitted by the
+gate; per-sample/global-min checks and focused negative tests close that gap.
+
+Scene SHA256 `ca5522b3948e2d3501eb47c0b0f3099a7ca9d7e596e8e9af5b9f6128353acaa3`, 1,793,740 bytes,
+117 objects/103 meshes, 14 stored materials, no armature/actions. 78 old cages
+and eight complete eye states remain exact. Four actual Blender workers and
+independent fresh opens verify slots/nodes/UVs/geometry, full movement trajectories
+and 3+1 contact; canonical RGBA pixels are exact. All 548 predecessor Git/LFS
+byte anchors remain fixed; stage50 is archived from a863493.
+The live build's 17 material datablocks include three unused old materials
+omitted on reopening; stored scenes retain ten owned roles plus four eye diagnostics.
+A 19-nanometer variation in old BVH shoulder metrics with exact cages uses a
+2e-7-meter measurement tolerance; current worker datasets remain mutually exact.
+
+F-01 is resolved in #18; F-02 nostrils stays #40 and F-03 eyes stays #19. #40
+remains open until all three pass on a common current scene; nostril geometry
+must precede #20. Final rig binding/combined QA remain #20–24. No V1 approval.

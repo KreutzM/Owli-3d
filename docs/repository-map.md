@@ -13,7 +13,7 @@ dass ihr Produktionsgoal abgeschlossen ist.
 | `design/proportions.json` | eingefrorene grobe Maße und Ringschemata |
 | `design/silhouette_freeze.json` | manuelle grobe Vieransichtenentscheidung mit Quellenbindungen |
 | `design/head_body.json`, `face.json`, `beak.json`, `feet.json` | implementierte Meilensteinparameter |
-| `blender/scene/` | LFS-Szenen; aktueller #6-Stand `owli_feathers_v01.blend`, #37 und frühere Szenen bleiben historische Baselines |
+| `blender/scene/` | LFS-Szenen; aktueller #18-Stand `owli_materials_v01.blend`; #6/#37 und frühere Szenen bleiben historische Baselines |
 | `validation/reference_views.json`, `checklist.json` | Studio und unveränderte Pflichtansichten / visuelle Checks |
 | `validation/reviews/<milestone>/` | dauerhafte Szenen-/Quellen-/Rendernachweise und separate manuelle Entscheidung |
 | `validation/history/pre_feet_v01/` | bytegenaue Original-Metadaten und geprüfte historische Quellenumbindung |
@@ -33,17 +33,23 @@ dass ihr Produktionsgoal abgeschlossen ist.
 | `scripts/feathers_review.py`, `feathers_gate.py`, `feathers_contracts.py` | eigener #6-Producer, strikte vollständige Abnahme, 462 geschützte Vorgängeranker |
 | `validation/reviews/feathers_v01/` | aktueller Federbericht, 40 Evidenzbilder, vier Pflichtansichten, separate Entscheidung und unabhängige Berichte |
 | `scripts/blender/legacy/30_wings_feathers.py`, `validation/history/pre_feathers_v01/` | byte-exakte archivierte Metadatenstufe aus Git966b7f0 |
-| `scripts/blender/50_materials.py`, `60_rig.py` | Materialbibliothek bzw. Rig-Gerüst; keine fertige Zuordnung/Deformation |
+| `design/materials_lookdev.json`, `scripts/blender/50_materials.py`, `materials_geometry.py` | #18: echte Nicht-Augen-Zuweisung, Brust-F01, sitzendes Stirnmotiv und Stangenringe |
+| `scripts/blender/materials_checks.py`, `materials_evidence.py` | tatsächliche Shader-/Erhaltungs-/Tech-/Bewegungsprüfung in vier Blender-Prozessen |
+| `scripts/materials_review.py`, `materials_gate.py`, `materials_contracts.py` | isolierter Producer, strikte Abnahme und 548 Vorgängeranker |
+| `validation/reviews/materials_v01/` | aktueller Bericht, Brustvergleich, 40 Evidenzbilder, vier feste Ansichten und unabhängige Berichte |
+| `scripts/blender/legacy/50_materials.py`, `validation/history/pre_materials_v01/` | bytegenaue Stage50-Sicherung aus Git a863493 |
+| `scripts/blender/60_rig.py` | ungewichtetes Gerüst; keine finale Rig-Deformation |
 | `scripts/blender/90_validation.py`, `validation_setup.py`, `verify_validation_setup.py` | feste Kameras/Lichter, Framing, Rendering und Studio-Prüfung |
 | `scripts/blender/legacy/40_feet_perch.py` | ursprünglicher Guide-Code, unverändert für ältere Blockout-Rezepte |
 | `scripts/legacy/project.py` | historische CLI-Quellensicherung; nicht als aktuellen Runner verwenden |
-| `tests/`, `.github/workflows/validate.yml`, `requirements.txt`, `.gitattributes` | 64 Tests einschließlich 19 neuer Feathers-Gate-Tests, Windows/Ubuntu-CI, Python-Abhängigkeiten, LF-/LFS-Regeln |
+| `tests/`, `.github/workflows/validate.yml`, `requirements.txt`, `.gitattributes` | 83 Tests einschließlich 19 neuer Materials-Gate-Tests, Windows/Ubuntu-CI, Python-Abhängigkeiten, LF-/LFS-Regeln |
 
 ## Nachweise lesen, ohne sie neu zu erzeugen
 
 ```powershell
 python scripts/project.py validate
 python scripts/feathers_gate.py
+python scripts/materials_gate.py
 python -m unittest discover -s tests -v
 python -c "import sys; sys.path.insert(0,'scripts'); from delivery_gates import validate_feet_delivery; from review_fixes_gate import validate_review_fixes; print(validate_feet_delivery()); print(validate_review_fixes())"
 ```
@@ -56,5 +62,6 @@ Modells noch einen tatsächlichen Blender-Test nach einer Modelländerung.
 
 Die tatsächliche #6-Lieferung nutzt `design/wings_feathers.json`,
 `scripts/feathers_review.py`, `blender/scene/owli_feathers_v01.blend` und
-`validation/reviews/feathers_v01/`. Die nächste Lieferung #18 erhält eigene
-Szenen/Nachweise; [Startplan #18](next-goal-18.md). Bestehende akzeptierte Artefakte erhalten.
+`validation/reviews/feathers_v01/`. Die aktuelle #18-Lieferung liegt separat in `owli_materials_v01.blend` und
+`materials_v01/`. Als Nächstes [Augenlookdev #19](next-goal-19.md) mit F-03,
+zusätzlich Nasenlöcher F-02 aus #40 vor #20. Historische Artefakte erhalten.
