@@ -5,6 +5,12 @@ Nachweis: [Korrekturbericht](../validation/reviews/review_fixes_v01/report.md).
 Die unten genannten Rig-Prüfungen sind **deferred** bis zu ihrem jeweiligen Goal.
 Keine Druckflächen-/Lastsimulation und keine Flugartikulation sind erforderlich.
 
+Fortschreibung 2026-10-05: #6 liefert die zugewiesenen großen Cream-Gesichts-
+und vollständigen Flügel-/Körper-/Schwanzgruppen. Neue tatsächliche Blink/Blick/
+Beak-, Root-/Gesten- und Griffproben bestehen; unabhängige Reviews sind geschlossen.
+[Federbericht](../validation/reviews/feathers_v01/report.md). Die folgende #6-Zeile
+bleibt als ursprünglicher Umfang erhalten; #20–#24 sind weiterhin offen.
+
 | Goal | Konkrete spätere Abnahme |
 |---|---|
 | [#6](https://github.com/KreutzM/Owli-3d/issues/6) | Große Gesichtsfederzüge für den verbliebenen äußeren cream Rand und Wangen-/Mittelstegfluss ausdrücklich mitliefern. Wenige breite, bearbeitbare Gruppen; primäre organische #37-Maske erhalten. Blink/Blick/Beak erneut prüfen. Vollständige Flügel-/Körper-/Schwanzlagen und Gestenbindung bleiben zusätzlich verbindlich. |

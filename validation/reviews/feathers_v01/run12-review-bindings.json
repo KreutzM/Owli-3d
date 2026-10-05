@@ -1,0 +1,68 @@
+{
+  "decision": "pass_goal6_visual_geometry_scope",
+  "scene_path": "blender/scene/owli_feathers_v01.blend",
+  "scene_sha256": "76ee3f1c0f8b4314aee40585445c14e3b2d193b7aa04c7e2c86e6f810f576b0a",
+  "references_inspected": {
+    "00_original_logo.png": "d97c36505ae64d3d70b04f55b055cba84de1bfa7326daa91a556b87dae3d0c2e",
+    "07_turnaround_technical.png": "b15a961ceadc50c9b226aefb981464461c5e049d0a18de5e969f454fc90259a1",
+    "08_parts_lookdev_technical.png": "6438c5a11db515e6d73f72a9617d511839b407e1e6c7022b80aa475b2a362488"
+  },
+  "actual_images_inspected": {
+    "VAL_FRONT.png": "a4f779fedff2b6d815276bf3c086fcca3c70c107eea0a635be7b0766a388eedd",
+    "VAL_LEFT.png": "d5a1037f02dc7d8c6e2facdafb2c8974cb96f192bddf9a3e6e3f76c61264b136",
+    "VAL_BACK.png": "24cf98237ee7ab90a7ee88966d41c601392b962445a0b9821d18121ff8a7cd33",
+    "VAL_3Q.png": "a993929983c747a7806c1afa548106017cffe6dfe6d7204a285dc2e1f233c78d",
+    "evidence/gesture_left/VAL_FRONT.png": "c927d5e9b860d8869a9014e250641b71299617adb539a824ac4602aefc51bf6e",
+    "evidence/gesture_left/VAL_LEFT.png": "0a99b580f380c1c39e4aa8199698b4c932d70a00c1be14b4aba7a9522fd5e619",
+    "evidence/gesture_left/VAL_BACK.png": "5ed75cd9b75bce3b163ba02322b698cdd37b71813fddf93aae0f475e3b190c05",
+    "evidence/gesture_left/VAL_3Q.png": "50206efeb53579289e5907eac03cc14eaac4f51af00a0f4d0617f1933f37d12e",
+    "evidence/gesture_right/VAL_FRONT.png": "f0898951e06c01b22801307e504232587de27a8c4d2face815298cf1575cf0b7",
+    "evidence/gesture_right/VAL_LEFT.png": "ce4a16861c328661a570a90b17f52865a4274f0a257b06573869dc9b8ea4be63",
+    "evidence/gesture_right/VAL_BACK.png": "900d31ea8cee7981bfc50a6f627ba928d3449f240e67baa6f46580f1b14d54c5",
+    "evidence/gesture_right/VAL_3Q.png": "a232e449a30c780d48e81a49a415df6494ae2861a9f4ea17806b864b6335f825",
+    "evidence/gesture_both/VAL_FRONT.png": "55f3cd8b8c76e669f65ae130fced0c7b9eeecc62034767d74066193d1bd15b14",
+    "evidence/gesture_both/VAL_LEFT.png": "03500b97ca19e10c25b655d88d9fd0826340165f5e15ca0a96d011fd7822afcf",
+    "evidence/gesture_both/VAL_BACK.png": "8f169fca1c2480c00e58b9e40912fef4903b9117f6c6d6cac7ebf9ea7ed9623b",
+    "evidence/gesture_both/VAL_3Q.png": "e7a56f18cee7a784a89a4206fc32128ee040ffc77442402a474fee9e9d7fecc3",
+    "evidence/blink/VAL_FRONT.png": "9b99b4ba6fa8aaeec90ec135e49bb15f22a9794b94bb833779a4eb79c23bfc35",
+    "evidence/blink/VAL_LEFT.png": "b5f8b62ead88c089781f43f1eb812eff7ae2064890ab6d0eb56bb2b10d1f4aac",
+    "evidence/blink/VAL_BACK.png": "87316779ce611f162a36db8e1901b1cda7a0c2911c65bab4562d7c29c206bed8",
+    "evidence/blink/VAL_3Q.png": "5cd321fd3a54ff9083740e8018454667d3b80be212cd51dfc07e576b95bbb0f2",
+    "evidence/beak_open/VAL_FRONT.png": "9c92706ac48f14914564aecfc4195850af052f2f2287410d247790fbd80156c9",
+    "evidence/beak_open/VAL_LEFT.png": "a50122a1e8c9c86376c99a6eaaac83e011a0c88b4813514c74b5523d8d1d3af0",
+    "evidence/beak_open/VAL_BACK.png": "65d4ec59ce0878aa478f3aa2d15a251e5ee99ea060f412abe0bf4c84cd198b2c",
+    "evidence/beak_open/VAL_3Q.png": "6289eb22048e9ebee6effd23c51ea281ec27ab214231eeb730e578490393db25"
+  },
+  "current_source_sha256": {
+    "design/wings_feathers.json": "c4dca720659047d090f77fbdf0f2d68861c6e1057174e66f7e944c428536c40d",
+    "validation/reference_views.json": "b54fc4aa5b6bdf0ba07d7a96006ca207791b397f2374a465ede581855cb9d89f",
+    "scripts/blender/30_wings_feathers.py": "5d4c743803bfc93e0513bfbddf0cc923786f1769c12f4be076884f1a7deca483",
+    "scripts/blender/feathers_geometry.py": "31cf65cc3bda16a1f832dddf35bc621d1d6902cfc4d2b4a6ec12009283944f37",
+    "scripts/blender/feathers_checks.py": "c4ac839251f299798a9122edd0d7cd4530f560c986a73d8cd0deb95758b53c29",
+    "scripts/blender/feathers_evidence.py": "83e3da59a86c7319896de8129f1762170e2bbd4e99fbd82b0c36ffeef99114a1",
+    "scripts/blender/verify_face.py": "38d6c36d5c9e0287df0c0d124fe3a1d5dd10b3c77e8cd4d967060d9267b82db0",
+    "scripts/blender/validation_setup.py": "d8aeb3b79b237613ad176d6ce97f75062cafa850f4da1f0b21586aa459b53f41"
+  },
+  "canonical_neutral_reload_pixel_identity": true,
+  "pixel_comparison_image_sha256": {
+    "neutral/VAL_FRONT.png": "3adb8cf502a589b9ee91ac46aeb227d165a42a59f0f2d2bb8dc009f23828a2f0",
+    "reload_a/VAL_FRONT.png": "d1234d1385c0a7a74de1ec7f02f1fbbc8ce412372ea605bd0cc93f36845c6043",
+    "reload_b/VAL_FRONT.png": "a4f779fedff2b6d815276bf3c086fcca3c70c107eea0a635be7b0766a388eedd",
+    "neutral/VAL_LEFT.png": "7f917cc1fbbf20e3c3d31a576300bb388004c9788c15c78c8d8fc736503f8308",
+    "reload_a/VAL_LEFT.png": "bde4f407ab3fb81ea1e9b57f40fc9d7a47878d1605fb1760d64ab19f29b5ca24",
+    "reload_b/VAL_LEFT.png": "d5a1037f02dc7d8c6e2facdafb2c8974cb96f192bddf9a3e6e3f76c61264b136",
+    "neutral/VAL_BACK.png": "367443c595b3e4a284f5acc68b8f8d188516fafca8993c728f25b8648125a7f4",
+    "reload_a/VAL_BACK.png": "24d1521c6073d7c6fa410ecedb6a79392bf451c11ff73d6cacdc082b0b03d449",
+    "reload_b/VAL_BACK.png": "24cf98237ee7ab90a7ee88966d41c601392b962445a0b9821d18121ff8a7cd33",
+    "neutral/VAL_3Q.png": "955c82992b2950dc9255765024be6064eadf172efacb9fb7b2eaf25da9f21d09",
+    "reload_a/VAL_3Q.png": "6fc20a2c489b14f0650ad7aa73a1fa753f8efc53f4428e1f469fe13496302028",
+    "reload_b/VAL_3Q.png": "a993929983c747a7806c1afa548106017cffe6dfe6d7204a285dc2e1f233c78d"
+  },
+  "saved_worker_checks_sha256": "3f365f5b8693f32b5c95332aa0d624c461667bfc3fbfbfaf4d2cf0aa91fa6466",
+  "independent_fresh_open_sha256": "e9eb9b0968754623f2452c744c0d599e74771f233c8a7b9a5e53f49135cb36e5",
+  "review_scope": "24 actual images; fixed neutral four views plus actual current 20 endpoint pose images, fresh read-only Blender open and 95 mesh digest identity.",
+  "limitations": [
+    "Numeric full pose/collision sweeps are separate technical evidence, not independently rerun in this visual review.",
+    "Large broad groups deliberately simplify the dense reference plumage. Final materials/eye appearance/controls/animation remain later goals."
+  ]
+}
